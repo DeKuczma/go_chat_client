@@ -33,16 +33,15 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	defer conn.Close()
+	h := NewHub()
+	h.conn = conn
+	defer h.conn.Close()
 
 	log.Println("Connection via websocket established")
 
-	h := NewHub()
-	h.conn = conn
-
 	p := tea.NewProgram(h, tea.WithContext(context.Background()))
 
-	go Read(conn, p)
+	go Read(h.conn, p)
 
 	p.Run()
 

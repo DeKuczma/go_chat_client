@@ -114,6 +114,10 @@ func (h Hub) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 			user:    m.Name,
 			message: m.Message,
 		})
+
+		if len(room.messages) > MaxMessages {
+			room.messages = room.messages[1:]
+		}
 	}
 	return h, nil
 }
