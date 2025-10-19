@@ -1,6 +1,7 @@
 package main
 
 import (
+	"context"
 	"encoding/json"
 	"fmt"
 	"log"
@@ -89,26 +90,31 @@ func (h Hub) Disconnect() {
 	h.conn.WriteJSON(msg)
 }
 
-func Read(conn *websocket.Conn, p *tea.Program) {
+func Read(ctx context.Context, conn *websocket.Conn, p *tea.Program) {
 	log.Println("Started reading message from ws")
 	for {
-		log.Println("Looping for reading message from ws")
-		_, recived, err := conn.ReadMessage()
-		if err != nil {
-			log.Fatal(err)
+		select {
+		case <-ctx.Done():
 			return
+		default:
+			log.Println("Looping for reading message from ws")
+			_, recived, err := conn.ReadMessage()
+			if err != nil {
+				log.Printf("Error sending msg to ws: %s\n", err)
+				return
+			}
+
+			log.Printf("Recieved: %+v", recived)
+			var msg IncommingMessage
+			err = json.Unmarshal(recived, &msg)
+
+			if err != nil {
+				fmt.Println(err)
+				continue
+			}
+
+			log.Printf("Sending msg to tea program %+v\n", msg)
+			p.Send(msg)
 		}
-
-		log.Printf("Recieved: %+v", recived)
-		var msg IncommingMessage
-		err = json.Unmarshal(recived, &msg)
-
-		if err != nil {
-			fmt.Println(err)
-			continue
-		}
-
-		log.Printf("Sending msg to tea program %+v\n", msg)
-		p.Send(msg)
 	}
 }

@@ -41,7 +41,10 @@ func main() {
 
 	p := tea.NewProgram(h, tea.WithContext(context.Background()))
 
-	go Read(h.conn, p)
+	ctx, cancel := context.WithCancel(context.Background())
+	defer cancel()
+
+	go Read(ctx, h.conn, p)
 
 	p.Run()
 
