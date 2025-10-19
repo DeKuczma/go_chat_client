@@ -1,100 +1,92 @@
 package main
 
 import (
-	"bufio"
 	"encoding/json"
 	"fmt"
 	"log"
-	"os"
-	"strings"
 	"time"
 
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/gorilla/websocket"
 )
 
-func Send(conn *websocket.Conn) {
-	time.Sleep(time.Second * 5)
+func (h Hub) Send(msg string) tea.Cmd {
 
-	scanner := bufio.NewScanner(os.Stdin)
-	for scanner.Scan() {
-		messageType := MessageType(TextMessage)
-		line := scanner.Text()
-		data := ""
-		split := strings.Split(line, " ")
-		line = strings.Join(split[1:], " ")
-		if split[0] == "disconnect" {
-			messageType = MessageType(Disconnect)
-		} else if len(split) >= 2 {
-			switch split[0] {
-			case "settings":
-				messageType = MessageType(Settings)
-				message := &SettingsMessage{
-					Name: line,
-				}
-				jsonData, err := json.Marshal(message)
-				if err != nil {
-					fmt.Println(err)
-					continue
-				}
-
-				data = string(jsonData)
-			case "join":
-				messageType = MessageType(Join)
-
-				message := &RoomOperationMessage{
-					Room: line,
-				}
-				jsonData, err := json.Marshal(message)
-
-				if err != nil {
-					fmt.Println(err)
-					continue
-				}
-
-				data = string(jsonData)
-			case "leave":
-
-				message := &RoomOperationMessage{
-					Room: line,
-				}
-
-				jsonData, err := json.Marshal(message)
-
-				if err != nil {
-					fmt.Println(err)
-					continue
-				}
-
-				data = string(jsonData)
-				messageType = MessageType(Leave)
-			default:
-				message := &SendMessage{
-					Message: line,
-					Room:    split[0],
-				}
-				jsonData, err := json.Marshal(message)
-				if err != nil {
-					fmt.Println(err)
-					continue
-				}
-				data = string(jsonData)
+	return func() tea.Msg {
+		var outcome Message
+		switch h.clientState {
+		case LogingIn:
+			outcome.MessageType = Settings
+			structData := &SettingsMessage{Name: msg}
+			data, err := json.Marshal(structData)
+			if err != nil {
+				return tea.Quit()
 			}
+			outcome.Data = string(data)
+		case JoiningRoom:
+			outcome.MessageType = Join
+			structData := &RoomOperationMessage{Room: msg}
+			data, err := json.Marshal(structData)
 
+			log.Printf("%s", data)
+			if err != nil {
+				return tea.Quit()
+			}
+			outcome.Data = string(data)
+		case WritingMessage:
+			outcome.MessageType = TextMessage
+			structData := &RoomOperationMessage{Room: msg}
+			data, err := json.Marshal(structData)
+			if err != nil {
+				return tea.Quit()
+			}
+			outcome.Data = string(data)
 		}
 
-		msg := Message{
-			MessageType: messageType,
-			Data:        data,
+		err := h.conn.WriteJSON(outcome)
+		if err != nil {
+			return tea.Quit()
 		}
-
-		conn.WriteJSON(msg)
-
-		if split[0] == "disconnect" {
-			conn.Close()
-			break
-		}
+		return nil
 	}
+}
+
+func (h *Hub) LeaveRoom() tea.Cmd {
+
+	if h.currentRoomIndex == 0 {
+		return nil
+	}
+
+	room := h.roomsName[h.currentRoomIndex]
+	h.roomsName = append(h.roomsName[:h.currentRoomIndex], h.roomsName[h.currentRoomIndex+1:]...)
+	delete(h.rooms, room)
+	if h.currentRoomIndex == len(h.roomsName) {
+		h.currentRoomIndex--
+	}
+
+	return func() tea.Msg {
+		outcome := Message{MessageType: Leave}
+		structData := &RoomOperationMessage{Room: room}
+		data, err := json.Marshal(structData)
+		if err != nil {
+			return tea.Quit()
+		}
+		outcome.Data = string(data)
+
+		err = h.conn.WriteJSON(outcome)
+		if err != nil {
+			return tea.Quit()
+		}
+		return nil
+	}
+}
+
+func (h Hub) Disconnect() {
+	msg := Message{
+		MessageType: Disconnect,
+	}
+
+	h.conn.WriteJSON(msg)
 }
 
 func Read(conn *websocket.Conn, p *tea.Program) {

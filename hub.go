@@ -6,6 +6,7 @@ import (
 	"github.com/charmbracelet/bubbles/key"
 	"github.com/charmbracelet/bubbles/textinput"
 	tea "github.com/charmbracelet/bubbletea"
+	"github.com/gorilla/websocket"
 )
 
 type keyMapping = struct {
@@ -13,6 +14,7 @@ type keyMapping = struct {
 	quit,
 	joinRoom,
 	leaveJoinRoom,
+	leaveRoom,
 	switchNextRoom,
 	switchPrevRoom key.Binding
 }
@@ -25,6 +27,8 @@ const (
 	LogingIn = iota
 	JoiningRoom
 	WritingMessage
+	LeaveRoom
+	LeaveHub
 )
 
 type Hub struct {
@@ -36,6 +40,7 @@ type Hub struct {
 	clientState      ClientState
 	input            textinput.Model
 	currentRoomIndex int
+	conn             *websocket.Conn
 }
 
 func NewHub() Hub {
@@ -67,6 +72,10 @@ func NewHub() Hub {
 				key.WithKeys("shift+tab"),
 				key.WithHelp("shift+tab", "switch to prev room"),
 			),
+			leaveRoom: key.NewBinding(
+				key.WithKeys("ctrl+q"),
+				key.WithHelp("ctrl+q", "leave current room"),
+			),
 		},
 		clientState:      LogingIn,
 		currentRoomIndex: 0,
@@ -93,80 +102,10 @@ func (h Hub) Init() tea.Cmd {
 }
 
 func (h Hub) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
-	var cmd tea.Cmd
 	log.Println(msg)
 	switch m := msg.(type) {
 	case tea.KeyMsg:
-		switch {
-		case key.Matches(m, h.keyMap.quit):
-			return h, tea.Quit
-		case key.Matches(m, h.keyMap.enter):
-			if len(h.input.Value()) > 0 {
-
-				switch h.clientState {
-				case LogingIn:
-					h.username = h.input.Value()
-					h.input.Reset()
-					h.clientState = WritingMessage
-
-					room := h.rooms["general"]
-					room.users = append(room.users, h.username)
-				case JoiningRoom:
-					roomName := h.input.Value()
-					h.input.Reset()
-
-					exists := false
-					index := 0
-
-					for i, val := range h.roomsName {
-						if val == roomName {
-							exists = true
-							index = i
-							break
-						}
-					}
-
-					if exists {
-						h.currentRoomIndex = index
-					} else {
-						room := InitRoom()
-						room.users = append(room.users, h.username)
-						h.rooms[roomName] = room
-						h.roomsName = append(h.roomsName, roomName)
-						h.currentRoomIndex = len(h.roomsName) - 1
-					}
-
-					h.clientState = WritingMessage
-				case WritingMessage:
-					room := h.rooms[h.roomsName[h.currentRoomIndex]]
-					room.messages = append(room.messages, ChatMessage{
-						user:    h.username,
-						message: h.input.Value(),
-					})
-					h.input.Reset()
-				}
-
-			}
-		case key.Matches(m, h.keyMap.joinRoom):
-			if h.clientState == WritingMessage {
-				h.clientState = JoiningRoom
-			}
-		case key.Matches(m, h.keyMap.leaveJoinRoom):
-			if h.clientState == JoiningRoom {
-				h.clientState = WritingMessage
-			}
-		case key.Matches(m, h.keyMap.switchNextRoom):
-			if h.currentRoomIndex != len(h.roomsName)-1 {
-				h.currentRoomIndex++
-			}
-		case key.Matches(m, h.keyMap.switchPrevRoom):
-			if h.currentRoomIndex != 0 {
-				h.currentRoomIndex--
-			}
-		default:
-			h.input, cmd = h.input.Update(msg)
-			return h, cmd
-		}
+		return h.HandleKeyMsg(m)
 	}
 	return h, nil
 }
@@ -207,4 +146,91 @@ func (h Hub) GetJoinedRooms() string {
 		joinedRooms += val + " "
 	}
 	return joinedRooms
+}
+
+func (h Hub) HandleKeyMsg(msg tea.KeyMsg) (tea.Model, tea.Cmd) {
+	var cmd tea.Cmd
+
+	switch {
+	case key.Matches(msg, h.keyMap.quit):
+		h.clientState = ClientState(Disconnect)
+		h.Disconnect()
+		return h, tea.Quit
+	case key.Matches(msg, h.keyMap.enter):
+		return h.HandleInputSubmit()
+	case key.Matches(msg, h.keyMap.joinRoom):
+		if h.clientState == WritingMessage {
+			h.clientState = ClientState(JoiningRoom)
+		}
+	case key.Matches(msg, h.keyMap.leaveJoinRoom):
+		if h.clientState == JoiningRoom {
+			h.clientState = ClientState(WritingMessage)
+		}
+	case key.Matches(msg, h.keyMap.leaveRoom):
+		cmd = h.LeaveRoom()
+	case key.Matches(msg, h.keyMap.switchNextRoom):
+		if h.currentRoomIndex != len(h.roomsName)-1 {
+			h.currentRoomIndex++
+		}
+	case key.Matches(msg, h.keyMap.switchPrevRoom):
+		if h.currentRoomIndex != 0 {
+			h.currentRoomIndex--
+		}
+	default:
+		h.input, cmd = h.input.Update(msg)
+	}
+	return h, cmd
+}
+
+func (h Hub) HandleInputSubmit() (tea.Model, tea.Cmd) {
+	var cmd tea.Cmd
+	if len(h.input.Value()) > 0 {
+		switch h.clientState {
+		case LogingIn:
+			h.username = h.input.Value()
+			h.input.Reset()
+			cmd = h.Send(h.username)
+			h.clientState = ClientState(WritingMessage)
+
+			room := h.rooms["general"]
+			room.users = append(room.users, h.username)
+		case JoiningRoom:
+			roomName := h.input.Value()
+			h.input.Reset()
+
+			exists := false
+			index := 0
+
+			for i, val := range h.roomsName {
+				if val == roomName {
+					exists = true
+					index = i
+					break
+				}
+			}
+
+			if exists {
+				h.currentRoomIndex = index
+			} else {
+				room := InitRoom()
+				room.users = append(room.users, h.username)
+				h.rooms[roomName] = room
+				h.roomsName = append(h.roomsName, roomName)
+				h.currentRoomIndex = len(h.roomsName) - 1
+				cmd = h.Send(roomName)
+			}
+
+			h.clientState = ClientState(WritingMessage)
+		case WritingMessage:
+			inputMsg := h.input.Value()
+			room := h.rooms[h.roomsName[h.currentRoomIndex]]
+			room.messages = append(room.messages, ChatMessage{
+				user:    h.username,
+				message: inputMsg,
+			})
+			h.input.Reset()
+			cmd = h.Send(inputMsg)
+		}
+	}
+	return h, cmd
 }
