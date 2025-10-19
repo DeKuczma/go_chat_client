@@ -7,10 +7,6 @@ type Room struct {
 	messages      []ChatMessage
 }
 
-type Login struct {
-	user string
-}
-
 type ChatMessage struct {
 	user    string
 	message string

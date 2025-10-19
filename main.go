@@ -41,10 +41,10 @@ func main() {
 	h.conn = conn
 
 	p := tea.NewProgram(h, tea.WithContext(context.Background()))
+
+	go Read(conn, p)
+
 	p.Run()
 
-	log.Println("Program run")
-
-	// go Send(conn)
-	// go Read(conn, p)
+	log.Println("Program finished running")
 }

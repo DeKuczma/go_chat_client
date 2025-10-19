@@ -4,7 +4,6 @@ import (
 	"encoding/json"
 	"fmt"
 	"log"
-	"time"
 
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/gorilla/websocket"
@@ -27,15 +26,16 @@ func (h Hub) Send(msg string) tea.Cmd {
 			outcome.MessageType = Join
 			structData := &RoomOperationMessage{Room: msg}
 			data, err := json.Marshal(structData)
-
-			log.Printf("%s", data)
 			if err != nil {
 				return tea.Quit()
 			}
 			outcome.Data = string(data)
 		case WritingMessage:
 			outcome.MessageType = TextMessage
-			structData := &RoomOperationMessage{Room: msg}
+			structData := &SendMessage{
+				Room:    h.roomsName[h.currentRoomIndex],
+				Message: msg,
+			}
 			data, err := json.Marshal(structData)
 			if err != nil {
 				return tea.Quit()
@@ -90,17 +90,16 @@ func (h Hub) Disconnect() {
 }
 
 func Read(conn *websocket.Conn, p *tea.Program) {
-
-	time.Sleep(time.Second * 5)
-	log.Println("ws Reader is running")
+	log.Println("Started reading message from ws")
 	for {
+		log.Println("Looping for reading message from ws")
 		_, recived, err := conn.ReadMessage()
-
 		if err != nil {
 			log.Fatal(err)
 			return
 		}
 
+		log.Printf("Recieved: %+v", recived)
 		var msg IncommingMessage
 		err = json.Unmarshal(recived, &msg)
 
@@ -111,6 +110,5 @@ func Read(conn *websocket.Conn, p *tea.Program) {
 
 		log.Printf("Sending msg to tea program %+v\n", msg)
 		p.Send(msg)
-		log.Println("Sent msg to tea program")
 	}
 }

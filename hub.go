@@ -33,7 +33,6 @@ const (
 
 type Hub struct {
 	username         string
-	logedIn          bool
 	rooms            map[string]*Room
 	roomsName        []string
 	keyMap           keyMapping
@@ -45,8 +44,7 @@ type Hub struct {
 
 func NewHub() Hub {
 	h := Hub{
-		logedIn: false,
-		rooms:   make(map[string]*Room),
+		rooms: make(map[string]*Room),
 
 		//Declare key mapping
 		keyMap: keyMapping{
@@ -102,10 +100,20 @@ func (h Hub) Init() tea.Cmd {
 }
 
 func (h Hub) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
-	log.Println(msg)
 	switch m := msg.(type) {
 	case tea.KeyMsg:
 		return h.HandleKeyMsg(m)
+	case IncommingMessage:
+		log.Printf("Processing incomming msg %+v\n", m)
+		room, ok := h.rooms[m.Room]
+		if !ok {
+			return h, nil
+		}
+
+		room.messages = append(room.messages, ChatMessage{
+			user:    m.Name,
+			message: m.Message,
+		})
 	}
 	return h, nil
 }
@@ -126,14 +134,14 @@ func (h Hub) View() string {
 
 		m += "Active room: " + h.roomsName[h.currentRoomIndex] + "\n"
 		m += "Room users: " + h.rooms[h.roomsName[h.currentRoomIndex]].GetUsers() + "\n"
-		for _, room := range h.rooms {
-			if len(room.messages) > 0 {
-				m += "Room messages: \n"
-				for _, val := range room.messages {
-					m += val.user + ": " + val.message + "\n"
-				}
+		room := h.rooms[h.roomsName[h.currentRoomIndex]]
+		if len(room.messages) > 0 {
+			m += "Room messages: \n"
+			for _, val := range room.messages {
+				m += val.user + ": " + val.message + "\n"
 			}
 		}
+
 		m += "\nWrite message to " + h.roomsName[h.currentRoomIndex] + ": "
 	}
 	m += h.input.View()
@@ -150,7 +158,6 @@ func (h Hub) GetJoinedRooms() string {
 
 func (h Hub) HandleKeyMsg(msg tea.KeyMsg) (tea.Model, tea.Cmd) {
 	var cmd tea.Cmd
-
 	switch {
 	case key.Matches(msg, h.keyMap.quit):
 		h.clientState = ClientState(Disconnect)
@@ -179,6 +186,7 @@ func (h Hub) HandleKeyMsg(msg tea.KeyMsg) (tea.Model, tea.Cmd) {
 	default:
 		h.input, cmd = h.input.Update(msg)
 	}
+
 	return h, cmd
 }
 
@@ -223,11 +231,6 @@ func (h Hub) HandleInputSubmit() (tea.Model, tea.Cmd) {
 			h.clientState = ClientState(WritingMessage)
 		case WritingMessage:
 			inputMsg := h.input.Value()
-			room := h.rooms[h.roomsName[h.currentRoomIndex]]
-			room.messages = append(room.messages, ChatMessage{
-				user:    h.username,
-				message: inputMsg,
-			})
 			h.input.Reset()
 			cmd = h.Send(inputMsg)
 		}
