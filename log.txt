@@ -1,0 +1,249 @@
+2025/10/19 11:59:33 logging to file
+2025/10/19 11:59:33 Connection via websocket established
+2025/10/19 11:59:33 {130 33}
+2025/10/19 11:59:38 a
+2025/10/19 11:59:38 s
+2025/10/19 11:59:38 {}
+2025/10/19 11:59:38 d
+2025/10/19 11:59:38 {}
+2025/10/19 11:59:39 a
+2025/10/19 11:59:39 {}
+2025/10/19 11:59:39 s
+2025/10/19 11:59:39 {}
+2025/10/19 11:59:39 enter
+2025/10/19 11:59:39 {username:asdas logedIn:false rooms:map[general:0xc00002c940] roomsName:[general] keyMap:{enter:{keys:[enter] help:{Key: Desc:} disabled:false} quit:{keys:[ctrl+c] help:{Key:esc Desc:quit} disabled:false} joinRoom:{keys:[ctrl+j] help:{Key:ctrl+j Desc:join room} disabled:false} leaveJoinRoom:{keys:[esc] help:{Key:esc Desc:go back to writing messages} disabled:false} switchNextRoom:{keys:[tab] help:{Key:tab Desc:switch to next room} disabled:false} switchPrevRoom:{keys:[shift+tab] help:{Key:shift+tab Desc:switch to prev room} disabled:false}} clientState:2 input:{Err:<nil> Prompt: Placeholder: EchoMode:0 EchoCharacter:42 Cursor:{BlinkSpeed:530000000 Style:{r:<nil> props:0 value: attrs:0 fgColor:<nil> bgColor:<nil> width:0 height:0 alignHorizontal:0 alignVertical:0 paddingTop:0 paddingRight:0 paddingBottom:0 paddingLeft:0 marginTop:0 marginRight:0 marginBottom:0 marginLeft:0 marginBgColor:<nil> borderStyle:{Top: Bottom: Left: Right: TopLeft: TopRight: BottomLeft: BottomRight: MiddleLeft: MiddleRight: Middle: MiddleTop: MiddleBottom:} borderTopFgColor:<nil> borderRightFgColor:<nil> borderBottomFgColor:<nil> borderLeftFgColor:<nil> borderTopBgColor:<nil> borderRightBgColor:<nil> borderBottomBgColor:<nil> borderLeftBgColor:<nil> maxWidth:0 maxHeight:0 tabWidth:0 transform:<nil>} TextStyle:{r:<nil> props:0 value: attrs:0 fgColor:<nil> bgColor:<nil> width:0 height:0 alignHorizontal:0 alignVertical:0 paddingTop:0 paddingRight:0 paddingBottom:0 paddingLeft:0 marginTop:0 marginRight:0 marginBottom:0 marginLeft:0 marginBgColor:<nil> borderStyle:{Top: Bottom: Left: Right: TopLeft: TopRight: BottomLeft: BottomRight: MiddleLeft: MiddleRight: Middle: MiddleTop: MiddleBottom:} borderTopFgColor:<nil> borderRightFgColor:<nil> borderBottomFgColor:<nil> borderLeftFgColor:<nil> borderTopBgColor:<nil> borderRightBgColor:<nil> borderBottomBgColor:<nil> borderLeftBgColor:<nil> maxWidth:0 maxHeight:0 tabWidth:0 transform:<nil>} char: id:0 focus:true Blink:false blinkCtx:0xc000008258 blinkTag:6 mode:0} BlinkSpeed:0 PromptStyle:{r:<nil> props:0 value: attrs:0 fgColor:<nil> bgColor:<nil> width:0 height:0 alignHorizontal:0 alignVertical:0 paddingTop:0 paddingRight:0 paddingBottom:0 paddingLeft:0 marginTop:0 marginRight:0 marginBottom:0 marginLeft:0 marginBgColor:<nil> borderStyle:{Top: Bottom: Left: Right: TopLeft: TopRight: BottomLeft: BottomRight: MiddleLeft: MiddleRight: Middle: MiddleTop: MiddleBottom:} borderTopFgColor:<nil> borderRightFgColor:<nil> borderBottomFgColor:<nil> borderLeftFgColor:<nil> borderTopBgColor:<nil> borderRightBgColor:<nil> borderBottomBgColor:<nil> borderLeftBgColor:<nil> maxWidth:0 maxHeight:0 tabWidth:0 transform:<nil>} TextStyle:{r:<nil> props:0 value: attrs:0 fgColor:<nil> bgColor:<nil> width:0 height:0 alignHorizontal:0 alignVertical:0 paddingTop:0 paddingRight:0 paddingBottom:0 paddingLeft:0 marginTop:0 marginRight:0 marginBottom:0 marginLeft:0 marginBgColor:<nil> borderStyle:{Top: Bottom: Left: Right: TopLeft: TopRight: BottomLeft: BottomRight: MiddleLeft: MiddleRight: Middle: MiddleTop: MiddleBottom:} borderTopFgColor:<nil> borderRightFgColor:<nil> borderBottomFgColor:<nil> borderLeftFgColor:<nil> borderTopBgColor:<nil> borderRightBgColor:<nil> borderBottomBgColor:<nil> borderLeftBgColor:<nil> maxWidth:0 maxHeight:0 tabWidth:0 transform:<nil>} PlaceholderStyle:{r:0x7ff6324e6800 props:1024 value: attrs:0 fgColor:240 bgColor:<nil> width:0 height:0 alignHorizontal:0 alignVertical:0 paddingTop:0 paddingRight:0 paddingBottom:0 paddingLeft:0 marginTop:0 marginRight:0 marginBottom:0 marginLeft:0 marginBgColor:<nil> borderStyle:{Top: Bottom: Left: Right: TopLeft: TopRight: BottomLeft: BottomRight: MiddleLeft: MiddleRight: Middle: MiddleTop: MiddleBottom:} borderTopFgColor:<nil> borderRightFgColor:<nil> borderBottomFgColor:<nil> borderLeftFgColor:<nil> borderTopBgColor:<nil> borderRightBgColor:<nil> borderBottomBgColor:<nil> borderLeftBgColor:<nil> maxWidth:0 maxHeight:0 tabWidth:0 transform:<nil>} CompletionStyle:{r:0x7ff6324e6800 props:1024 value: attrs:0 fgColor:240 bgColor:<nil> width:0 height:0 alignHorizontal:0 alignVertical:0 paddingTop:0 paddingRight:0 paddingBottom:0 paddingLeft:0 marginTop:0 marginRight:0 marginBottom:0 marginLeft:0 marginBgColor:<nil> borderStyle:{Top: Bottom: Left: Right: TopLeft: TopRight: BottomLeft: BottomRight: MiddleLeft: MiddleRight: Middle: MiddleTop: MiddleBottom:} borderTopFgColor:<nil> borderRightFgColor:<nil> borderBottomFgColor:<nil> borderLeftFgColor:<nil> borderTopBgColor:<nil> borderRightBgColor:<nil> borderBottomBgColor:<nil> borderLeftBgColor:<nil> maxWidth:0 maxHeight:0 tabWidth:0 transform:<nil>} CursorStyle:{r:<nil> props:0 value: attrs:0 fgColor:<nil> bgColor:<nil> width:0 height:0 alignHorizontal:0 alignVertical:0 paddingTop:0 paddingRight:0 paddingBottom:0 paddingLeft:0 marginTop:0 marginRight:0 marginBottom:0 marginLeft:0 marginBgColor:<nil> borderStyle:{Top: Bottom: Left: Right: TopLeft: TopRight: BottomLeft: BottomRight: MiddleLeft: MiddleRight: Middle: MiddleTop: MiddleBottom:} borderTopFgColor:<nil> borderRightFgColor:<nil> borderBottomFgColor:<nil> borderLeftFgColor:<nil> borderTopBgColor:<nil> borderRightBgColor:<nil> borderBottomBgColor:<nil> borderLeftBgColor:<nil> maxWidth:0 maxHeight:0 tabWidth:0 transform:<nil>} CharLimit:50 Width:0 KeyMap:{CharacterForward:{keys:[right ctrl+f] help:{Key: Desc:} disabled:false} CharacterBackward:{keys:[left ctrl+b] help:{Key: Desc:} disabled:false} WordForward:{keys:[alt+right ctrl+right alt+f] help:{Key: Desc:} disabled:false} WordBackward:{keys:[alt+left ctrl+left alt+b] help:{Key: Desc:} disabled:false} DeleteWordBackward:{keys:[alt+backspace ctrl+w] help:{Key: Desc:} disabled:false} DeleteWordForward:{keys:[alt+delete alt+d] help:{Key: Desc:} disabled:false} DeleteAfterCursor:{keys:[ctrl+k] help:{Key: Desc:} disabled:false} DeleteBeforeCursor:{keys:[ctrl+u] help:{Key: Desc:} disabled:false} DeleteCharacterBackward:{keys:[backspace ctrl+h] help:{Key: Desc:} disabled:false} DeleteCharacterForward:{keys:[delete ctrl+d] help:{Key: Desc:} disabled:false} LineStart:{keys:[home ctrl+a] help:{Key: Desc:} disabled:false} LineEnd:{keys:[end ctrl+e] help:{Key: Desc:} disabled:false} Paste:{keys:[ctrl+v] help:{Key: Desc:} disabled:false} AcceptSuggestion:{keys:[tab] help:{Key: Desc:} disabled:false} NextSuggestion:{keys:[down ctrl+n] help:{Key: Desc:} disabled:false} PrevSuggestion:{keys:[up ctrl+p] help:{Key: Desc:} disabled:false}} value:[] focus:true pos:0 offset:0 offsetRight:0 Validate:<nil> rsan:0xc000294000 ShowSuggestions:false suggestions:[] matchedSuggestions:[] currentSuggestionIndex:0} currentRoomIndex:0}
+2025/10/19 11:59:39 {0 6}
+2025/10/19 11:59:39 {username:asdas logedIn:false rooms:map[general:0xc00002c940] roomsName:[general] keyMap:{enter:{keys:[enter] help:{Key: Desc:} disabled:false} quit:{keys:[ctrl+c] help:{Key:esc Desc:quit} disabled:false} joinRoom:{keys:[ctrl+j] help:{Key:ctrl+j Desc:join room} disabled:false} leaveJoinRoom:{keys:[esc] help:{Key:esc Desc:go back to writing messages} disabled:false} switchNextRoom:{keys:[tab] help:{Key:tab Desc:switch to next room} disabled:false} switchPrevRoom:{keys:[shift+tab] help:{Key:shift+tab Desc:switch to prev room} disabled:false}} clientState:2 input:{Err:<nil> Prompt: Placeholder: EchoMode:0 EchoCharacter:42 Cursor:{BlinkSpeed:530000000 Style:{r:<nil> props:0 value: attrs:0 fgColor:<nil> bgColor:<nil> width:0 height:0 alignHorizontal:0 alignVertical:0 paddingTop:0 paddingRight:0 paddingBottom:0 paddingLeft:0 marginTop:0 marginRight:0 marginBottom:0 marginLeft:0 marginBgColor:<nil> borderStyle:{Top: Bottom: Left: Right: TopLeft: TopRight: BottomLeft: BottomRight: MiddleLeft: MiddleRight: Middle: MiddleTop: MiddleBottom:} borderTopFgColor:<nil> borderRightFgColor:<nil> borderBottomFgColor:<nil> borderLeftFgColor:<nil> borderTopBgColor:<nil> borderRightBgColor:<nil> borderBottomBgColor:<nil> borderLeftBgColor:<nil> maxWidth:0 maxHeight:0 tabWidth:0 transform:<nil>} TextStyle:{r:<nil> props:0 value: attrs:0 fgColor:<nil> bgColor:<nil> width:0 height:0 alignHorizontal:0 alignVertical:0 paddingTop:0 paddingRight:0 paddingBottom:0 paddingLeft:0 marginTop:0 marginRight:0 marginBottom:0 marginLeft:0 marginBgColor:<nil> borderStyle:{Top: Bottom: Left: Right: TopLeft: TopRight: BottomLeft: BottomRight: MiddleLeft: MiddleRight: Middle: MiddleTop: MiddleBottom:} borderTopFgColor:<nil> borderRightFgColor:<nil> borderBottomFgColor:<nil> borderLeftFgColor:<nil> borderTopBgColor:<nil> borderRightBgColor:<nil> borderBottomBgColor:<nil> borderLeftBgColor:<nil> maxWidth:0 maxHeight:0 tabWidth:0 transform:<nil>} char: id:0 focus:true Blink:false blinkCtx:0xc000008258 blinkTag:6 mode:0} BlinkSpeed:0 PromptStyle:{r:<nil> props:0 value: attrs:0 fgColor:<nil> bgColor:<nil> width:0 height:0 alignHorizontal:0 alignVertical:0 paddingTop:0 paddingRight:0 paddingBottom:0 paddingLeft:0 marginTop:0 marginRight:0 marginBottom:0 marginLeft:0 marginBgColor:<nil> borderStyle:{Top: Bottom: Left: Right: TopLeft: TopRight: BottomLeft: BottomRight: MiddleLeft: MiddleRight: Middle: MiddleTop: MiddleBottom:} borderTopFgColor:<nil> borderRightFgColor:<nil> borderBottomFgColor:<nil> borderLeftFgColor:<nil> borderTopBgColor:<nil> borderRightBgColor:<nil> borderBottomBgColor:<nil> borderLeftBgColor:<nil> maxWidth:0 maxHeight:0 tabWidth:0 transform:<nil>} TextStyle:{r:<nil> props:0 value: attrs:0 fgColor:<nil> bgColor:<nil> width:0 height:0 alignHorizontal:0 alignVertical:0 paddingTop:0 paddingRight:0 paddingBottom:0 paddingLeft:0 marginTop:0 marginRight:0 marginBottom:0 marginLeft:0 marginBgColor:<nil> borderStyle:{Top: Bottom: Left: Right: TopLeft: TopRight: BottomLeft: BottomRight: MiddleLeft: MiddleRight: Middle: MiddleTop: MiddleBottom:} borderTopFgColor:<nil> borderRightFgColor:<nil> borderBottomFgColor:<nil> borderLeftFgColor:<nil> borderTopBgColor:<nil> borderRightBgColor:<nil> borderBottomBgColor:<nil> borderLeftBgColor:<nil> maxWidth:0 maxHeight:0 tabWidth:0 transform:<nil>} PlaceholderStyle:{r:0x7ff6324e6800 props:1024 value: attrs:0 fgColor:240 bgColor:<nil> width:0 height:0 alignHorizontal:0 alignVertical:0 paddingTop:0 paddingRight:0 paddingBottom:0 paddingLeft:0 marginTop:0 marginRight:0 marginBottom:0 marginLeft:0 marginBgColor:<nil> borderStyle:{Top: Bottom: Left: Right: TopLeft: TopRight: BottomLeft: BottomRight: MiddleLeft: MiddleRight: Middle: MiddleTop: MiddleBottom:} borderTopFgColor:<nil> borderRightFgColor:<nil> borderBottomFgColor:<nil> borderLeftFgColor:<nil> borderTopBgColor:<nil> borderRightBgColor:<nil> borderBottomBgColor:<nil> borderLeftBgColor:<nil> maxWidth:0 maxHeight:0 tabWidth:0 transform:<nil>} CompletionStyle:{r:0x7ff6324e6800 props:1024 value: attrs:0 fgColor:240 bgColor:<nil> width:0 height:0 alignHorizontal:0 alignVertical:0 paddingTop:0 paddingRight:0 paddingBottom:0 paddingLeft:0 marginTop:0 marginRight:0 marginBottom:0 marginLeft:0 marginBgColor:<nil> borderStyle:{Top: Bottom: Left: Right: TopLeft: TopRight: BottomLeft: BottomRight: MiddleLeft: MiddleRight: Middle: MiddleTop: MiddleBottom:} borderTopFgColor:<nil> borderRightFgColor:<nil> borderBottomFgColor:<nil> borderLeftFgColor:<nil> borderTopBgColor:<nil> borderRightBgColor:<nil> borderBottomBgColor:<nil> borderLeftBgColor:<nil> maxWidth:0 maxHeight:0 tabWidth:0 transform:<nil>} CursorStyle:{r:<nil> props:0 value: attrs:0 fgColor:<nil> bgColor:<nil> width:0 height:0 alignHorizontal:0 alignVertical:0 paddingTop:0 paddingRight:0 paddingBottom:0 paddingLeft:0 marginTop:0 marginRight:0 marginBottom:0 marginLeft:0 marginBgColor:<nil> borderStyle:{Top: Bottom: Left: Right: TopLeft: TopRight: BottomLeft: BottomRight: MiddleLeft: MiddleRight: Middle: MiddleTop: MiddleBottom:} borderTopFgColor:<nil> borderRightFgColor:<nil> borderBottomFgColor:<nil> borderLeftFgColor:<nil> borderTopBgColor:<nil> borderRightBgColor:<nil> borderBottomBgColor:<nil> borderLeftBgColor:<nil> maxWidth:0 maxHeight:0 tabWidth:0 transform:<nil>} CharLimit:50 Width:0 KeyMap:{CharacterForward:{keys:[right ctrl+f] help:{Key: Desc:} disabled:false} CharacterBackward:{keys:[left ctrl+b] help:{Key: Desc:} disabled:false} WordForward:{keys:[alt+right ctrl+right alt+f] help:{Key: Desc:} disabled:false} WordBackward:{keys:[alt+left ctrl+left alt+b] help:{Key: Desc:} disabled:false} DeleteWordBackward:{keys:[alt+backspace ctrl+w] help:{Key: Desc:} disabled:false} DeleteWordForward:{keys:[alt+delete alt+d] help:{Key: Desc:} disabled:false} DeleteAfterCursor:{keys:[ctrl+k] help:{Key: Desc:} disabled:false} DeleteBeforeCursor:{keys:[ctrl+u] help:{Key: Desc:} disabled:false} DeleteCharacterBackward:{keys:[backspace ctrl+h] help:{Key: Desc:} disabled:false} DeleteCharacterForward:{keys:[delete ctrl+d] help:{Key: Desc:} disabled:false} LineStart:{keys:[home ctrl+a] help:{Key: Desc:} disabled:false} LineEnd:{keys:[end ctrl+e] help:{Key: Desc:} disabled:false} Paste:{keys:[ctrl+v] help:{Key: Desc:} disabled:false} AcceptSuggestion:{keys:[tab] help:{Key: Desc:} disabled:false} NextSuggestion:{keys:[down ctrl+n] help:{Key: Desc:} disabled:false} PrevSuggestion:{keys:[up ctrl+p] help:{Key: Desc:} disabled:false}} value:[] focus:true pos:0 offset:0 offsetRight:0 Validate:<nil> rsan:0xc000294000 ShowSuggestions:false suggestions:[] matchedSuggestions:[] currentSuggestionIndex:0} currentRoomIndex:0}
+2025/10/19 11:59:40  
+2025/10/19 11:59:40 {username:asdas logedIn:false rooms:map[general:0xc00002c940] roomsName:[general] keyMap:{enter:{keys:[enter] help:{Key: Desc:} disabled:false} quit:{keys:[ctrl+c] help:{Key:esc Desc:quit} disabled:false} joinRoom:{keys:[ctrl+j] help:{Key:ctrl+j Desc:join room} disabled:false} leaveJoinRoom:{keys:[esc] help:{Key:esc Desc:go back to writing messages} disabled:false} switchNextRoom:{keys:[tab] help:{Key:tab Desc:switch to next room} disabled:false} switchPrevRoom:{keys:[shift+tab] help:{Key:shift+tab Desc:switch to prev room} disabled:false}} clientState:2 input:{Err:<nil> Prompt: Placeholder: EchoMode:0 EchoCharacter:42 Cursor:{BlinkSpeed:530000000 Style:{r:<nil> props:0 value: attrs:0 fgColor:<nil> bgColor:<nil> width:0 height:0 alignHorizontal:0 alignVertical:0 paddingTop:0 paddingRight:0 paddingBottom:0 paddingLeft:0 marginTop:0 marginRight:0 marginBottom:0 marginLeft:0 marginBgColor:<nil> borderStyle:{Top: Bottom: Left: Right: TopLeft: TopRight: BottomLeft: BottomRight: MiddleLeft: MiddleRight: Middle: MiddleTop: MiddleBottom:} borderTopFgColor:<nil> borderRightFgColor:<nil> borderBottomFgColor:<nil> borderLeftFgColor:<nil> borderTopBgColor:<nil> borderRightBgColor:<nil> borderBottomBgColor:<nil> borderLeftBgColor:<nil> maxWidth:0 maxHeight:0 tabWidth:0 transform:<nil>} TextStyle:{r:<nil> props:0 value: attrs:0 fgColor:<nil> bgColor:<nil> width:0 height:0 alignHorizontal:0 alignVertical:0 paddingTop:0 paddingRight:0 paddingBottom:0 paddingLeft:0 marginTop:0 marginRight:0 marginBottom:0 marginLeft:0 marginBgColor:<nil> borderStyle:{Top: Bottom: Left: Right: TopLeft: TopRight: BottomLeft: BottomRight: MiddleLeft: MiddleRight: Middle: MiddleTop: MiddleBottom:} borderTopFgColor:<nil> borderRightFgColor:<nil> borderBottomFgColor:<nil> borderLeftFgColor:<nil> borderTopBgColor:<nil> borderRightBgColor:<nil> borderBottomBgColor:<nil> borderLeftBgColor:<nil> maxWidth:0 maxHeight:0 tabWidth:0 transform:<nil>} char: id:0 focus:true Blink:false blinkCtx:0xc000008258 blinkTag:6 mode:0} BlinkSpeed:0 PromptStyle:{r:<nil> props:0 value: attrs:0 fgColor:<nil> bgColor:<nil> width:0 height:0 alignHorizontal:0 alignVertical:0 paddingTop:0 paddingRight:0 paddingBottom:0 paddingLeft:0 marginTop:0 marginRight:0 marginBottom:0 marginLeft:0 marginBgColor:<nil> borderStyle:{Top: Bottom: Left: Right: TopLeft: TopRight: BottomLeft: BottomRight: MiddleLeft: MiddleRight: Middle: MiddleTop: MiddleBottom:} borderTopFgColor:<nil> borderRightFgColor:<nil> borderBottomFgColor:<nil> borderLeftFgColor:<nil> borderTopBgColor:<nil> borderRightBgColor:<nil> borderBottomBgColor:<nil> borderLeftBgColor:<nil> maxWidth:0 maxHeight:0 tabWidth:0 transform:<nil>} TextStyle:{r:<nil> props:0 value: attrs:0 fgColor:<nil> bgColor:<nil> width:0 height:0 alignHorizontal:0 alignVertical:0 paddingTop:0 paddingRight:0 paddingBottom:0 paddingLeft:0 marginTop:0 marginRight:0 marginBottom:0 marginLeft:0 marginBgColor:<nil> borderStyle:{Top: Bottom: Left: Right: TopLeft: TopRight: BottomLeft: BottomRight: MiddleLeft: MiddleRight: Middle: MiddleTop: MiddleBottom:} borderTopFgColor:<nil> borderRightFgColor:<nil> borderBottomFgColor:<nil> borderLeftFgColor:<nil> borderTopBgColor:<nil> borderRightBgColor:<nil> borderBottomBgColor:<nil> borderLeftBgColor:<nil> maxWidth:0 maxHeight:0 tabWidth:0 transform:<nil>} PlaceholderStyle:{r:0x7ff6324e6800 props:1024 value: attrs:0 fgColor:240 bgColor:<nil> width:0 height:0 alignHorizontal:0 alignVertical:0 paddingTop:0 paddingRight:0 paddingBottom:0 paddingLeft:0 marginTop:0 marginRight:0 marginBottom:0 marginLeft:0 marginBgColor:<nil> borderStyle:{Top: Bottom: Left: Right: TopLeft: TopRight: BottomLeft: BottomRight: MiddleLeft: MiddleRight: Middle: MiddleTop: MiddleBottom:} borderTopFgColor:<nil> borderRightFgColor:<nil> borderBottomFgColor:<nil> borderLeftFgColor:<nil> borderTopBgColor:<nil> borderRightBgColor:<nil> borderBottomBgColor:<nil> borderLeftBgColor:<nil> maxWidth:0 maxHeight:0 tabWidth:0 transform:<nil>} CompletionStyle:{r:0x7ff6324e6800 props:1024 value: attrs:0 fgColor:240 bgColor:<nil> width:0 height:0 alignHorizontal:0 alignVertical:0 paddingTop:0 paddingRight:0 paddingBottom:0 paddingLeft:0 marginTop:0 marginRight:0 marginBottom:0 marginLeft:0 marginBgColor:<nil> borderStyle:{Top: Bottom: Left: Right: TopLeft: TopRight: BottomLeft: BottomRight: MiddleLeft: MiddleRight: Middle: MiddleTop: MiddleBottom:} borderTopFgColor:<nil> borderRightFgColor:<nil> borderBottomFgColor:<nil> borderLeftFgColor:<nil> borderTopBgColor:<nil> borderRightBgColor:<nil> borderBottomBgColor:<nil> borderLeftBgColor:<nil> maxWidth:0 maxHeight:0 tabWidth:0 transform:<nil>} CursorStyle:{r:<nil> props:0 value: attrs:0 fgColor:<nil> bgColor:<nil> width:0 height:0 alignHorizontal:0 alignVertical:0 paddingTop:0 paddingRight:0 paddingBottom:0 paddingLeft:0 marginTop:0 marginRight:0 marginBottom:0 marginLeft:0 marginBgColor:<nil> borderStyle:{Top: Bottom: Left: Right: TopLeft: TopRight: BottomLeft: BottomRight: MiddleLeft: MiddleRight: Middle: MiddleTop: MiddleBottom:} borderTopFgColor:<nil> borderRightFgColor:<nil> borderBottomFgColor:<nil> borderLeftFgColor:<nil> borderTopBgColor:<nil> borderRightBgColor:<nil> borderBottomBgColor:<nil> borderLeftBgColor:<nil> maxWidth:0 maxHeight:0 tabWidth:0 transform:<nil>} CharLimit:50 Width:0 KeyMap:{CharacterForward:{keys:[right ctrl+f] help:{Key: Desc:} disabled:false} CharacterBackward:{keys:[left ctrl+b] help:{Key: Desc:} disabled:false} WordForward:{keys:[alt+right ctrl+right alt+f] help:{Key: Desc:} disabled:false} WordBackward:{keys:[alt+left ctrl+left alt+b] help:{Key: Desc:} disabled:false} DeleteWordBackward:{keys:[alt+backspace ctrl+w] help:{Key: Desc:} disabled:false} DeleteWordForward:{keys:[alt+delete alt+d] help:{Key: Desc:} disabled:false} DeleteAfterCursor:{keys:[ctrl+k] help:{Key: Desc:} disabled:false} DeleteBeforeCursor:{keys:[ctrl+u] help:{Key: Desc:} disabled:false} DeleteCharacterBackward:{keys:[backspace ctrl+h] help:{Key: Desc:} disabled:false} DeleteCharacterForward:{keys:[delete ctrl+d] help:{Key: Desc:} disabled:false} LineStart:{keys:[home ctrl+a] help:{Key: Desc:} disabled:false} LineEnd:{keys:[end ctrl+e] help:{Key: Desc:} disabled:false} Paste:{keys:[ctrl+v] help:{Key: Desc:} disabled:false} AcceptSuggestion:{keys:[tab] help:{Key: Desc:} disabled:false} NextSuggestion:{keys:[down ctrl+n] help:{Key: Desc:} disabled:false} PrevSuggestion:{keys:[up ctrl+p] help:{Key: Desc:} disabled:false}} value:[] focus:true pos:0 offset:0 offsetRight:0 Validate:<nil> rsan:0xc000294000 ShowSuggestions:false suggestions:[] matchedSuggestions:[] currentSuggestionIndex:0} currentRoomIndex:0}
+2025/10/19 11:59:40 ctrl+j
+2025/10/19 11:59:40 t
+2025/10/19 11:59:40 y
+2025/10/19 11:59:40 {}
+2025/10/19 11:59:41 enter
+2025/10/19 11:59:41 {username:asdas logedIn:false rooms:map[general:0xc00002c940] roomsName:[general ty] keyMap:{enter:{keys:[enter] help:{Key: Desc:} disabled:false} quit:{keys:[ctrl+c] help:{Key:esc Desc:quit} disabled:false} joinRoom:{keys:[ctrl+j] help:{Key:ctrl+j Desc:join room} disabled:false} leaveJoinRoom:{keys:[esc] help:{Key:esc Desc:go back to writing messages} disabled:false} switchNextRoom:{keys:[tab] help:{Key:tab Desc:switch to next room} disabled:false} switchPrevRoom:{keys:[shift+tab] help:{Key:shift+tab Desc:switch to prev room} disabled:false}} clientState:2 input:{Err:<nil> Prompt: Placeholder: EchoMode:0 EchoCharacter:42 Cursor:{BlinkSpeed:530000000 Style:{r:<nil> props:0 value: attrs:0 fgColor:<nil> bgColor:<nil> width:0 height:0 alignHorizontal:0 alignVertical:0 paddingTop:0 paddingRight:0 paddingBottom:0 paddingLeft:0 marginTop:0 marginRight:0 marginBottom:0 marginLeft:0 marginBgColor:<nil> borderStyle:{Top: Bottom: Left: Right: TopLeft: TopRight: BottomLeft: BottomRight: MiddleLeft: MiddleRight: Middle: MiddleTop: MiddleBottom:} borderTopFgColor:<nil> borderRightFgColor:<nil> borderBottomFgColor:<nil> borderLeftFgColor:<nil> borderTopBgColor:<nil> borderRightBgColor:<nil> borderBottomBgColor:<nil> borderLeftBgColor:<nil> maxWidth:0 maxHeight:0 tabWidth:0 transform:<nil>} TextStyle:{r:<nil> props:0 value: attrs:0 fgColor:<nil> bgColor:<nil> width:0 height:0 alignHorizontal:0 alignVertical:0 paddingTop:0 paddingRight:0 paddingBottom:0 paddingLeft:0 marginTop:0 marginRight:0 marginBottom:0 marginLeft:0 marginBgColor:<nil> borderStyle:{Top: Bottom: Left: Right: TopLeft: TopRight: BottomLeft: BottomRight: MiddleLeft: MiddleRight: Middle: MiddleTop: MiddleBottom:} borderTopFgColor:<nil> borderRightFgColor:<nil> borderBottomFgColor:<nil> borderLeftFgColor:<nil> borderTopBgColor:<nil> borderRightBgColor:<nil> borderBottomBgColor:<nil> borderLeftBgColor:<nil> maxWidth:0 maxHeight:0 tabWidth:0 transform:<nil>} char: id:0 focus:true Blink:false blinkCtx:0xc000008258 blinkTag:8 mode:0} BlinkSpeed:0 PromptStyle:{r:<nil> props:0 value: attrs:0 fgColor:<nil> bgColor:<nil> width:0 height:0 alignHorizontal:0 alignVertical:0 paddingTop:0 paddingRight:0 paddingBottom:0 paddingLeft:0 marginTop:0 marginRight:0 marginBottom:0 marginLeft:0 marginBgColor:<nil> borderStyle:{Top: Bottom: Left: Right: TopLeft: TopRight: BottomLeft: BottomRight: MiddleLeft: MiddleRight: Middle: MiddleTop: MiddleBottom:} borderTopFgColor:<nil> borderRightFgColor:<nil> borderBottomFgColor:<nil> borderLeftFgColor:<nil> borderTopBgColor:<nil> borderRightBgColor:<nil> borderBottomBgColor:<nil> borderLeftBgColor:<nil> maxWidth:0 maxHeight:0 tabWidth:0 transform:<nil>} TextStyle:{r:<nil> props:0 value: attrs:0 fgColor:<nil> bgColor:<nil> width:0 height:0 alignHorizontal:0 alignVertical:0 paddingTop:0 paddingRight:0 paddingBottom:0 paddingLeft:0 marginTop:0 marginRight:0 marginBottom:0 marginLeft:0 marginBgColor:<nil> borderStyle:{Top: Bottom: Left: Right: TopLeft: TopRight: BottomLeft: BottomRight: MiddleLeft: MiddleRight: Middle: MiddleTop: MiddleBottom:} borderTopFgColor:<nil> borderRightFgColor:<nil> borderBottomFgColor:<nil> borderLeftFgColor:<nil> borderTopBgColor:<nil> borderRightBgColor:<nil> borderBottomBgColor:<nil> borderLeftBgColor:<nil> maxWidth:0 maxHeight:0 tabWidth:0 transform:<nil>} PlaceholderStyle:{r:0x7ff6324e6800 props:1024 value: attrs:0 fgColor:240 bgColor:<nil> width:0 height:0 alignHorizontal:0 alignVertical:0 paddingTop:0 paddingRight:0 paddingBottom:0 paddingLeft:0 marginTop:0 marginRight:0 marginBottom:0 marginLeft:0 marginBgColor:<nil> borderStyle:{Top: Bottom: Left: Right: TopLeft: TopRight: BottomLeft: BottomRight: MiddleLeft: MiddleRight: Middle: MiddleTop: MiddleBottom:} borderTopFgColor:<nil> borderRightFgColor:<nil> borderBottomFgColor:<nil> borderLeftFgColor:<nil> borderTopBgColor:<nil> borderRightBgColor:<nil> borderBottomBgColor:<nil> borderLeftBgColor:<nil> maxWidth:0 maxHeight:0 tabWidth:0 transform:<nil>} CompletionStyle:{r:0x7ff6324e6800 props:1024 value: attrs:0 fgColor:240 bgColor:<nil> width:0 height:0 alignHorizontal:0 alignVertical:0 paddingTop:0 paddingRight:0 paddingBottom:0 paddingLeft:0 marginTop:0 marginRight:0 marginBottom:0 marginLeft:0 marginBgColor:<nil> borderStyle:{Top: Bottom: Left: Right: TopLeft: TopRight: BottomLeft: BottomRight: MiddleLeft: MiddleRight: Middle: MiddleTop: MiddleBottom:} borderTopFgColor:<nil> borderRightFgColor:<nil> borderBottomFgColor:<nil> borderLeftFgColor:<nil> borderTopBgColor:<nil> borderRightBgColor:<nil> borderBottomBgColor:<nil> borderLeftBgColor:<nil> maxWidth:0 maxHeight:0 tabWidth:0 transform:<nil>} CursorStyle:{r:<nil> props:0 value: attrs:0 fgColor:<nil> bgColor:<nil> width:0 height:0 alignHorizontal:0 alignVertical:0 paddingTop:0 paddingRight:0 paddingBottom:0 paddingLeft:0 marginTop:0 marginRight:0 marginBottom:0 marginLeft:0 marginBgColor:<nil> borderStyle:{Top: Bottom: Left: Right: TopLeft: TopRight: BottomLeft: BottomRight: MiddleLeft: MiddleRight: Middle: MiddleTop: MiddleBottom:} borderTopFgColor:<nil> borderRightFgColor:<nil> borderBottomFgColor:<nil> borderLeftFgColor:<nil> borderTopBgColor:<nil> borderRightBgColor:<nil> borderBottomBgColor:<nil> borderLeftBgColor:<nil> maxWidth:0 maxHeight:0 tabWidth:0 transform:<nil>} CharLimit:50 Width:0 KeyMap:{CharacterForward:{keys:[right ctrl+f] help:{Key: Desc:} disabled:false} CharacterBackward:{keys:[left ctrl+b] help:{Key: Desc:} disabled:false} WordForward:{keys:[alt+right ctrl+right alt+f] help:{Key: Desc:} disabled:false} WordBackward:{keys:[alt+left ctrl+left alt+b] help:{Key: Desc:} disabled:false} DeleteWordBackward:{keys:[alt+backspace ctrl+w] help:{Key: Desc:} disabled:false} DeleteWordForward:{keys:[alt+delete alt+d] help:{Key: Desc:} disabled:false} DeleteAfterCursor:{keys:[ctrl+k] help:{Key: Desc:} disabled:false} DeleteBeforeCursor:{keys:[ctrl+u] help:{Key: Desc:} disabled:false} DeleteCharacterBackward:{keys:[backspace ctrl+h] help:{Key: Desc:} disabled:false} DeleteCharacterForward:{keys:[delete ctrl+d] help:{Key: Desc:} disabled:false} LineStart:{keys:[home ctrl+a] help:{Key: Desc:} disabled:false} LineEnd:{keys:[end ctrl+e] help:{Key: Desc:} disabled:false} Paste:{keys:[ctrl+v] help:{Key: Desc:} disabled:false} AcceptSuggestion:{keys:[tab] help:{Key: Desc:} disabled:false} NextSuggestion:{keys:[down ctrl+n] help:{Key: Desc:} disabled:false} PrevSuggestion:{keys:[up ctrl+p] help:{Key: Desc:} disabled:false}} value:[] focus:true pos:0 offset:0 offsetRight:0 Validate:<nil> rsan:0xc000294000 ShowSuggestions:false suggestions:[] matchedSuggestions:[] currentSuggestionIndex:0} currentRoomIndex:1}
+2025/10/19 11:59:41 Program run
+2025/10/19 12:02:27 logging to file
+2025/10/19 12:02:27 Connection via websocket established
+2025/10/19 12:02:27 {130 33}
+2025/10/19 12:02:29 q
+2025/10/19 12:02:29 w
+2025/10/19 12:02:29 {}
+2025/10/19 12:02:29 e
+2025/10/19 12:02:29 {}
+2025/10/19 12:02:30 r
+2025/10/19 12:02:30 {}
+2025/10/19 12:02:30 t
+2025/10/19 12:02:30 {}
+2025/10/19 12:02:30 y
+2025/10/19 12:02:30 {}
+2025/10/19 12:02:30 enter
+2025/10/19 12:02:31 {0 7}
+2025/10/19 12:02:31  
+2025/10/19 12:02:31 ctrl+j
+2025/10/19 12:02:31 1
+2025/10/19 12:02:31 enter
+2025/10/19 12:02:32  
+2025/10/19 12:02:32 {0 8}
+2025/10/19 12:02:32 ctrl+j
+2025/10/19 12:02:32 2
+2025/10/19 12:02:33 enter
+2025/10/19 12:02:33  
+2025/10/19 12:02:33 {0 9}
+2025/10/19 12:02:33 ctrl+j
+2025/10/19 12:02:34 3
+2025/10/19 12:02:34 enter
+2025/10/19 12:02:34  
+2025/10/19 12:02:34 {0 10}
+2025/10/19 12:02:34 ctrl+j
+2025/10/19 12:02:35 4
+2025/10/19 12:02:35 enter
+2025/10/19 12:02:35 {0 11}
+2025/10/19 12:02:35 tab
+2025/10/19 12:02:36 tab
+2025/10/19 12:02:36 tab
+2025/10/19 12:02:36 shift+tab
+2025/10/19 12:02:37 shift+tab
+2025/10/19 12:02:37 shift+tab
+2025/10/19 12:02:37 tab
+2025/10/19 12:02:38 tab
+2025/10/19 12:02:38 tab
+2025/10/19 12:02:38 tab
+2025/10/19 12:02:38 shift+tab
+2025/10/19 12:02:39 shift+tab
+2025/10/19 12:02:39 tab
+2025/10/19 12:02:39 tab
+2025/10/19 12:02:39 tab
+2025/10/19 12:02:40 shift+tab
+2025/10/19 12:02:40 shift+tab
+2025/10/19 12:02:40 shift+tab
+2025/10/19 12:02:40 shift+tab
+2025/10/19 12:02:42 tab
+2025/10/19 12:02:42 tab
+2025/10/19 12:02:42 tab
+2025/10/19 12:02:42 tab
+2025/10/19 12:02:42 tab
+2025/10/19 12:02:43 shift+tab
+2025/10/19 12:02:43 shift+tab
+2025/10/19 12:02:43 shift+tab
+2025/10/19 12:02:44 shift+tab
+2025/10/19 12:02:44 tab
+2025/10/19 12:02:44 tab
+2025/10/19 12:02:44 tab
+2025/10/19 12:02:44 tab
+2025/10/19 12:02:45 tab
+2025/10/19 12:02:45 shift+tab
+2025/10/19 12:02:45 shift+tab
+2025/10/19 12:02:45 shift+tab
+2025/10/19 12:02:46 tab
+2025/10/19 12:02:46 tab
+2025/10/19 12:02:46 tab
+2025/10/19 12:02:46 tab
+2025/10/19 12:02:47 shift+tab
+2025/10/19 12:02:47 tab
+2025/10/19 12:02:47 tab
+2025/10/19 12:02:48 shift+tab
+2025/10/19 12:02:48 shift+tab
+2025/10/19 12:02:48 shift+tab
+2025/10/19 12:02:49 tab
+2025/10/19 12:02:49 tab
+2025/10/19 12:02:49 tab
+2025/10/19 12:02:49 tab
+2025/10/19 12:02:49 tab
+2025/10/19 12:02:50  
+2025/10/19 12:02:50 ctrl+j
+2025/10/19 12:02:51 esc
+2025/10/19 12:02:58 {131 33}
+2025/10/19 12:02:58 {132 34}
+2025/10/19 12:02:58 {133 34}
+2025/10/19 12:02:58 {135 35}
+2025/10/19 12:02:58 {136 35}
+2025/10/19 12:02:58 {138 36}
+2025/10/19 12:02:58 {139 36}
+2025/10/19 12:02:58 {140 36}
+2025/10/19 12:02:58 {141 36}
+2025/10/19 12:02:58 {142 36}
+2025/10/19 12:03:01 {143 36}
+2025/10/19 12:03:01 {144 37}
+2025/10/19 12:03:01 {145 37}
+2025/10/19 12:03:01 {146 38}
+2025/10/19 12:03:01 {147 38}
+2025/10/19 12:03:01 {148 38}
+2025/10/19 12:03:01 {148 39}
+2025/10/19 12:03:01  
+2025/10/19 12:03:03 tab
+2025/10/19 12:03:03 tab
+2025/10/19 12:03:03 tab
+2025/10/19 12:03:04 tab
+2025/10/19 12:03:05 tab
+2025/10/19 12:03:05 shift+tab
+2025/10/19 12:03:05 shift+tab
+2025/10/19 12:03:05 shift+tab
+2025/10/19 12:03:06 shift+tab
+2025/10/19 12:03:06 shift+tab
+2025/10/19 12:03:06  
+2025/10/19 12:03:06 ctrl+j
+2025/10/19 12:03:07 d
+2025/10/19 12:03:07 a
+2025/10/19 12:03:07 {}
+2025/10/19 12:03:07 s
+2025/10/19 12:03:07 {}
+2025/10/19 12:03:07 l
+2025/10/19 12:03:07 {}
+2025/10/19 12:03:07 k
+2025/10/19 12:03:07 d
+2025/10/19 12:03:07 {}
+2025/10/19 12:03:07 {}
+2025/10/19 12:03:07 a
+2025/10/19 12:03:07 {}
+2025/10/19 12:03:07 s
+2025/10/19 12:03:07 {}
+2025/10/19 12:03:07 enter
+2025/10/19 12:03:08 {0 19}
+2025/10/19 12:03:08 shift+tab
+2025/10/19 12:03:08 shift+tab
+2025/10/19 12:03:09 shift+tab
+2025/10/19 12:03:09 shift+tab
+2025/10/19 12:03:09 shift+tab
+2025/10/19 12:03:10 tab
+2025/10/19 12:03:10 tab
+2025/10/19 12:03:10 tab
+2025/10/19 12:03:10 tab
+2025/10/19 12:03:10 tab
+2025/10/19 12:03:10 tab
+2025/10/19 12:03:11 tab
+2025/10/19 12:03:12 shift+tab
+2025/10/19 12:03:12 shift+tab
+2025/10/19 12:03:12 shift+tab
+2025/10/19 12:03:12 shift+tab
+2025/10/19 12:03:12 shift+tab
+2025/10/19 12:03:12 tab
+2025/10/19 12:03:13 tab
+2025/10/19 12:03:13 tab
+2025/10/19 12:03:13 tab
+2025/10/19 12:03:13 tab
+2025/10/19 12:03:13 tab
+2025/10/19 12:03:13 tab
+2025/10/19 12:03:14 shift+tab
+2025/10/19 12:03:14 shift+tab
+2025/10/19 12:03:14 shift+tab
+2025/10/19 12:03:14 shift+tab
+2025/10/19 12:03:15 d
+2025/10/19 12:03:15 s
+2025/10/19 12:03:15 a
+2025/10/19 12:03:15 {}
+2025/10/19 12:03:15 {}
+2025/10/19 12:03:16 j
+2025/10/19 12:03:16 {}
+2025/10/19 12:03:16 f
+2025/10/19 12:03:16 s
+2025/10/19 12:03:16 {}
+2025/10/19 12:03:16 {}
+2025/10/19 12:03:16 enter
+2025/10/19 12:03:16 {0 25}
+2025/10/19 12:03:17 s
+2025/10/19 12:03:17 a
+2025/10/19 12:03:17 {}
+2025/10/19 12:03:17 d
+2025/10/19 12:03:17 {}
+2025/10/19 12:03:17 u
+2025/10/19 12:03:17 {}
+2025/10/19 12:03:17 h
+2025/10/19 12:03:17 {}
+2025/10/19 12:03:17 f
+2025/10/19 12:03:17 {}
+2025/10/19 12:03:18 a
+2025/10/19 12:03:18 {}
+2025/10/19 12:03:18 o
+2025/10/19 12:03:18 i
+2025/10/19 12:03:18 {}
+2025/10/19 12:03:18 s
+2025/10/19 12:03:18 {}
+2025/10/19 12:03:18 {}
+2025/10/19 12:03:18 d
+2025/10/19 12:03:18 {}
+2025/10/19 12:03:18 f
+2025/10/19 12:03:18 {}
+2025/10/19 12:03:18 enter
+2025/10/19 12:03:18 {0 37}
+2025/10/19 12:03:18 s
+2025/10/19 12:03:18 a
+2025/10/19 12:03:18 {}
+2025/10/19 12:03:18 j
+2025/10/19 12:03:18 d
+2025/10/19 12:03:18 {}
+2025/10/19 12:03:18 {}
+2025/10/19 12:03:19 k
+2025/10/19 12:03:19 a
+2025/10/19 12:03:19 {}
+2025/10/19 12:03:19 {}
+2025/10/19 12:03:19 f
+2025/10/19 12:03:19 {}
+2025/10/19 12:03:19 d
+2025/10/19 12:03:19 {}
+2025/10/19 12:03:19 enter
+2025/10/19 12:03:19 {0 45}
+2025/10/19 12:03:20 esc
+2025/10/19 12:03:21  
+2025/10/19 12:03:22 ctrl+c
+2025/10/19 12:03:22 Program run
