@@ -13,37 +13,28 @@ import (
 func (h Hub) Send(msg string) tea.Cmd {
 
 	return func() tea.Msg {
-		var outcome Message
+		var outcome OutcomingMessage
 		switch h.clientState {
 		case LogingIn:
-			outcome.MessageType = Settings
-			structData := &SettingsMessage{Name: msg}
-			data, err := json.Marshal(structData)
-			if err != nil {
-				return tea.Quit()
-			}
-			outcome.Data = string(data)
+			outcome.Type = Settings
+			outcome.User = msg
 		case JoiningRoom:
-			outcome.MessageType = Join
-			structData := &RoomOperationMessage{Room: msg}
-			data, err := json.Marshal(structData)
-			if err != nil {
-				return tea.Quit()
-			}
-			outcome.Data = string(data)
+			outcome.Type = Join
+			outcome.Room = msg
 		case WritingMessage:
-			outcome.MessageType = TextMessage
-			structData := &SendMessage{
-				Room:    h.roomsName[h.currentRoomIndex],
-				Message: msg,
-			}
-			data, err := json.Marshal(structData)
-			if err != nil {
-				return tea.Quit()
-			}
-			outcome.Data = string(data)
+			outcome.Type = TextMessage
+			outcome.Room = h.roomsName[h.currentRoomIndex]
+			outcome.Message = msg
 		}
 
+		val, er := json.Marshal(outcome)
+
+		if er != nil {
+			log.Println(er)
+			return tea.Quit()
+		}
+
+		log.Printf("Sending to server %s \n", string(val))
 		err := h.conn.WriteJSON(outcome)
 		if err != nil {
 			return tea.Quit()
@@ -66,15 +57,10 @@ func (h *Hub) LeaveRoom() tea.Cmd {
 	}
 
 	return func() tea.Msg {
-		outcome := Message{MessageType: Leave}
-		structData := &RoomOperationMessage{Room: room}
-		data, err := json.Marshal(structData)
-		if err != nil {
-			return tea.Quit()
-		}
-		outcome.Data = string(data)
+		outcome := OutcomingMessage{Type: Leave,
+			Room: room}
 
-		err = h.conn.WriteJSON(outcome)
+		err := h.conn.WriteJSON(outcome)
 		if err != nil {
 			return tea.Quit()
 		}
@@ -83,8 +69,8 @@ func (h *Hub) LeaveRoom() tea.Cmd {
 }
 
 func (h Hub) Disconnect() {
-	msg := Message{
-		MessageType: Disconnect,
+	msg := OutcomingMessage{
+		Type: Disconnect,
 	}
 
 	h.conn.WriteJSON(msg)
@@ -105,7 +91,7 @@ func Read(ctx context.Context, conn *websocket.Conn, p *tea.Program) {
 			}
 
 			log.Printf("Recieved: %+v", recived)
-			var msg IncommingMessage
+			var msg IncomingMessage
 			err = json.Unmarshal(recived, &msg)
 
 			if err != nil {

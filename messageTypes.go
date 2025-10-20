@@ -8,28 +8,22 @@ const (
 	Join
 	Leave
 	Disconnect
+	ClientJoined
+	ClientLeft
 )
 
-type Message struct {
-	MessageType MessageType `json:"messageType"`
-	Data        string      `json:"data"`
+type IncomingMessage struct {
+	Type    MessageType `json:"type"`
+	User    string      `json:"user,omitempty"`
+	Room    string      `json:"room,omitempty"`
+	Clients []string    `json:"clients,omitempty"`
+	Message string      `json:"message,omitempty"`
 }
 
-type SettingsMessage struct {
-	Name string `json:"name"`
-}
-
-type SendMessage struct {
-	Room    string `json:"room"`
-	Message string `json:"message"`
-}
-
-type RoomOperationMessage struct {
-	Room string `json:"room"`
-}
-
-type IncommingMessage struct {
-	Room    string `json:"room"`
-	Name    string `json:"name"`
-	Message string `json:"message"`
+type OutcomingMessage struct {
+	Type    MessageType `json:"type"`
+	UserId  uint32      `json:"-"`
+	User    string      `json:"user,omitempty"`
+	Room    string      `json:"room,omitempty"`
+	Message string      `json:"message,omitempty"`
 }

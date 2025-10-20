@@ -103,15 +103,15 @@ func (h Hub) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 	switch m := msg.(type) {
 	case tea.KeyMsg:
 		return h.HandleKeyMsg(m)
-	case IncommingMessage:
-		log.Printf("Processing incomming msg %+v\n", m)
+	case IncomingMessage:
+		log.Printf("Processing incoming msg %+v\n", m)
 		room, ok := h.rooms[m.Room]
 		if !ok {
 			return h, nil
 		}
 
 		room.messages = append(room.messages, ChatMessage{
-			user:    m.Name,
+			user:    m.User,
 			message: m.Message,
 		})
 
