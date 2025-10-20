@@ -8,8 +8,9 @@ const (
 	Join
 	Leave
 	Disconnect
-	ClientJoined
-	ClientLeft
+	ClientJoinedRoom
+	ClientLeftRoom
+	AllRoomClients
 )
 
 type IncomingMessage struct {

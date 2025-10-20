@@ -104,20 +104,7 @@ func (h Hub) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 	case tea.KeyMsg:
 		return h.HandleKeyMsg(m)
 	case IncomingMessage:
-		log.Printf("Processing incoming msg %+v\n", m)
-		room, ok := h.rooms[m.Room]
-		if !ok {
-			return h, nil
-		}
-
-		room.messages = append(room.messages, ChatMessage{
-			user:    m.User,
-			message: m.Message,
-		})
-
-		if len(room.messages) > MaxMessages {
-			room.messages = room.messages[1:]
-		}
+		return h.HandleIncomingMessage(m)
 	}
 	return h, nil
 }
@@ -240,4 +227,48 @@ func (h Hub) HandleInputSubmit() (tea.Model, tea.Cmd) {
 		}
 	}
 	return h, cmd
+}
+
+func (h Hub) HandleIncomingMessage(msg IncomingMessage) (tea.Model, tea.Cmd) {
+	log.Printf("Processing incoming msg %+v\n", msg)
+	switch msg.Type {
+	case TextMessage:
+		room, ok := h.rooms[msg.Room]
+		if !ok {
+			return h, nil
+		}
+
+		room.messages = append(room.messages, ChatMessage{
+			user:    msg.User,
+			message: msg.Message,
+		})
+
+		if len(room.messages) > MaxMessages {
+			room.messages = room.messages[1:]
+		}
+	case ClientLeftRoom:
+		room := h.rooms[msg.Room]
+		foundAt := 0
+		for index, clients := range room.users {
+			if clients == msg.User {
+				foundAt = index
+				break
+			}
+		}
+
+		room.users = append(room.users[:foundAt], room.users[foundAt+1:]...)
+	case ClientJoinedRoom:
+		room := h.rooms[msg.Room]
+		room.users = append(room.users, msg.User)
+	case AllRoomClients:
+		room := h.rooms[msg.Room]
+		room.users = make([]string, 1, len(msg.Clients))
+		room.users[0] = h.username
+		for _, client := range msg.Clients {
+			if client != h.username {
+				room.users = append(room.users, client)
+			}
+		}
+	}
+	return h, nil
 }

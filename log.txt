@@ -1,654 +1,586 @@
-2025/10/19 20:30:25 Connection via websocket established
-2025/10/19 20:30:25 Started reading message from ws
-2025/10/19 20:30:25 Looping for reading message from ws
-2025/10/19 20:30:50 Connection via websocket established
-2025/10/19 20:30:50 Started reading message from ws
-2025/10/19 20:30:50 Looping for reading message from ws
-2025/10/19 20:31:01 Recieved: [123 34 114 111 111 109 34 58 34 116 101 115 116 34 44 34 110 97 109 101 34 58 34 116 101 115 116 101 114 34 44 34 109 101 115 115 97 103 101 34 58 34 104 105 34 125 10]
-2025/10/19 20:31:01 Recieved: [123 34 114 111 111 109 34 58 34 116 101 115 116 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 104 105 34 125 10]
-2025/10/19 20:31:01 Sending msg to tea program {Room:test Name:tester Message:hi}
-2025/10/19 20:31:01 Sending msg to tea program {Room:test Name:Me Message:hi}
-2025/10/19 20:31:01 Looping for reading message from ws
-2025/10/19 20:31:01 Looping for reading message from ws
-2025/10/19 20:31:01 Processing incomming msg {Room:test Name:tester Message:hi}
-2025/10/19 20:31:01 Processing incomming msg {Room:test Name:Me Message:hi}
-2025/10/19 20:31:03 Recieved: [123 34 114 111 111 109 34 58 34 116 101 115 116 34 44 34 110 97 109 101 34 58 34 113 119 101 114 116 121 34 44 34 109 101 115 115 97 103 101 34 58 34 110 111 32 104 101 106 34 125 10]
-2025/10/19 20:31:03 Recieved: [123 34 114 111 111 109 34 58 34 116 101 115 116 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 110 111 32 104 101 106 34 125 10]
-2025/10/19 20:31:03 Sending msg to tea program {Room:test Name:qwerty Message:no hej}
-2025/10/19 20:31:03 Looping for reading message from ws
-2025/10/19 20:31:03 Sending msg to tea program {Room:test Name:Me Message:no hej}
-2025/10/19 20:31:03 Looping for reading message from ws
-2025/10/19 20:31:03 Processing incomming msg {Room:test Name:qwerty Message:no hej}
-2025/10/19 20:31:03 Processing incomming msg {Room:test Name:Me Message:no hej}
-2025/10/19 20:31:23 Recieved: [123 34 114 111 111 109 34 58 34 116 101 115 116 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 101 108 111 34 125 10]
-2025/10/19 20:31:23 Recieved: [123 34 114 111 111 109 34 58 34 116 101 115 116 34 44 34 110 97 109 101 34 58 34 116 101 115 116 101 114 34 44 34 109 101 115 115 97 103 101 34 58 34 101 108 111 34 125 10]
-2025/10/19 20:31:23 Sending msg to tea program {Room:test Name:Me Message:elo}
-2025/10/19 20:31:23 Sending msg to tea program {Room:test Name:tester Message:elo}
-2025/10/19 20:31:23 Looping for reading message from ws
-2025/10/19 20:31:23 Looping for reading message from ws
-2025/10/19 20:31:23 Processing incomming msg {Room:test Name:tester Message:elo}
-2025/10/19 20:31:23 Processing incomming msg {Room:test Name:Me Message:elo}
-2025/10/19 20:31:26 websocket: close 1006 (abnormal closure): unexpected EOF
-2025/10/19 20:31:27 websocket: close 1006 (abnormal closure): unexpected EOF
-2025/10/19 20:36:29 dial tcp 127.0.0.1:8080: connectex: Nie można nawiązać połączenia, ponieważ komputer docelowy aktywnie go odmawia.
-2025/10/19 20:36:40 Connection via websocket established
-2025/10/19 20:36:40 Started reading message from ws
-2025/10/19 20:36:40 Looping for reading message from ws
-2025/10/19 20:36:52 websocket: close 1006 (abnormal closure): unexpected EOF
-2025/10/19 20:37:59 Connection via websocket established
-2025/10/19 20:37:59 Started reading message from ws
-2025/10/19 20:37:59 Looping for reading message from ws
-2025/10/19 20:38:03 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 97 115 100 97 100 34 125 10]
-2025/10/19 20:38:03 Sending msg to tea program {Room:general Name:Me Message:asdad}
-2025/10/19 20:38:03 Looping for reading message from ws
-2025/10/19 20:38:03 Processing incomming msg {Room:general Name:Me Message:asdad}
-2025/10/19 20:38:04 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 97 115 100 97 115 100 34 125 10]
-2025/10/19 20:38:04 Sending msg to tea program {Room:general Name:Me Message:asdasd}
-2025/10/19 20:38:04 Looping for reading message from ws
-2025/10/19 20:38:04 Processing incomming msg {Room:general Name:Me Message:asdasd}
-2025/10/19 20:38:04 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 97 115 100 97 34 125 10]
-2025/10/19 20:38:04 Sending msg to tea program {Room:general Name:Me Message:asda}
-2025/10/19 20:38:04 Looping for reading message from ws
-2025/10/19 20:38:04 Processing incomming msg {Room:general Name:Me Message:asda}
-2025/10/19 20:38:05 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 100 97 115 100 34 125 10]
-2025/10/19 20:38:05 Sending msg to tea program {Room:general Name:Me Message:dasd}
-2025/10/19 20:38:05 Looping for reading message from ws
-2025/10/19 20:38:05 Processing incomming msg {Room:general Name:Me Message:dasd}
-2025/10/19 20:38:05 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 97 115 34 125 10]
-2025/10/19 20:38:05 Sending msg to tea program {Room:general Name:Me Message:as}
-2025/10/19 20:38:05 Looping for reading message from ws
-2025/10/19 20:38:05 Processing incomming msg {Room:general Name:Me Message:as}
-2025/10/19 20:38:05 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 100 97 34 125 10]
-2025/10/19 20:38:05 Sending msg to tea program {Room:general Name:Me Message:da}
-2025/10/19 20:38:05 Looping for reading message from ws
-2025/10/19 20:38:05 Processing incomming msg {Room:general Name:Me Message:da}
-2025/10/19 20:38:05 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 115 100 34 125 10]
-2025/10/19 20:38:05 Sending msg to tea program {Room:general Name:Me Message:sd}
-2025/10/19 20:38:05 Looping for reading message from ws
-2025/10/19 20:38:05 Processing incomming msg {Room:general Name:Me Message:sd}
-2025/10/19 20:38:05 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 97 115 100 34 125 10]
-2025/10/19 20:38:05 Sending msg to tea program {Room:general Name:Me Message:asd}
-2025/10/19 20:38:05 Looping for reading message from ws
-2025/10/19 20:38:05 Processing incomming msg {Room:general Name:Me Message:asd}
-2025/10/19 20:38:06 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 113 34 125 10]
-2025/10/19 20:38:06 Sending msg to tea program {Room:general Name:Me Message:q}
-2025/10/19 20:38:06 Looping for reading message from ws
-2025/10/19 20:38:06 Processing incomming msg {Room:general Name:Me Message:q}
-2025/10/19 20:38:06 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 119 101 34 125 10]
-2025/10/19 20:38:06 Sending msg to tea program {Room:general Name:Me Message:we}
-2025/10/19 20:38:06 Looping for reading message from ws
-2025/10/19 20:38:06 Processing incomming msg {Room:general Name:Me Message:we}
-2025/10/19 20:38:06 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 113 119 34 125 10]
-2025/10/19 20:38:06 Sending msg to tea program {Room:general Name:Me Message:qw}
-2025/10/19 20:38:06 Looping for reading message from ws
-2025/10/19 20:38:06 Processing incomming msg {Room:general Name:Me Message:qw}
-2025/10/19 20:38:06 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 101 119 113 116 34 125 10]
-2025/10/19 20:38:06 Sending msg to tea program {Room:general Name:Me Message:ewqt}
-2025/10/19 20:38:06 Looping for reading message from ws
-2025/10/19 20:38:06 Processing incomming msg {Room:general Name:Me Message:ewqt}
-2025/10/19 20:38:07 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 101 113 114 34 125 10]
-2025/10/19 20:38:07 Sending msg to tea program {Room:general Name:Me Message:eqr}
-2025/10/19 20:38:07 Looping for reading message from ws
-2025/10/19 20:38:07 Processing incomming msg {Room:general Name:Me Message:eqr}
-2025/10/19 20:38:07 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 101 113 116 34 125 10]
-2025/10/19 20:38:07 Sending msg to tea program {Room:general Name:Me Message:eqt}
-2025/10/19 20:38:07 Looping for reading message from ws
-2025/10/19 20:38:07 Processing incomming msg {Room:general Name:Me Message:eqt}
-2025/10/19 20:38:07 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 113 116 98 34 125 10]
-2025/10/19 20:38:07 Sending msg to tea program {Room:general Name:Me Message:qtb}
-2025/10/19 20:38:07 Looping for reading message from ws
-2025/10/19 20:38:07 Processing incomming msg {Room:general Name:Me Message:qtb}
-2025/10/19 20:38:07 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 114 113 34 125 10]
-2025/10/19 20:38:07 Sending msg to tea program {Room:general Name:Me Message:rq}
-2025/10/19 20:38:07 Processing incomming msg {Room:general Name:Me Message:rq}
-2025/10/19 20:38:07 Looping for reading message from ws
-2025/10/19 20:38:07 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 98 116 113 34 125 10]
-2025/10/19 20:38:07 Sending msg to tea program {Room:general Name:Me Message:btq}
-2025/10/19 20:38:07 Looping for reading message from ws
-2025/10/19 20:38:07 Processing incomming msg {Room:general Name:Me Message:btq}
-2025/10/19 20:38:07 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 114 101 34 125 10]
-2025/10/19 20:38:07 Sending msg to tea program {Room:general Name:Me Message:re}
-2025/10/19 20:38:07 Looping for reading message from ws
-2025/10/19 20:38:07 Processing incomming msg {Room:general Name:Me Message:re}
-2025/10/19 20:38:08 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 113 119 34 125 10]
-2025/10/19 20:38:08 Sending msg to tea program {Room:general Name:Me Message:qw}
-2025/10/19 20:38:08 Looping for reading message from ws
-2025/10/19 20:38:08 Processing incomming msg {Room:general Name:Me Message:qw}
-2025/10/19 20:38:08 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 101 114 34 125 10]
-2025/10/19 20:38:08 Sending msg to tea program {Room:general Name:Me Message:er}
-2025/10/19 20:38:08 Looping for reading message from ws
-2025/10/19 20:38:08 Processing incomming msg {Room:general Name:Me Message:er}
-2025/10/19 20:38:08 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 119 113 101 114 34 125 10]
-2025/10/19 20:38:08 Sending msg to tea program {Room:general Name:Me Message:wqer}
-2025/10/19 20:38:08 Looping for reading message from ws
-2025/10/19 20:38:08 Processing incomming msg {Room:general Name:Me Message:wqer}
-2025/10/19 20:38:08 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 113 119 101 34 125 10]
-2025/10/19 20:38:08 Sending msg to tea program {Room:general Name:Me Message:qwe}
-2025/10/19 20:38:08 Looping for reading message from ws
-2025/10/19 20:38:08 Processing incomming msg {Room:general Name:Me Message:qwe}
-2025/10/19 20:38:08 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 114 34 125 10]
-2025/10/19 20:38:08 Sending msg to tea program {Room:general Name:Me Message:r}
-2025/10/19 20:38:08 Looping for reading message from ws
-2025/10/19 20:38:08 Processing incomming msg {Room:general Name:Me Message:r}
-2025/10/19 20:38:09 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 97 115 100 34 125 10]
-2025/10/19 20:38:09 Sending msg to tea program {Room:general Name:Me Message:asd}
-2025/10/19 20:38:09 Looping for reading message from ws
-2025/10/19 20:38:09 Processing incomming msg {Room:general Name:Me Message:asd}
-2025/10/19 20:38:09 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 102 34 125 10]
-2025/10/19 20:38:09 Sending msg to tea program {Room:general Name:Me Message:f}
-2025/10/19 20:38:09 Looping for reading message from ws
-2025/10/19 20:38:09 Processing incomming msg {Room:general Name:Me Message:f}
-2025/10/19 20:38:09 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 97 115 100 34 125 10]
-2025/10/19 20:38:09 Sending msg to tea program {Room:general Name:Me Message:asd}
-2025/10/19 20:38:09 Looping for reading message from ws
-2025/10/19 20:38:09 Processing incomming msg {Room:general Name:Me Message:asd}
-2025/10/19 20:38:09 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 102 34 125 10]
-2025/10/19 20:38:09 Sending msg to tea program {Room:general Name:Me Message:f}
-2025/10/19 20:38:09 Looping for reading message from ws
-2025/10/19 20:38:09 Processing incomming msg {Room:general Name:Me Message:f}
-2025/10/19 20:38:09 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 115 97 100 102 34 125 10]
-2025/10/19 20:38:09 Sending msg to tea program {Room:general Name:Me Message:sadf}
-2025/10/19 20:38:09 Looping for reading message from ws
-2025/10/19 20:38:09 Processing incomming msg {Room:general Name:Me Message:sadf}
-2025/10/19 20:38:10 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 119 100 102 34 125 10]
-2025/10/19 20:38:10 Sending msg to tea program {Room:general Name:Me Message:wdf}
-2025/10/19 20:38:10 Looping for reading message from ws
-2025/10/19 20:38:10 Processing incomming msg {Room:general Name:Me Message:wdf}
-2025/10/19 20:38:10 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 119 113 101 102 113 34 125 10]
-2025/10/19 20:38:10 Sending msg to tea program {Room:general Name:Me Message:wqefq}
-2025/10/19 20:38:10 Looping for reading message from ws
-2025/10/19 20:38:10 Processing incomming msg {Room:general Name:Me Message:wqefq}
-2025/10/19 20:38:12 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 119 113 101 114 113 119 34 125 10]
-2025/10/19 20:38:12 Sending msg to tea program {Room:general Name:Me Message:wqerqw}
-2025/10/19 20:38:12 Looping for reading message from ws
-2025/10/19 20:38:12 Processing incomming msg {Room:general Name:Me Message:wqerqw}
-2025/10/19 20:38:13 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 101 114 119 113 101 34 125 10]
-2025/10/19 20:38:13 Sending msg to tea program {Room:general Name:Me Message:erwqe}
-2025/10/19 20:38:13 Looping for reading message from ws
-2025/10/19 20:38:13 Processing incomming msg {Room:general Name:Me Message:erwqe}
-2025/10/19 20:38:13 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 114 113 119 34 125 10]
-2025/10/19 20:38:13 Sending msg to tea program {Room:general Name:Me Message:rqw}
-2025/10/19 20:38:13 Looping for reading message from ws
-2025/10/19 20:38:13 Processing incomming msg {Room:general Name:Me Message:rqw}
-2025/10/19 20:38:13 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 101 114 34 125 10]
-2025/10/19 20:38:13 Sending msg to tea program {Room:general Name:Me Message:er}
-2025/10/19 20:38:13 Looping for reading message from ws
-2025/10/19 20:38:13 Processing incomming msg {Room:general Name:Me Message:er}
-2025/10/19 20:38:13 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 113 101 119 34 125 10]
-2025/10/19 20:38:13 Sending msg to tea program {Room:general Name:Me Message:qew}
-2025/10/19 20:38:13 Looping for reading message from ws
-2025/10/19 20:38:13 Processing incomming msg {Room:general Name:Me Message:qew}
-2025/10/19 20:38:13 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 114 113 34 125 10]
-2025/10/19 20:38:13 Sending msg to tea program {Room:general Name:Me Message:rq}
-2025/10/19 20:38:13 Looping for reading message from ws
-2025/10/19 20:38:13 Processing incomming msg {Room:general Name:Me Message:rq}
-2025/10/19 20:38:13 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 119 101 114 34 125 10]
-2025/10/19 20:38:13 Sending msg to tea program {Room:general Name:Me Message:wer}
-2025/10/19 20:38:13 Looping for reading message from ws
-2025/10/19 20:38:13 Processing incomming msg {Room:general Name:Me Message:wer}
-2025/10/19 20:38:14 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 113 119 34 125 10]
-2025/10/19 20:38:14 Sending msg to tea program {Room:general Name:Me Message:qw}
-2025/10/19 20:38:14 Looping for reading message from ws
-2025/10/19 20:38:14 Processing incomming msg {Room:general Name:Me Message:qw}
-2025/10/19 20:38:14 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 101 114 34 125 10]
-2025/10/19 20:38:14 Sending msg to tea program {Room:general Name:Me Message:er}
-2025/10/19 20:38:14 Looping for reading message from ws
-2025/10/19 20:38:14 Processing incomming msg {Room:general Name:Me Message:er}
-2025/10/19 20:38:14 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 113 119 101 34 125 10]
-2025/10/19 20:38:14 Sending msg to tea program {Room:general Name:Me Message:qwe}
-2025/10/19 20:38:14 Looping for reading message from ws
-2025/10/19 20:38:14 Processing incomming msg {Room:general Name:Me Message:qwe}
-2025/10/19 20:38:14 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 114 113 34 125 10]
-2025/10/19 20:38:14 Sending msg to tea program {Room:general Name:Me Message:rq}
-2025/10/19 20:38:14 Looping for reading message from ws
-2025/10/19 20:38:14 Processing incomming msg {Room:general Name:Me Message:rq}
-2025/10/19 20:38:14 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 101 119 114 34 125 10]
-2025/10/19 20:38:14 Sending msg to tea program {Room:general Name:Me Message:ewr}
-2025/10/19 20:38:14 Looping for reading message from ws
-2025/10/19 20:38:14 Processing incomming msg {Room:general Name:Me Message:ewr}
-2025/10/19 20:38:27 websocket: close 1006 (abnormal closure): unexpected EOF
-2025/10/19 20:39:37 Connection via websocket established
-2025/10/19 20:39:37 Started reading message from ws
-2025/10/19 20:39:37 Looping for reading message from ws
-2025/10/19 20:39:40 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 115 34 125 10]
-2025/10/19 20:39:40 Sending msg to tea program {Room:general Name:Me Message:s}
-2025/10/19 20:39:40 Looping for reading message from ws
-2025/10/19 20:39:40 Processing incomming msg {Room:general Name:Me Message:s}
-2025/10/19 20:39:40 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
-2025/10/19 20:39:40 Sending msg to tea program {Room:general Name:Me Message:a}
-2025/10/19 20:39:40 Looping for reading message from ws
-2025/10/19 20:39:40 Processing incomming msg {Room:general Name:Me Message:a}
-2025/10/19 20:39:40 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
-2025/10/19 20:39:40 Sending msg to tea program {Room:general Name:Me Message:a}
-2025/10/19 20:39:40 Looping for reading message from ws
-2025/10/19 20:39:40 Processing incomming msg {Room:general Name:Me Message:a}
-2025/10/19 20:39:40 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
-2025/10/19 20:39:40 Sending msg to tea program {Room:general Name:Me Message:a}
-2025/10/19 20:39:40 Looping for reading message from ws
-2025/10/19 20:39:40 Processing incomming msg {Room:general Name:Me Message:a}
-2025/10/19 20:39:41 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
-2025/10/19 20:39:41 Sending msg to tea program {Room:general Name:Me Message:a}
-2025/10/19 20:39:41 Looping for reading message from ws
-2025/10/19 20:39:41 Processing incomming msg {Room:general Name:Me Message:a}
-2025/10/19 20:39:41 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
-2025/10/19 20:39:41 Sending msg to tea program {Room:general Name:Me Message:a}
-2025/10/19 20:39:41 Looping for reading message from ws
-2025/10/19 20:39:41 Processing incomming msg {Room:general Name:Me Message:a}
-2025/10/19 20:39:41 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
-2025/10/19 20:39:41 Sending msg to tea program {Room:general Name:Me Message:a}
-2025/10/19 20:39:41 Looping for reading message from ws
-2025/10/19 20:39:41 Processing incomming msg {Room:general Name:Me Message:a}
-2025/10/19 20:39:41 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
-2025/10/19 20:39:41 Sending msg to tea program {Room:general Name:Me Message:a}
-2025/10/19 20:39:41 Looping for reading message from ws
-2025/10/19 20:39:41 Processing incomming msg {Room:general Name:Me Message:a}
-2025/10/19 20:39:41 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
-2025/10/19 20:39:41 Sending msg to tea program {Room:general Name:Me Message:a}
-2025/10/19 20:39:41 Looping for reading message from ws
-2025/10/19 20:39:41 Processing incomming msg {Room:general Name:Me Message:a}
-2025/10/19 20:39:41 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
-2025/10/19 20:39:41 Sending msg to tea program {Room:general Name:Me Message:a}
-2025/10/19 20:39:41 Looping for reading message from ws
-2025/10/19 20:39:41 Processing incomming msg {Room:general Name:Me Message:a}
-2025/10/19 20:39:42 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
-2025/10/19 20:39:42 Sending msg to tea program {Room:general Name:Me Message:a}
-2025/10/19 20:39:42 Looping for reading message from ws
-2025/10/19 20:39:42 Processing incomming msg {Room:general Name:Me Message:a}
-2025/10/19 20:39:42 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
-2025/10/19 20:39:42 Sending msg to tea program {Room:general Name:Me Message:a}
-2025/10/19 20:39:42 Looping for reading message from ws
-2025/10/19 20:39:42 Processing incomming msg {Room:general Name:Me Message:a}
-2025/10/19 20:39:42 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
-2025/10/19 20:39:42 Sending msg to tea program {Room:general Name:Me Message:a}
-2025/10/19 20:39:42 Looping for reading message from ws
-2025/10/19 20:39:42 Processing incomming msg {Room:general Name:Me Message:a}
-2025/10/19 20:39:42 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 115 97 34 125 10]
-2025/10/19 20:39:42 Sending msg to tea program {Room:general Name:Me Message:sa}
-2025/10/19 20:39:42 Looping for reading message from ws
-2025/10/19 20:39:42 Processing incomming msg {Room:general Name:Me Message:sa}
-2025/10/19 20:39:42 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 100 97 34 125 10]
-2025/10/19 20:39:42 Sending msg to tea program {Room:general Name:Me Message:da}
-2025/10/19 20:39:42 Looping for reading message from ws
-2025/10/19 20:39:42 Processing incomming msg {Room:general Name:Me Message:da}
-2025/10/19 20:39:42 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 115 100 34 125 10]
-2025/10/19 20:39:42 Sending msg to tea program {Room:general Name:Me Message:sd}
-2025/10/19 20:39:42 Looping for reading message from ws
-2025/10/19 20:39:42 Processing incomming msg {Room:general Name:Me Message:sd}
-2025/10/19 20:39:43 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 97 115 34 125 10]
-2025/10/19 20:39:43 Sending msg to tea program {Room:general Name:Me Message:as}
-2025/10/19 20:39:43 Looping for reading message from ws
-2025/10/19 20:39:43 Processing incomming msg {Room:general Name:Me Message:as}
-2025/10/19 20:39:43 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 100 34 125 10]
-2025/10/19 20:39:43 Sending msg to tea program {Room:general Name:Me Message:d}
-2025/10/19 20:39:43 Looping for reading message from ws
-2025/10/19 20:39:43 Processing incomming msg {Room:general Name:Me Message:d}
-2025/10/19 20:39:43 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 115 100 34 125 10]
-2025/10/19 20:39:43 Sending msg to tea program {Room:general Name:Me Message:sd}
-2025/10/19 20:39:43 Looping for reading message from ws
-2025/10/19 20:39:43 Processing incomming msg {Room:general Name:Me Message:sd}
-2025/10/19 20:39:43 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 97 115 100 34 125 10]
-2025/10/19 20:39:43 Sending msg to tea program {Room:general Name:Me Message:asd}
-2025/10/19 20:39:43 Looping for reading message from ws
-2025/10/19 20:39:43 Processing incomming msg {Room:general Name:Me Message:asd}
-2025/10/19 20:39:44 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 97 115 34 125 10]
-2025/10/19 20:39:44 Sending msg to tea program {Room:general Name:Me Message:as}
-2025/10/19 20:39:44 Looping for reading message from ws
-2025/10/19 20:39:44 Processing incomming msg {Room:general Name:Me Message:as}
-2025/10/19 20:39:44 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 100 34 125 10]
-2025/10/19 20:39:44 Sending msg to tea program {Room:general Name:Me Message:d}
-2025/10/19 20:39:44 Looping for reading message from ws
-2025/10/19 20:39:44 Processing incomming msg {Room:general Name:Me Message:d}
-2025/10/19 20:39:44 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 115 97 34 125 10]
-2025/10/19 20:39:44 Sending msg to tea program {Room:general Name:Me Message:sa}
-2025/10/19 20:39:44 Looping for reading message from ws
-2025/10/19 20:39:44 Processing incomming msg {Room:general Name:Me Message:sa}
-2025/10/19 20:39:44 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 100 34 125 10]
-2025/10/19 20:39:44 Sending msg to tea program {Room:general Name:Me Message:d}
-2025/10/19 20:39:44 Looping for reading message from ws
-2025/10/19 20:39:44 Processing incomming msg {Room:general Name:Me Message:d}
-2025/10/19 20:39:45 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 97 115 34 125 10]
-2025/10/19 20:39:45 Sending msg to tea program {Room:general Name:Me Message:as}
-2025/10/19 20:39:45 Looping for reading message from ws
-2025/10/19 20:39:45 Processing incomming msg {Room:general Name:Me Message:as}
-2025/10/19 20:39:45 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 100 34 125 10]
-2025/10/19 20:39:45 Sending msg to tea program {Room:general Name:Me Message:d}
-2025/10/19 20:39:45 Looping for reading message from ws
-2025/10/19 20:39:45 Processing incomming msg {Room:general Name:Me Message:d}
-2025/10/19 20:39:45 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 97 115 34 125 10]
-2025/10/19 20:39:45 Sending msg to tea program {Room:general Name:Me Message:as}
-2025/10/19 20:39:45 Looping for reading message from ws
-2025/10/19 20:39:45 Processing incomming msg {Room:general Name:Me Message:as}
-2025/10/19 20:39:45 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 100 34 125 10]
-2025/10/19 20:39:45 Sending msg to tea program {Room:general Name:Me Message:d}
-2025/10/19 20:39:45 Looping for reading message from ws
-2025/10/19 20:39:45 Processing incomming msg {Room:general Name:Me Message:d}
-2025/10/19 20:39:45 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 97 115 100 34 125 10]
-2025/10/19 20:39:45 Sending msg to tea program {Room:general Name:Me Message:asd}
-2025/10/19 20:39:45 Looping for reading message from ws
-2025/10/19 20:39:45 Processing incomming msg {Room:general Name:Me Message:asd}
-2025/10/19 20:39:46 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 97 115 100 34 125 10]
-2025/10/19 20:39:46 Sending msg to tea program {Room:general Name:Me Message:asd}
-2025/10/19 20:39:46 Looping for reading message from ws
-2025/10/19 20:39:46 Processing incomming msg {Room:general Name:Me Message:asd}
-2025/10/19 20:39:46 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
-2025/10/19 20:39:46 Sending msg to tea program {Room:general Name:Me Message:a}
-2025/10/19 20:39:46 Looping for reading message from ws
-2025/10/19 20:39:46 Processing incomming msg {Room:general Name:Me Message:a}
-2025/10/19 20:39:46 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 115 100 34 125 10]
-2025/10/19 20:39:46 Sending msg to tea program {Room:general Name:Me Message:sd}
-2025/10/19 20:39:46 Looping for reading message from ws
-2025/10/19 20:39:46 Processing incomming msg {Room:general Name:Me Message:sd}
-2025/10/19 20:39:46 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 97 115 34 125 10]
-2025/10/19 20:39:46 Sending msg to tea program {Room:general Name:Me Message:as}
-2025/10/19 20:39:46 Looping for reading message from ws
-2025/10/19 20:39:46 Processing incomming msg {Room:general Name:Me Message:as}
-2025/10/19 20:39:46 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 100 34 125 10]
-2025/10/19 20:39:46 Sending msg to tea program {Room:general Name:Me Message:d}
-2025/10/19 20:39:46 Looping for reading message from ws
-2025/10/19 20:39:46 Processing incomming msg {Room:general Name:Me Message:d}
-2025/10/19 20:39:46 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 97 115 34 125 10]
-2025/10/19 20:39:46 Sending msg to tea program {Room:general Name:Me Message:as}
-2025/10/19 20:39:46 Looping for reading message from ws
-2025/10/19 20:39:46 Processing incomming msg {Room:general Name:Me Message:as}
-2025/10/19 20:39:47 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 100 97 34 125 10]
-2025/10/19 20:39:47 Sending msg to tea program {Room:general Name:Me Message:da}
-2025/10/19 20:39:47 Looping for reading message from ws
-2025/10/19 20:39:47 Processing incomming msg {Room:general Name:Me Message:da}
-2025/10/19 20:39:47 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 115 100 34 125 10]
-2025/10/19 20:39:47 Sending msg to tea program {Room:general Name:Me Message:sd}
-2025/10/19 20:39:47 Looping for reading message from ws
-2025/10/19 20:39:47 Processing incomming msg {Room:general Name:Me Message:sd}
-2025/10/19 20:39:47 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 97 115 34 125 10]
-2025/10/19 20:39:47 Sending msg to tea program {Room:general Name:Me Message:as}
-2025/10/19 20:39:47 Looping for reading message from ws
-2025/10/19 20:39:47 Processing incomming msg {Room:general Name:Me Message:as}
-2025/10/19 20:39:47 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 100 97 34 125 10]
-2025/10/19 20:39:47 Sending msg to tea program {Room:general Name:Me Message:da}
-2025/10/19 20:39:47 Looping for reading message from ws
-2025/10/19 20:39:47 Processing incomming msg {Room:general Name:Me Message:da}
-2025/10/19 20:39:47 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 115 100 34 125 10]
-2025/10/19 20:39:47 Sending msg to tea program {Room:general Name:Me Message:sd}
-2025/10/19 20:39:47 Looping for reading message from ws
-2025/10/19 20:39:47 Processing incomming msg {Room:general Name:Me Message:sd}
-2025/10/19 20:39:47 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
-2025/10/19 20:39:47 Sending msg to tea program {Room:general Name:Me Message:a}
-2025/10/19 20:39:47 Looping for reading message from ws
-2025/10/19 20:39:47 Processing incomming msg {Room:general Name:Me Message:a}
-2025/10/19 20:39:47 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 115 100 34 125 10]
-2025/10/19 20:39:47 Sending msg to tea program {Room:general Name:Me Message:sd}
-2025/10/19 20:39:47 Looping for reading message from ws
-2025/10/19 20:39:47 Processing incomming msg {Room:general Name:Me Message:sd}
-2025/10/19 20:39:48 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 97 115 100 34 125 10]
-2025/10/19 20:39:48 Sending msg to tea program {Room:general Name:Me Message:asd}
-2025/10/19 20:39:48 Looping for reading message from ws
-2025/10/19 20:39:48 Processing incomming msg {Room:general Name:Me Message:asd}
-2025/10/19 20:39:48 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
-2025/10/19 20:39:48 Sending msg to tea program {Room:general Name:Me Message:a}
-2025/10/19 20:39:48 Looping for reading message from ws
-2025/10/19 20:39:48 Processing incomming msg {Room:general Name:Me Message:a}
-2025/10/19 20:39:48 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 115 100 34 125 10]
-2025/10/19 20:39:48 Sending msg to tea program {Room:general Name:Me Message:sd}
-2025/10/19 20:39:48 Looping for reading message from ws
-2025/10/19 20:39:48 Processing incomming msg {Room:general Name:Me Message:sd}
-2025/10/19 20:39:48 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 97 115 34 125 10]
-2025/10/19 20:39:48 Sending msg to tea program {Room:general Name:Me Message:as}
-2025/10/19 20:39:48 Looping for reading message from ws
-2025/10/19 20:39:48 Processing incomming msg {Room:general Name:Me Message:as}
-2025/10/19 20:39:48 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 100 97 34 125 10]
-2025/10/19 20:39:48 Sending msg to tea program {Room:general Name:Me Message:da}
-2025/10/19 20:39:48 Looping for reading message from ws
-2025/10/19 20:39:48 Processing incomming msg {Room:general Name:Me Message:da}
-2025/10/19 20:39:48 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 115 100 34 125 10]
-2025/10/19 20:39:48 Sending msg to tea program {Room:general Name:Me Message:sd}
-2025/10/19 20:39:48 Looping for reading message from ws
-2025/10/19 20:39:48 Processing incomming msg {Room:general Name:Me Message:sd}
-2025/10/19 20:39:49 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 97 115 100 34 125 10]
-2025/10/19 20:39:49 Sending msg to tea program {Room:general Name:Me Message:asd}
-2025/10/19 20:39:49 Looping for reading message from ws
-2025/10/19 20:39:49 Processing incomming msg {Room:general Name:Me Message:asd}
-2025/10/19 20:39:49 websocket: close 1006 (abnormal closure): unexpected EOF
-2025/10/19 22:27:37 Connection via websocket established
-2025/10/19 22:27:37 Started reading message from ws
-2025/10/19 22:27:37 Looping for reading message from ws
-2025/10/19 22:27:41 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 97 115 100 99 97 115 100 34 125 10]
-2025/10/19 22:27:41 Sending msg to tea program {Room:general Name:Me Message:asdcasd}
-2025/10/19 22:27:41 Looping for reading message from ws
-2025/10/19 22:27:41 Processing incomming msg {Room:general Name:Me Message:asdcasd}
-2025/10/19 22:27:41 Error sending msg to ws: websocket: close 1006 (abnormal closure): unexpected EOF
-2025/10/19 22:27:41 Program finished running
-2025/10/19 22:28:55 Connection via websocket established
-2025/10/19 22:28:55 Started reading message from ws
-2025/10/19 22:28:55 Looping for reading message from ws
-2025/10/19 22:28:58 Error sending msg to ws: websocket: close 1006 (abnormal closure): unexpected EOF
-2025/10/19 22:28:58 Program finished running
-2025/10/19 22:30:03 Connection via websocket established
-2025/10/19 22:30:03 Started reading message from ws
-2025/10/19 22:30:03 Looping for reading message from ws
-2025/10/19 22:30:06 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 97 115 97 115 34 125 10]
-2025/10/19 22:30:06 Sending msg to tea program {Room:general Name:Me Message:asas}
-2025/10/19 22:30:06 Looping for reading message from ws
-2025/10/19 22:30:06 Processing incomming msg {Room:general Name:Me Message:asas}
-2025/10/19 22:30:06 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 120 97 115 34 125 10]
-2025/10/19 22:30:06 Sending msg to tea program {Room:general Name:Me Message:xas}
-2025/10/19 22:30:06 Looping for reading message from ws
-2025/10/19 22:30:06 Processing incomming msg {Room:general Name:Me Message:xas}
-2025/10/19 22:30:06 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 120 97 115 34 125 10]
-2025/10/19 22:30:06 Sending msg to tea program {Room:general Name:Me Message:xas}
-2025/10/19 22:30:06 Looping for reading message from ws
-2025/10/19 22:30:06 Processing incomming msg {Room:general Name:Me Message:xas}
-2025/10/19 22:30:07 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 120 97 34 125 10]
-2025/10/19 22:30:07 Sending msg to tea program {Room:general Name:Me Message:xa}
-2025/10/19 22:30:07 Looping for reading message from ws
-2025/10/19 22:30:07 Processing incomming msg {Room:general Name:Me Message:xa}
-2025/10/19 22:30:07 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 115 120 34 125 10]
-2025/10/19 22:30:07 Sending msg to tea program {Room:general Name:Me Message:sx}
-2025/10/19 22:30:07 Looping for reading message from ws
-2025/10/19 22:30:07 Processing incomming msg {Room:general Name:Me Message:sx}
-2025/10/19 22:30:07 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 99 120 122 118 34 125 10]
-2025/10/19 22:30:07 Sending msg to tea program {Room:general Name:Me Message:cxzv}
-2025/10/19 22:30:07 Looping for reading message from ws
-2025/10/19 22:30:07 Processing incomming msg {Room:general Name:Me Message:cxzv}
-2025/10/19 22:30:07 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 122 118 99 34 125 10]
-2025/10/19 22:30:07 Sending msg to tea program {Room:general Name:Me Message:zvc}
-2025/10/19 22:30:07 Looping for reading message from ws
-2025/10/19 22:30:07 Processing incomming msg {Room:general Name:Me Message:zvc}
-2025/10/19 22:30:08 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 102 113 34 125 10]
-2025/10/19 22:30:08 Sending msg to tea program {Room:general Name:Me Message:fq}
-2025/10/19 22:30:08 Looping for reading message from ws
-2025/10/19 22:30:08 Processing incomming msg {Room:general Name:Me Message:fq}
-2025/10/19 22:30:08 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 101 114 118 34 125 10]
-2025/10/19 22:30:08 Sending msg to tea program {Room:general Name:Me Message:erv}
-2025/10/19 22:30:08 Looping for reading message from ws
-2025/10/19 22:30:08 Processing incomming msg {Room:general Name:Me Message:erv}
-2025/10/19 22:30:08 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 113 101 34 125 10]
-2025/10/19 22:30:08 Sending msg to tea program {Room:general Name:Me Message:qe}
-2025/10/19 22:30:08 Looping for reading message from ws
-2025/10/19 22:30:08 Processing incomming msg {Room:general Name:Me Message:qe}
-2025/10/19 22:30:08 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 118 34 125 10]
-2025/10/19 22:30:08 Sending msg to tea program {Room:general Name:Me Message:v}
-2025/10/19 22:30:08 Looping for reading message from ws
-2025/10/19 22:30:08 Processing incomming msg {Room:general Name:Me Message:v}
-2025/10/19 22:30:08 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 97 100 115 34 125 10]
-2025/10/19 22:30:08 Sending msg to tea program {Room:general Name:Me Message:ads}
-2025/10/19 22:30:08 Looping for reading message from ws
-2025/10/19 22:30:08 Processing incomming msg {Room:general Name:Me Message:ads}
-2025/10/19 22:30:09 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 118 97 34 125 10]
-2025/10/19 22:30:09 Sending msg to tea program {Room:general Name:Me Message:va}
-2025/10/19 22:30:09 Looping for reading message from ws
-2025/10/19 22:30:09 Processing incomming msg {Room:general Name:Me Message:va}
-2025/10/19 22:30:09 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 100 115 102 34 125 10]
-2025/10/19 22:30:09 Sending msg to tea program {Room:general Name:Me Message:dsf}
-2025/10/19 22:30:09 Looping for reading message from ws
-2025/10/19 22:30:09 Processing incomming msg {Room:general Name:Me Message:dsf}
-2025/10/19 22:30:09 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 118 97 34 125 10]
-2025/10/19 22:30:09 Sending msg to tea program {Room:general Name:Me Message:va}
-2025/10/19 22:30:09 Looping for reading message from ws
-2025/10/19 22:30:09 Processing incomming msg {Room:general Name:Me Message:va}
-2025/10/19 22:30:09 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 118 102 34 125 10]
-2025/10/19 22:30:09 Sending msg to tea program {Room:general Name:Me Message:vf}
-2025/10/19 22:30:09 Looping for reading message from ws
-2025/10/19 22:30:09 Processing incomming msg {Room:general Name:Me Message:vf}
-2025/10/19 22:30:09 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 101 34 125 10]
-2025/10/19 22:30:09 Sending msg to tea program {Room:general Name:Me Message:e}
-2025/10/19 22:30:09 Looping for reading message from ws
-2025/10/19 22:30:09 Processing incomming msg {Room:general Name:Me Message:e}
-2025/10/19 22:30:09 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 118 102 113 34 125 10]
-2025/10/19 22:30:09 Sending msg to tea program {Room:general Name:Me Message:vfq}
-2025/10/19 22:30:09 Looping for reading message from ws
-2025/10/19 22:30:09 Processing incomming msg {Room:general Name:Me Message:vfq}
-2025/10/19 22:30:10 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 101 34 125 10]
-2025/10/19 22:30:10 Sending msg to tea program {Room:general Name:Me Message:e}
-2025/10/19 22:30:10 Looping for reading message from ws
-2025/10/19 22:30:10 Processing incomming msg {Room:general Name:Me Message:e}
-2025/10/19 22:30:10 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 102 118 34 125 10]
-2025/10/19 22:30:10 Sending msg to tea program {Room:general Name:Me Message:fv}
-2025/10/19 22:30:10 Looping for reading message from ws
-2025/10/19 22:30:10 Processing incomming msg {Room:general Name:Me Message:fv}
-2025/10/19 22:30:10 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 115 97 100 34 125 10]
-2025/10/19 22:30:10 Sending msg to tea program {Room:general Name:Me Message:sad}
-2025/10/19 22:30:10 Looping for reading message from ws
-2025/10/19 22:30:10 Processing incomming msg {Room:general Name:Me Message:sad}
-2025/10/19 22:30:10 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 118 34 125 10]
-2025/10/19 22:30:10 Sending msg to tea program {Room:general Name:Me Message:v}
-2025/10/19 22:30:10 Looping for reading message from ws
-2025/10/19 22:30:10 Processing incomming msg {Room:general Name:Me Message:v}
-2025/10/19 22:30:10 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 97 100 34 125 10]
-2025/10/19 22:30:10 Sending msg to tea program {Room:general Name:Me Message:ad}
-2025/10/19 22:30:10 Looping for reading message from ws
-2025/10/19 22:30:10 Processing incomming msg {Room:general Name:Me Message:ad}
-2025/10/19 22:30:10 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 102 118 34 125 10]
-2025/10/19 22:30:10 Sending msg to tea program {Room:general Name:Me Message:fv}
-2025/10/19 22:30:10 Looping for reading message from ws
-2025/10/19 22:30:10 Processing incomming msg {Room:general Name:Me Message:fv}
-2025/10/19 22:30:11 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 100 97 34 125 10]
-2025/10/19 22:30:11 Sending msg to tea program {Room:general Name:Me Message:da}
-2025/10/19 22:30:11 Looping for reading message from ws
-2025/10/19 22:30:11 Processing incomming msg {Room:general Name:Me Message:da}
-2025/10/19 22:30:11 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 102 118 34 125 10]
-2025/10/19 22:30:11 Sending msg to tea program {Room:general Name:Me Message:fv}
-2025/10/19 22:30:11 Looping for reading message from ws
-2025/10/19 22:30:11 Processing incomming msg {Room:general Name:Me Message:fv}
-2025/10/19 22:30:11 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 97 100 102 34 125 10]
-2025/10/19 22:30:11 Sending msg to tea program {Room:general Name:Me Message:adf}
-2025/10/19 22:30:11 Looping for reading message from ws
-2025/10/19 22:30:11 Processing incomming msg {Room:general Name:Me Message:adf}
-2025/10/19 22:30:11 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 118 34 125 10]
-2025/10/19 22:30:11 Sending msg to tea program {Room:general Name:Me Message:v}
-2025/10/19 22:30:11 Looping for reading message from ws
-2025/10/19 22:30:11 Processing incomming msg {Room:general Name:Me Message:v}
-2025/10/19 22:30:11 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 97 100 102 118 34 125 10]
-2025/10/19 22:30:11 Sending msg to tea program {Room:general Name:Me Message:adfv}
-2025/10/19 22:30:11 Looping for reading message from ws
-2025/10/19 22:30:11 Processing incomming msg {Room:general Name:Me Message:adfv}
-2025/10/19 22:30:11 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 97 100 34 125 10]
-2025/10/19 22:30:11 Sending msg to tea program {Room:general Name:Me Message:ad}
-2025/10/19 22:30:11 Looping for reading message from ws
-2025/10/19 22:30:11 Processing incomming msg {Room:general Name:Me Message:ad}
-2025/10/19 22:30:12 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 102 118 34 125 10]
-2025/10/19 22:30:12 Sending msg to tea program {Room:general Name:Me Message:fv}
-2025/10/19 22:30:12 Looping for reading message from ws
-2025/10/19 22:30:12 Processing incomming msg {Room:general Name:Me Message:fv}
-2025/10/19 22:30:12 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 97 100 102 118 34 125 10]
-2025/10/19 22:30:12 Sending msg to tea program {Room:general Name:Me Message:adfv}
-2025/10/19 22:30:12 Looping for reading message from ws
-2025/10/19 22:30:12 Processing incomming msg {Room:general Name:Me Message:adfv}
-2025/10/19 22:30:12 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 97 100 102 34 125 10]
-2025/10/19 22:30:12 Sending msg to tea program {Room:general Name:Me Message:adf}
-2025/10/19 22:30:12 Looping for reading message from ws
-2025/10/19 22:30:12 Processing incomming msg {Room:general Name:Me Message:adf}
-2025/10/19 22:30:12 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 118 34 125 10]
-2025/10/19 22:30:12 Sending msg to tea program {Room:general Name:Me Message:v}
-2025/10/19 22:30:12 Looping for reading message from ws
-2025/10/19 22:30:12 Processing incomming msg {Room:general Name:Me Message:v}
-2025/10/19 22:30:12 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 97 100 34 125 10]
-2025/10/19 22:30:12 Sending msg to tea program {Room:general Name:Me Message:ad}
-2025/10/19 22:30:12 Looping for reading message from ws
-2025/10/19 22:30:12 Processing incomming msg {Room:general Name:Me Message:ad}
-2025/10/19 22:30:12 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 102 118 34 125 10]
-2025/10/19 22:30:12 Sending msg to tea program {Room:general Name:Me Message:fv}
-2025/10/19 22:30:12 Looping for reading message from ws
-2025/10/19 22:30:12 Processing incomming msg {Room:general Name:Me Message:fv}
-2025/10/19 22:30:12 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 97 100 34 125 10]
-2025/10/19 22:30:12 Sending msg to tea program {Room:general Name:Me Message:ad}
-2025/10/19 22:30:12 Looping for reading message from ws
-2025/10/19 22:30:12 Processing incomming msg {Room:general Name:Me Message:ad}
-2025/10/19 22:30:13 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 102 118 34 125 10]
-2025/10/19 22:30:13 Sending msg to tea program {Room:general Name:Me Message:fv}
-2025/10/19 22:30:13 Processing incomming msg {Room:general Name:Me Message:fv}
-2025/10/19 22:30:13 Looping for reading message from ws
-2025/10/19 22:30:13 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 97 100 34 125 10]
-2025/10/19 22:30:13 Sending msg to tea program {Room:general Name:Me Message:ad}
-2025/10/19 22:30:13 Looping for reading message from ws
-2025/10/19 22:30:13 Processing incomming msg {Room:general Name:Me Message:ad}
-2025/10/19 22:30:13 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 102 118 34 125 10]
-2025/10/19 22:30:13 Sending msg to tea program {Room:general Name:Me Message:fv}
-2025/10/19 22:30:13 Looping for reading message from ws
-2025/10/19 22:30:13 Processing incomming msg {Room:general Name:Me Message:fv}
-2025/10/19 22:30:13 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 97 100 34 125 10]
-2025/10/19 22:30:13 Sending msg to tea program {Room:general Name:Me Message:ad}
-2025/10/19 22:30:13 Looping for reading message from ws
-2025/10/19 22:30:13 Processing incomming msg {Room:general Name:Me Message:ad}
-2025/10/19 22:30:13 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 102 118 34 125 10]
-2025/10/19 22:30:13 Sending msg to tea program {Room:general Name:Me Message:fv}
-2025/10/19 22:30:13 Looping for reading message from ws
-2025/10/19 22:30:13 Processing incomming msg {Room:general Name:Me Message:fv}
-2025/10/19 22:30:13 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 97 100 34 125 10]
-2025/10/19 22:30:13 Sending msg to tea program {Room:general Name:Me Message:ad}
-2025/10/19 22:30:13 Looping for reading message from ws
-2025/10/19 22:30:13 Processing incomming msg {Room:general Name:Me Message:ad}
-2025/10/19 22:30:13 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 102 118 34 125 10]
-2025/10/19 22:30:13 Sending msg to tea program {Room:general Name:Me Message:fv}
-2025/10/19 22:30:13 Looping for reading message from ws
-2025/10/19 22:30:13 Processing incomming msg {Room:general Name:Me Message:fv}
-2025/10/19 22:30:14 Recieved: [123 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 110 97 109 101 34 58 34 77 101 34 44 34 109 101 115 115 97 103 101 34 58 34 97 102 100 34 125 10]
-2025/10/19 22:30:14 Sending msg to tea program {Room:general Name:Me Message:afd}
-2025/10/19 22:30:14 Looping for reading message from ws
-2025/10/19 22:30:14 Processing incomming msg {Room:general Name:Me Message:afd}
-2025/10/19 22:30:15 Error sending msg to ws: websocket: close 1006 (abnormal closure): unexpected EOF
-2025/10/19 22:30:15 Program finished running
-2025/10/20 21:00:46 Connection via websocket established
-2025/10/20 21:00:46 Started reading message from ws
-2025/10/20 21:00:46 Looping for reading message from ws
-2025/10/20 21:00:48 Sending to server {"type":1,"user":"j"} 
-2025/10/20 21:01:11 Sending to server {"type":2,"room":"join"} 
-2025/10/20 21:02:27 Error sending msg to ws: read tcp 127.0.0.1:62479->127.0.0.1:8080: wsarecv: Istniejące połączenie zostało gwałtownie zamknięte przez zdalnego hosta.
-2025/10/20 21:02:32 Program finished running
-2025/10/20 21:03:33 Connection via websocket established
-2025/10/20 21:03:33 Started reading message from ws
-2025/10/20 21:03:33 Looping for reading message from ws
-2025/10/20 21:03:34 Connection via websocket established
-2025/10/20 21:03:34 Started reading message from ws
-2025/10/20 21:03:34 Looping for reading message from ws
-2025/10/20 21:03:36 Sending to server {"type":1,"user":"ja"} 
-2025/10/20 21:03:38 Sending to server {"type":1,"user":"ja 2"} 
-2025/10/20 21:03:39 Sending to server {"type":0,"room":"general","message":"sadsa"} 
-2025/10/20 21:03:39 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 106 97 32 50 40 77 101 41 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 115 97 100 115 97 34 125 10]
-2025/10/20 21:03:39 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 106 97 32 50 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 115 97 100 115 97 34 125 10]
-2025/10/20 21:03:39 Sending msg to tea program {Type:0 User:ja 2(Me) Room:general Clients:[] Message:sadsa}
-2025/10/20 21:03:39 Looping for reading message from ws
-2025/10/20 21:03:39 Sending msg to tea program {Type:0 User:ja 2 Room:general Clients:[] Message:sadsa}
-2025/10/20 21:03:39 Looping for reading message from ws
-2025/10/20 21:03:39 Processing incoming msg {Type:0 User:ja 2(Me) Room:general Clients:[] Message:sadsa}
-2025/10/20 21:03:39 Processing incoming msg {Type:0 User:ja 2 Room:general Clients:[] Message:sadsa}
-2025/10/20 21:03:41 Sending to server {"type":0,"room":"general","message":"asdasd"} 
-2025/10/20 21:03:41 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 106 97 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 97 115 100 97 115 100 34 125 10]
-2025/10/20 21:03:41 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 106 97 40 77 101 41 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 97 115 100 97 115 100 34 125 10]
-2025/10/20 21:03:41 Sending msg to tea program {Type:0 User:ja Room:general Clients:[] Message:asdasd}
-2025/10/20 21:03:41 Looping for reading message from ws
-2025/10/20 21:03:41 Sending msg to tea program {Type:0 User:ja(Me) Room:general Clients:[] Message:asdasd}
-2025/10/20 21:03:41 Processing incoming msg {Type:0 User:ja Room:general Clients:[] Message:asdasd}
-2025/10/20 21:03:41 Looping for reading message from ws
-2025/10/20 21:03:41 Processing incoming msg {Type:0 User:ja(Me) Room:general Clients:[] Message:asdasd}
-2025/10/20 21:03:45 Sending to server {"type":0,"room":"general","message":"sdajvsadf"} 
-2025/10/20 21:03:45 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 106 97 32 50 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 115 100 97 106 118 115 97 100 102 34 125 10]
-2025/10/20 21:03:45 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 106 97 32 50 40 77 101 41 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 115 100 97 106 118 115 97 100 102 34 125 10]
-2025/10/20 21:03:45 Sending msg to tea program {Type:0 User:ja 2 Room:general Clients:[] Message:sdajvsadf}
-2025/10/20 21:03:45 Looping for reading message from ws
-2025/10/20 21:03:45 Sending msg to tea program {Type:0 User:ja 2(Me) Room:general Clients:[] Message:sdajvsadf}
-2025/10/20 21:03:45 Processing incoming msg {Type:0 User:ja 2 Room:general Clients:[] Message:sdajvsadf}
-2025/10/20 21:03:45 Looping for reading message from ws
-2025/10/20 21:03:45 Processing incoming msg {Type:0 User:ja 2(Me) Room:general Clients:[] Message:sdajvsadf}
-2025/10/20 21:03:47 Error sending msg to ws: websocket: close 1006 (abnormal closure): unexpected EOF
-2025/10/20 21:03:47 Program finished running
-2025/10/20 21:03:48 Error sending msg to ws: websocket: close 1006 (abnormal closure): unexpected EOF
-2025/10/20 21:03:48 Program finished running
+2025/10/20 21:55:49 Connection via websocket established
+2025/10/20 21:55:49 Started reading message from ws
+2025/10/20 21:55:49 Looping for reading message from ws
+2025/10/20 21:55:50 Sending to server {"type":1,"user":"jan"} 
+2025/10/20 21:55:50 Recieved: [123 34 116 121 112 101 34 58 55 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 99 108 105 101 110 116 115 34 58 91 34 106 97 110 34 93 125 10]
+2025/10/20 21:55:50 Sending msg to tea program {Type:7 User: Room:general Clients:[jan] Message:}
+2025/10/20 21:55:50 Looping for reading message from ws
+2025/10/20 21:55:50 Processing incoming msg {Type:7 User: Room:general Clients:[jan] Message:}
+2025/10/20 21:55:57 Connection via websocket established
+2025/10/20 21:55:57 Started reading message from ws
+2025/10/20 21:55:57 Looping for reading message from ws
+2025/10/20 21:55:59 Sending to server {"type":1,"user":"temp"} 
+2025/10/20 21:55:59 Recieved: [123 34 116 121 112 101 34 58 55 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 99 108 105 101 110 116 115 34 58 91 34 106 97 110 34 44 34 116 101 109 112 34 93 125 10]
+2025/10/20 21:55:59 Recieved: [123 34 116 121 112 101 34 58 53 44 34 117 115 101 114 34 58 34 116 101 109 112 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 125 10]
+2025/10/20 21:55:59 Sending msg to tea program {Type:5 User:temp Room:general Clients:[] Message:}
+2025/10/20 21:55:59 Looping for reading message from ws
+2025/10/20 21:55:59 Sending msg to tea program {Type:7 User: Room:general Clients:[jan temp] Message:}
+2025/10/20 21:55:59 Processing incoming msg {Type:5 User:temp Room:general Clients:[] Message:}
+2025/10/20 21:55:59 Looping for reading message from ws
+2025/10/20 21:55:59 Processing incoming msg {Type:7 User: Room:general Clients:[jan temp] Message:}
+2025/10/20 21:56:00 Error sending msg to ws: websocket: close 1006 (abnormal closure): unexpected EOF
+2025/10/20 21:56:00 Recieved: [123 34 116 121 112 101 34 58 54 44 34 117 115 101 114 34 58 34 116 101 109 112 34 125 10]
+2025/10/20 21:56:00 Sending msg to tea program {Type:6 User:temp Room: Clients:[] Message:}
+2025/10/20 21:56:00 Looping for reading message from ws
+2025/10/20 21:56:00 Processing incoming msg {Type:6 User:temp Room: Clients:[] Message:}
+2025/10/20 21:56:00 Program finished running
+2025/10/20 21:56:00 Error sending msg to ws: read tcp 127.0.0.1:51292->127.0.0.1:8080: use of closed network connection
+2025/10/20 21:56:01 Program finished running
+2025/10/20 21:56:33 Connection via websocket established
+2025/10/20 21:56:33 Started reading message from ws
+2025/10/20 21:56:33 Looping for reading message from ws
+2025/10/20 21:56:39 Sending to server {"type":1,"user":"jan"} 
+2025/10/20 21:56:39 Recieved: [123 34 116 121 112 101 34 58 55 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 99 108 105 101 110 116 115 34 58 91 34 106 97 110 34 93 125 10]
+2025/10/20 21:56:39 Sending msg to tea program {Type:7 User: Room:general Clients:[jan] Message:}
+2025/10/20 21:56:39 Looping for reading message from ws
+2025/10/20 21:56:39 Processing incoming msg {Type:7 User: Room:general Clients:[jan] Message:}
+2025/10/20 21:56:44 Connection via websocket established
+2025/10/20 21:56:44 Started reading message from ws
+2025/10/20 21:56:44 Looping for reading message from ws
+2025/10/20 21:56:45 Sending to server {"type":1,"user":"adam"} 
+2025/10/20 21:56:45 Recieved: [123 34 116 121 112 101 34 58 55 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 99 108 105 101 110 116 115 34 58 91 34 97 100 97 109 34 44 34 106 97 110 34 93 125 10]
+2025/10/20 21:56:45 Recieved: [123 34 116 121 112 101 34 58 53 44 34 117 115 101 114 34 58 34 97 100 97 109 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 125 10]
+2025/10/20 21:56:45 Sending msg to tea program {Type:5 User:adam Room:general Clients:[] Message:}
+2025/10/20 21:56:45 Looping for reading message from ws
+2025/10/20 21:56:45 Sending msg to tea program {Type:7 User: Room:general Clients:[adam jan] Message:}
+2025/10/20 21:56:45 Looping for reading message from ws
+2025/10/20 21:56:45 Processing incoming msg {Type:5 User:adam Room:general Clients:[] Message:}
+2025/10/20 21:56:45 Processing incoming msg {Type:7 User: Room:general Clients:[adam jan] Message:}
+2025/10/20 21:56:50 Sending to server {"type":2,"room":"temp"} 
+2025/10/20 21:56:50 Recieved: [123 34 116 121 112 101 34 58 55 44 34 114 111 111 109 34 58 34 116 101 109 112 34 44 34 99 108 105 101 110 116 115 34 58 91 34 97 100 97 109 34 93 125 10]
+2025/10/20 21:56:50 Sending msg to tea program {Type:7 User: Room:temp Clients:[adam] Message:}
+2025/10/20 21:56:50 Looping for reading message from ws
+2025/10/20 21:56:50 Processing incoming msg {Type:7 User: Room:temp Clients:[adam] Message:}
+2025/10/20 21:57:02 Sending to server {"type":2,"room":"temp"} 
+2025/10/20 21:57:02 Recieved: [123 34 116 121 112 101 34 58 53 44 34 117 115 101 114 34 58 34 106 97 110 34 44 34 114 111 111 109 34 58 34 116 101 109 112 34 125 10]
+2025/10/20 21:57:02 Recieved: [123 34 116 121 112 101 34 58 55 44 34 114 111 111 109 34 58 34 116 101 109 112 34 44 34 99 108 105 101 110 116 115 34 58 91 34 97 100 97 109 34 44 34 106 97 110 34 93 125 10]
+2025/10/20 21:57:02 Sending msg to tea program {Type:5 User:jan Room:temp Clients:[] Message:}
+2025/10/20 21:57:02 Looping for reading message from ws
+2025/10/20 21:57:02 Sending msg to tea program {Type:7 User: Room:temp Clients:[adam jan] Message:}
+2025/10/20 21:57:02 Looping for reading message from ws
+2025/10/20 21:57:02 Processing incoming msg {Type:5 User:jan Room:temp Clients:[] Message:}
+2025/10/20 21:57:02 Processing incoming msg {Type:7 User: Room:temp Clients:[adam jan] Message:}
+2025/10/20 21:57:13 Sending to server {"type":0,"room":"general","message":"sdasda"} 
+2025/10/20 21:57:13 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 106 97 110 32 40 77 101 41 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 115 100 97 115 100 97 34 125 10]
+2025/10/20 21:57:13 Sending msg to tea program {Type:0 User:jan (Me) Room:general Clients:[] Message:sdasda}
+2025/10/20 21:57:13 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 106 97 110 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 115 100 97 115 100 97 34 125 10]
+2025/10/20 21:57:13 Looping for reading message from ws
+2025/10/20 21:57:13 Processing incoming msg {Type:0 User:jan (Me) Room:general Clients:[] Message:sdasda}
+2025/10/20 21:57:13 Sending msg to tea program {Type:0 User:jan Room:general Clients:[] Message:sdasda}
+2025/10/20 21:57:13 Looping for reading message from ws
+2025/10/20 21:57:13 Processing incoming msg {Type:0 User:jan Room:general Clients:[] Message:sdasda}
+2025/10/20 21:57:23 Sending to server {"type":0,"room":"general","message":"asd"} 
+2025/10/20 21:57:23 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 97 115 100 34 125 10]
+2025/10/20 21:57:23 Sending msg to tea program {Type:0 User:adam Room:general Clients:[] Message:asd}
+2025/10/20 21:57:23 Looping for reading message from ws
+2025/10/20 21:57:23 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 32 40 77 101 41 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 97 115 100 34 125 10]
+2025/10/20 21:57:23 Processing incoming msg {Type:0 User:adam Room:general Clients:[] Message:asd}
+2025/10/20 21:57:23 Sending msg to tea program {Type:0 User:adam (Me) Room:general Clients:[] Message:asd}
+2025/10/20 21:57:23 Looping for reading message from ws
+2025/10/20 21:57:23 Processing incoming msg {Type:0 User:adam (Me) Room:general Clients:[] Message:asd}
+2025/10/20 21:57:23 Sending to server {"type":0,"room":"general","message":"a"} 
+2025/10/20 21:57:23 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
+2025/10/20 21:57:23 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 32 40 77 101 41 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
+2025/10/20 21:57:23 Sending msg to tea program {Type:0 User:adam Room:general Clients:[] Message:a}
+2025/10/20 21:57:23 Sending msg to tea program {Type:0 User:adam (Me) Room:general Clients:[] Message:a}
+2025/10/20 21:57:23 Looping for reading message from ws
+2025/10/20 21:57:23 Looping for reading message from ws
+2025/10/20 21:57:23 Processing incoming msg {Type:0 User:adam Room:general Clients:[] Message:a}
+2025/10/20 21:57:23 Processing incoming msg {Type:0 User:adam (Me) Room:general Clients:[] Message:a}
+2025/10/20 21:57:24 Sending to server {"type":0,"room":"general","message":"a"} 
+2025/10/20 21:57:24 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
+2025/10/20 21:57:24 Sending msg to tea program {Type:0 User:adam Room:general Clients:[] Message:a}
+2025/10/20 21:57:24 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 32 40 77 101 41 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
+2025/10/20 21:57:24 Sending msg to tea program {Type:0 User:adam (Me) Room:general Clients:[] Message:a}
+2025/10/20 21:57:24 Looping for reading message from ws
+2025/10/20 21:57:24 Looping for reading message from ws
+2025/10/20 21:57:24 Processing incoming msg {Type:0 User:adam Room:general Clients:[] Message:a}
+2025/10/20 21:57:24 Processing incoming msg {Type:0 User:adam (Me) Room:general Clients:[] Message:a}
+2025/10/20 21:57:24 Sending to server {"type":0,"room":"general","message":"a"} 
+2025/10/20 21:57:24 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 32 40 77 101 41 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
+2025/10/20 21:57:24 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
+2025/10/20 21:57:24 Sending msg to tea program {Type:0 User:adam Room:general Clients:[] Message:a}
+2025/10/20 21:57:24 Sending msg to tea program {Type:0 User:adam (Me) Room:general Clients:[] Message:a}
+2025/10/20 21:57:24 Looping for reading message from ws
+2025/10/20 21:57:24 Looping for reading message from ws
+2025/10/20 21:57:24 Processing incoming msg {Type:0 User:adam (Me) Room:general Clients:[] Message:a}
+2025/10/20 21:57:24 Processing incoming msg {Type:0 User:adam Room:general Clients:[] Message:a}
+2025/10/20 21:57:24 Sending to server {"type":0,"room":"general","message":"a"} 
+2025/10/20 21:57:24 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
+2025/10/20 21:57:24 Sending msg to tea program {Type:0 User:adam Room:general Clients:[] Message:a}
+2025/10/20 21:57:24 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 32 40 77 101 41 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
+2025/10/20 21:57:24 Looping for reading message from ws
+2025/10/20 21:57:24 Sending msg to tea program {Type:0 User:adam (Me) Room:general Clients:[] Message:a}
+2025/10/20 21:57:24 Processing incoming msg {Type:0 User:adam Room:general Clients:[] Message:a}
+2025/10/20 21:57:24 Looping for reading message from ws
+2025/10/20 21:57:24 Processing incoming msg {Type:0 User:adam (Me) Room:general Clients:[] Message:a}
+2025/10/20 21:57:24 Sending to server {"type":0,"room":"general","message":"a"} 
+2025/10/20 21:57:24 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 32 40 77 101 41 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
+2025/10/20 21:57:24 Sending msg to tea program {Type:0 User:adam (Me) Room:general Clients:[] Message:a}
+2025/10/20 21:57:24 Looping for reading message from ws
+2025/10/20 21:57:24 Processing incoming msg {Type:0 User:adam (Me) Room:general Clients:[] Message:a}
+2025/10/20 21:57:24 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
+2025/10/20 21:57:24 Sending msg to tea program {Type:0 User:adam Room:general Clients:[] Message:a}
+2025/10/20 21:57:24 Looping for reading message from ws
+2025/10/20 21:57:24 Processing incoming msg {Type:0 User:adam Room:general Clients:[] Message:a}
+2025/10/20 21:57:24 Sending to server {"type":0,"room":"general","message":"a"} 
+2025/10/20 21:57:24 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 32 40 77 101 41 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
+2025/10/20 21:57:24 Sending msg to tea program {Type:0 User:adam (Me) Room:general Clients:[] Message:a}
+2025/10/20 21:57:24 Looping for reading message from ws
+2025/10/20 21:57:24 Processing incoming msg {Type:0 User:adam (Me) Room:general Clients:[] Message:a}
+2025/10/20 21:57:24 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
+2025/10/20 21:57:24 Sending msg to tea program {Type:0 User:adam Room:general Clients:[] Message:a}
+2025/10/20 21:57:24 Looping for reading message from ws
+2025/10/20 21:57:24 Processing incoming msg {Type:0 User:adam Room:general Clients:[] Message:a}
+2025/10/20 21:57:25 Sending to server {"type":0,"room":"general","message":"a"} 
+2025/10/20 21:57:25 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
+2025/10/20 21:57:25 Sending msg to tea program {Type:0 User:adam Room:general Clients:[] Message:a}
+2025/10/20 21:57:25 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 32 40 77 101 41 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
+2025/10/20 21:57:25 Looping for reading message from ws
+2025/10/20 21:57:25 Processing incoming msg {Type:0 User:adam Room:general Clients:[] Message:a}
+2025/10/20 21:57:25 Sending msg to tea program {Type:0 User:adam (Me) Room:general Clients:[] Message:a}
+2025/10/20 21:57:25 Looping for reading message from ws
+2025/10/20 21:57:25 Processing incoming msg {Type:0 User:adam (Me) Room:general Clients:[] Message:a}
+2025/10/20 21:57:25 Sending to server {"type":0,"room":"general","message":"a"} 
+2025/10/20 21:57:25 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 32 40 77 101 41 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
+2025/10/20 21:57:25 Sending msg to tea program {Type:0 User:adam (Me) Room:general Clients:[] Message:a}
+2025/10/20 21:57:25 Looping for reading message from ws
+2025/10/20 21:57:25 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
+2025/10/20 21:57:25 Processing incoming msg {Type:0 User:adam (Me) Room:general Clients:[] Message:a}
+2025/10/20 21:57:25 Sending msg to tea program {Type:0 User:adam Room:general Clients:[] Message:a}
+2025/10/20 21:57:25 Looping for reading message from ws
+2025/10/20 21:57:25 Processing incoming msg {Type:0 User:adam Room:general Clients:[] Message:a}
+2025/10/20 21:57:25 Sending to server {"type":0,"room":"general","message":"a"} 
+2025/10/20 21:57:25 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 32 40 77 101 41 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
+2025/10/20 21:57:25 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
+2025/10/20 21:57:25 Sending msg to tea program {Type:0 User:adam (Me) Room:general Clients:[] Message:a}
+2025/10/20 21:57:25 Sending msg to tea program {Type:0 User:adam Room:general Clients:[] Message:a}
+2025/10/20 21:57:25 Looping for reading message from ws
+2025/10/20 21:57:25 Looping for reading message from ws
+2025/10/20 21:57:25 Processing incoming msg {Type:0 User:adam (Me) Room:general Clients:[] Message:a}
+2025/10/20 21:57:25 Processing incoming msg {Type:0 User:adam Room:general Clients:[] Message:a}
+2025/10/20 21:57:25 Sending to server {"type":0,"room":"general","message":"a"} 
+2025/10/20 21:57:25 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 32 40 77 101 41 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
+2025/10/20 21:57:25 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
+2025/10/20 21:57:25 Sending msg to tea program {Type:0 User:adam (Me) Room:general Clients:[] Message:a}
+2025/10/20 21:57:25 Sending msg to tea program {Type:0 User:adam Room:general Clients:[] Message:a}
+2025/10/20 21:57:25 Looping for reading message from ws
+2025/10/20 21:57:25 Looping for reading message from ws
+2025/10/20 21:57:25 Processing incoming msg {Type:0 User:adam (Me) Room:general Clients:[] Message:a}
+2025/10/20 21:57:25 Processing incoming msg {Type:0 User:adam Room:general Clients:[] Message:a}
+2025/10/20 21:57:25 Sending to server {"type":0,"room":"general","message":"a"} 
+2025/10/20 21:57:25 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 32 40 77 101 41 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
+2025/10/20 21:57:25 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
+2025/10/20 21:57:25 Sending msg to tea program {Type:0 User:adam (Me) Room:general Clients:[] Message:a}
+2025/10/20 21:57:25 Sending msg to tea program {Type:0 User:adam Room:general Clients:[] Message:a}
+2025/10/20 21:57:25 Looping for reading message from ws
+2025/10/20 21:57:25 Looping for reading message from ws
+2025/10/20 21:57:25 Processing incoming msg {Type:0 User:adam (Me) Room:general Clients:[] Message:a}
+2025/10/20 21:57:25 Processing incoming msg {Type:0 User:adam Room:general Clients:[] Message:a}
+2025/10/20 21:57:25 Sending to server {"type":0,"room":"general","message":"a"} 
+2025/10/20 21:57:25 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
+2025/10/20 21:57:25 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 32 40 77 101 41 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
+2025/10/20 21:57:25 Sending msg to tea program {Type:0 User:adam Room:general Clients:[] Message:a}
+2025/10/20 21:57:25 Sending msg to tea program {Type:0 User:adam (Me) Room:general Clients:[] Message:a}
+2025/10/20 21:57:25 Looping for reading message from ws
+2025/10/20 21:57:25 Looping for reading message from ws
+2025/10/20 21:57:25 Processing incoming msg {Type:0 User:adam Room:general Clients:[] Message:a}
+2025/10/20 21:57:25 Processing incoming msg {Type:0 User:adam (Me) Room:general Clients:[] Message:a}
+2025/10/20 21:57:26 Sending to server {"type":0,"room":"general","message":"a"} 
+2025/10/20 21:57:26 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
+2025/10/20 21:57:26 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 32 40 77 101 41 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
+2025/10/20 21:57:26 Sending msg to tea program {Type:0 User:adam Room:general Clients:[] Message:a}
+2025/10/20 21:57:26 Sending msg to tea program {Type:0 User:adam (Me) Room:general Clients:[] Message:a}
+2025/10/20 21:57:26 Looping for reading message from ws
+2025/10/20 21:57:26 Looping for reading message from ws
+2025/10/20 21:57:26 Processing incoming msg {Type:0 User:adam Room:general Clients:[] Message:a}
+2025/10/20 21:57:26 Processing incoming msg {Type:0 User:adam (Me) Room:general Clients:[] Message:a}
+2025/10/20 21:57:26 Sending to server {"type":0,"room":"general","message":"a"} 
+2025/10/20 21:57:26 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 32 40 77 101 41 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
+2025/10/20 21:57:26 Sending msg to tea program {Type:0 User:adam (Me) Room:general Clients:[] Message:a}
+2025/10/20 21:57:26 Looping for reading message from ws
+2025/10/20 21:57:26 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
+2025/10/20 21:57:26 Processing incoming msg {Type:0 User:adam (Me) Room:general Clients:[] Message:a}
+2025/10/20 21:57:26 Sending msg to tea program {Type:0 User:adam Room:general Clients:[] Message:a}
+2025/10/20 21:57:26 Looping for reading message from ws
+2025/10/20 21:57:26 Processing incoming msg {Type:0 User:adam Room:general Clients:[] Message:a}
+2025/10/20 21:57:26 Sending to server {"type":0,"room":"general","message":"a"} 
+2025/10/20 21:57:26 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
+2025/10/20 21:57:26 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 32 40 77 101 41 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
+2025/10/20 21:57:26 Sending msg to tea program {Type:0 User:adam Room:general Clients:[] Message:a}
+2025/10/20 21:57:26 Sending msg to tea program {Type:0 User:adam (Me) Room:general Clients:[] Message:a}
+2025/10/20 21:57:26 Looping for reading message from ws
+2025/10/20 21:57:26 Looping for reading message from ws
+2025/10/20 21:57:26 Processing incoming msg {Type:0 User:adam (Me) Room:general Clients:[] Message:a}
+2025/10/20 21:57:26 Processing incoming msg {Type:0 User:adam Room:general Clients:[] Message:a}
+2025/10/20 21:57:26 Sending to server {"type":0,"room":"general","message":"a"} 
+2025/10/20 21:57:26 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
+2025/10/20 21:57:26 Sending msg to tea program {Type:0 User:adam Room:general Clients:[] Message:a}
+2025/10/20 21:57:26 Looping for reading message from ws
+2025/10/20 21:57:26 Processing incoming msg {Type:0 User:adam Room:general Clients:[] Message:a}
+2025/10/20 21:57:26 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 32 40 77 101 41 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
+2025/10/20 21:57:26 Sending msg to tea program {Type:0 User:adam (Me) Room:general Clients:[] Message:a}
+2025/10/20 21:57:26 Looping for reading message from ws
+2025/10/20 21:57:26 Processing incoming msg {Type:0 User:adam (Me) Room:general Clients:[] Message:a}
+2025/10/20 21:57:26 Sending to server {"type":0,"room":"general","message":"a"} 
+2025/10/20 21:57:26 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 32 40 77 101 41 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
+2025/10/20 21:57:26 Sending msg to tea program {Type:0 User:adam (Me) Room:general Clients:[] Message:a}
+2025/10/20 21:57:26 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
+2025/10/20 21:57:26 Looping for reading message from ws
+2025/10/20 21:57:26 Sending msg to tea program {Type:0 User:adam Room:general Clients:[] Message:a}
+2025/10/20 21:57:26 Processing incoming msg {Type:0 User:adam (Me) Room:general Clients:[] Message:a}
+2025/10/20 21:57:26 Looping for reading message from ws
+2025/10/20 21:57:26 Processing incoming msg {Type:0 User:adam Room:general Clients:[] Message:a}
+2025/10/20 21:57:27 Sending to server {"type":0,"room":"general","message":"a"} 
+2025/10/20 21:57:27 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 32 40 77 101 41 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
+2025/10/20 21:57:27 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
+2025/10/20 21:57:27 Sending msg to tea program {Type:0 User:adam (Me) Room:general Clients:[] Message:a}
+2025/10/20 21:57:27 Sending msg to tea program {Type:0 User:adam Room:general Clients:[] Message:a}
+2025/10/20 21:57:27 Looping for reading message from ws
+2025/10/20 21:57:27 Looping for reading message from ws
+2025/10/20 21:57:27 Processing incoming msg {Type:0 User:adam (Me) Room:general Clients:[] Message:a}
+2025/10/20 21:57:27 Processing incoming msg {Type:0 User:adam Room:general Clients:[] Message:a}
+2025/10/20 21:57:27 Sending to server {"type":0,"room":"general","message":"a"} 
+2025/10/20 21:57:27 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 32 40 77 101 41 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
+2025/10/20 21:57:27 Sending msg to tea program {Type:0 User:adam (Me) Room:general Clients:[] Message:a}
+2025/10/20 21:57:27 Looping for reading message from ws
+2025/10/20 21:57:27 Processing incoming msg {Type:0 User:adam (Me) Room:general Clients:[] Message:a}
+2025/10/20 21:57:27 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
+2025/10/20 21:57:27 Sending msg to tea program {Type:0 User:adam Room:general Clients:[] Message:a}
+2025/10/20 21:57:27 Looping for reading message from ws
+2025/10/20 21:57:27 Processing incoming msg {Type:0 User:adam Room:general Clients:[] Message:a}
+2025/10/20 21:57:27 Sending to server {"type":0,"room":"general","message":"a"} 
+2025/10/20 21:57:27 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
+2025/10/20 21:57:27 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 32 40 77 101 41 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
+2025/10/20 21:57:27 Sending msg to tea program {Type:0 User:adam Room:general Clients:[] Message:a}
+2025/10/20 21:57:27 Sending msg to tea program {Type:0 User:adam (Me) Room:general Clients:[] Message:a}
+2025/10/20 21:57:27 Looping for reading message from ws
+2025/10/20 21:57:27 Looping for reading message from ws
+2025/10/20 21:57:27 Processing incoming msg {Type:0 User:adam Room:general Clients:[] Message:a}
+2025/10/20 21:57:27 Processing incoming msg {Type:0 User:adam (Me) Room:general Clients:[] Message:a}
+2025/10/20 21:57:27 Sending to server {"type":0,"room":"general","message":"a"} 
+2025/10/20 21:57:27 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 32 40 77 101 41 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
+2025/10/20 21:57:27 Sending msg to tea program {Type:0 User:adam (Me) Room:general Clients:[] Message:a}
+2025/10/20 21:57:27 Looping for reading message from ws
+2025/10/20 21:57:27 Processing incoming msg {Type:0 User:adam (Me) Room:general Clients:[] Message:a}
+2025/10/20 21:57:27 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
+2025/10/20 21:57:27 Sending msg to tea program {Type:0 User:adam Room:general Clients:[] Message:a}
+2025/10/20 21:57:27 Looping for reading message from ws
+2025/10/20 21:57:27 Processing incoming msg {Type:0 User:adam Room:general Clients:[] Message:a}
+2025/10/20 21:57:27 Sending to server {"type":0,"room":"general","message":"a"} 
+2025/10/20 21:57:27 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 32 40 77 101 41 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
+2025/10/20 21:57:27 Sending msg to tea program {Type:0 User:adam (Me) Room:general Clients:[] Message:a}
+2025/10/20 21:57:27 Looping for reading message from ws
+2025/10/20 21:57:27 Processing incoming msg {Type:0 User:adam (Me) Room:general Clients:[] Message:a}
+2025/10/20 21:57:27 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
+2025/10/20 21:57:27 Sending msg to tea program {Type:0 User:adam Room:general Clients:[] Message:a}
+2025/10/20 21:57:27 Looping for reading message from ws
+2025/10/20 21:57:27 Processing incoming msg {Type:0 User:adam Room:general Clients:[] Message:a}
+2025/10/20 21:57:28 Sending to server {"type":0,"room":"general","message":"a"} 
+2025/10/20 21:57:28 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
+2025/10/20 21:57:28 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 32 40 77 101 41 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
+2025/10/20 21:57:28 Sending msg to tea program {Type:0 User:adam Room:general Clients:[] Message:a}
+2025/10/20 21:57:28 Sending msg to tea program {Type:0 User:adam (Me) Room:general Clients:[] Message:a}
+2025/10/20 21:57:28 Looping for reading message from ws
+2025/10/20 21:57:28 Looping for reading message from ws
+2025/10/20 21:57:28 Processing incoming msg {Type:0 User:adam Room:general Clients:[] Message:a}
+2025/10/20 21:57:28 Processing incoming msg {Type:0 User:adam (Me) Room:general Clients:[] Message:a}
+2025/10/20 21:57:28 Sending to server {"type":0,"room":"general","message":"a"} 
+2025/10/20 21:57:28 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 32 40 77 101 41 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
+2025/10/20 21:57:28 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
+2025/10/20 21:57:28 Sending msg to tea program {Type:0 User:adam (Me) Room:general Clients:[] Message:a}
+2025/10/20 21:57:28 Sending msg to tea program {Type:0 User:adam Room:general Clients:[] Message:a}
+2025/10/20 21:57:28 Looping for reading message from ws
+2025/10/20 21:57:28 Looping for reading message from ws
+2025/10/20 21:57:28 Processing incoming msg {Type:0 User:adam (Me) Room:general Clients:[] Message:a}
+2025/10/20 21:57:28 Processing incoming msg {Type:0 User:adam Room:general Clients:[] Message:a}
+2025/10/20 21:57:28 Sending to server {"type":0,"room":"general","message":"a"} 
+2025/10/20 21:57:28 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 32 40 77 101 41 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
+2025/10/20 21:57:28 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
+2025/10/20 21:57:28 Sending msg to tea program {Type:0 User:adam (Me) Room:general Clients:[] Message:a}
+2025/10/20 21:57:28 Sending msg to tea program {Type:0 User:adam Room:general Clients:[] Message:a}
+2025/10/20 21:57:28 Looping for reading message from ws
+2025/10/20 21:57:28 Looping for reading message from ws
+2025/10/20 21:57:28 Processing incoming msg {Type:0 User:adam Room:general Clients:[] Message:a}
+2025/10/20 21:57:28 Processing incoming msg {Type:0 User:adam (Me) Room:general Clients:[] Message:a}
+2025/10/20 21:57:28 Sending to server {"type":0,"room":"general","message":"a"} 
+2025/10/20 21:57:28 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 32 40 77 101 41 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
+2025/10/20 21:57:28 Sending msg to tea program {Type:0 User:adam (Me) Room:general Clients:[] Message:a}
+2025/10/20 21:57:28 Looping for reading message from ws
+2025/10/20 21:57:28 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
+2025/10/20 21:57:28 Processing incoming msg {Type:0 User:adam (Me) Room:general Clients:[] Message:a}
+2025/10/20 21:57:28 Sending msg to tea program {Type:0 User:adam Room:general Clients:[] Message:a}
+2025/10/20 21:57:28 Looping for reading message from ws
+2025/10/20 21:57:28 Processing incoming msg {Type:0 User:adam Room:general Clients:[] Message:a}
+2025/10/20 21:57:28 Sending to server {"type":0,"room":"general","message":"a"} 
+2025/10/20 21:57:28 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 32 40 77 101 41 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
+2025/10/20 21:57:28 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
+2025/10/20 21:57:28 Sending msg to tea program {Type:0 User:adam (Me) Room:general Clients:[] Message:a}
+2025/10/20 21:57:28 Looping for reading message from ws
+2025/10/20 21:57:28 Sending msg to tea program {Type:0 User:adam Room:general Clients:[] Message:a}
+2025/10/20 21:57:28 Looping for reading message from ws
+2025/10/20 21:57:28 Processing incoming msg {Type:0 User:adam Room:general Clients:[] Message:a}
+2025/10/20 21:57:28 Processing incoming msg {Type:0 User:adam (Me) Room:general Clients:[] Message:a}
+2025/10/20 21:57:29 Sending to server {"type":0,"room":"general","message":"a"} 
+2025/10/20 21:57:29 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 32 40 77 101 41 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
+2025/10/20 21:57:29 Sending msg to tea program {Type:0 User:adam (Me) Room:general Clients:[] Message:a}
+2025/10/20 21:57:29 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 97 34 125 10]
+2025/10/20 21:57:29 Looping for reading message from ws
+2025/10/20 21:57:29 Sending msg to tea program {Type:0 User:adam Room:general Clients:[] Message:a}
+2025/10/20 21:57:29 Looping for reading message from ws
+2025/10/20 21:57:29 Processing incoming msg {Type:0 User:adam Room:general Clients:[] Message:a}
+2025/10/20 21:57:29 Processing incoming msg {Type:0 User:adam (Me) Room:general Clients:[] Message:a}
+2025/10/20 21:57:29 Sending to server {"type":0,"room":"general","message":"as"} 
+2025/10/20 21:57:29 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 32 40 77 101 41 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 97 115 34 125 10]
+2025/10/20 21:57:29 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 97 115 34 125 10]
+2025/10/20 21:57:29 Sending msg to tea program {Type:0 User:adam (Me) Room:general Clients:[] Message:as}
+2025/10/20 21:57:29 Sending msg to tea program {Type:0 User:adam Room:general Clients:[] Message:as}
+2025/10/20 21:57:29 Looping for reading message from ws
+2025/10/20 21:57:29 Looping for reading message from ws
+2025/10/20 21:57:29 Processing incoming msg {Type:0 User:adam (Me) Room:general Clients:[] Message:as}
+2025/10/20 21:57:29 Processing incoming msg {Type:0 User:adam Room:general Clients:[] Message:as}
+2025/10/20 21:57:29 Sending to server {"type":0,"room":"general","message":"das"} 
+2025/10/20 21:57:29 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 32 40 77 101 41 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 100 97 115 34 125 10]
+2025/10/20 21:57:29 Sending msg to tea program {Type:0 User:adam (Me) Room:general Clients:[] Message:das}
+2025/10/20 21:57:29 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 100 97 115 34 125 10]
+2025/10/20 21:57:29 Looping for reading message from ws
+2025/10/20 21:57:29 Sending msg to tea program {Type:0 User:adam Room:general Clients:[] Message:das}
+2025/10/20 21:57:29 Processing incoming msg {Type:0 User:adam (Me) Room:general Clients:[] Message:das}
+2025/10/20 21:57:29 Looping for reading message from ws
+2025/10/20 21:57:29 Processing incoming msg {Type:0 User:adam Room:general Clients:[] Message:das}
+2025/10/20 21:57:29 Sending to server {"type":0,"room":"general","message":"da"} 
+2025/10/20 21:57:29 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 32 40 77 101 41 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 100 97 34 125 10]
+2025/10/20 21:57:29 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 100 97 34 125 10]
+2025/10/20 21:57:29 Sending msg to tea program {Type:0 User:adam (Me) Room:general Clients:[] Message:da}
+2025/10/20 21:57:29 Sending msg to tea program {Type:0 User:adam Room:general Clients:[] Message:da}
+2025/10/20 21:57:29 Looping for reading message from ws
+2025/10/20 21:57:29 Looping for reading message from ws
+2025/10/20 21:57:29 Processing incoming msg {Type:0 User:adam (Me) Room:general Clients:[] Message:da}
+2025/10/20 21:57:29 Processing incoming msg {Type:0 User:adam Room:general Clients:[] Message:da}
+2025/10/20 21:57:29 Sending to server {"type":0,"room":"general","message":"sd"} 
+2025/10/20 21:57:29 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 32 40 77 101 41 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 115 100 34 125 10]
+2025/10/20 21:57:29 Sending msg to tea program {Type:0 User:adam (Me) Room:general Clients:[] Message:sd}
+2025/10/20 21:57:29 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 115 100 34 125 10]
+2025/10/20 21:57:29 Looping for reading message from ws
+2025/10/20 21:57:29 Sending msg to tea program {Type:0 User:adam Room:general Clients:[] Message:sd}
+2025/10/20 21:57:29 Processing incoming msg {Type:0 User:adam (Me) Room:general Clients:[] Message:sd}
+2025/10/20 21:57:29 Looping for reading message from ws
+2025/10/20 21:57:29 Processing incoming msg {Type:0 User:adam Room:general Clients:[] Message:sd}
+2025/10/20 21:57:29 Sending to server {"type":0,"room":"general","message":"as"} 
+2025/10/20 21:57:29 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 32 40 77 101 41 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 97 115 34 125 10]
+2025/10/20 21:57:29 Sending msg to tea program {Type:0 User:adam (Me) Room:general Clients:[] Message:as}
+2025/10/20 21:57:29 Looping for reading message from ws
+2025/10/20 21:57:29 Processing incoming msg {Type:0 User:adam (Me) Room:general Clients:[] Message:as}
+2025/10/20 21:57:29 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 97 115 34 125 10]
+2025/10/20 21:57:29 Sending msg to tea program {Type:0 User:adam Room:general Clients:[] Message:as}
+2025/10/20 21:57:29 Looping for reading message from ws
+2025/10/20 21:57:29 Processing incoming msg {Type:0 User:adam Room:general Clients:[] Message:as}
+2025/10/20 21:57:30 Sending to server {"type":0,"room":"general","message":"d"} 
+2025/10/20 21:57:30 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 32 40 77 101 41 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 100 34 125 10]
+2025/10/20 21:57:30 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 100 34 125 10]
+2025/10/20 21:57:30 Sending msg to tea program {Type:0 User:adam (Me) Room:general Clients:[] Message:d}
+2025/10/20 21:57:30 Sending msg to tea program {Type:0 User:adam Room:general Clients:[] Message:d}
+2025/10/20 21:57:30 Looping for reading message from ws
+2025/10/20 21:57:30 Looping for reading message from ws
+2025/10/20 21:57:30 Processing incoming msg {Type:0 User:adam (Me) Room:general Clients:[] Message:d}
+2025/10/20 21:57:30 Processing incoming msg {Type:0 User:adam Room:general Clients:[] Message:d}
+2025/10/20 21:57:30 Sending to server {"type":0,"room":"general","message":"asd"} 
+2025/10/20 21:57:30 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 32 40 77 101 41 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 97 115 100 34 125 10]
+2025/10/20 21:57:30 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 97 115 100 34 125 10]
+2025/10/20 21:57:30 Sending msg to tea program {Type:0 User:adam Room:general Clients:[] Message:asd}
+2025/10/20 21:57:30 Sending msg to tea program {Type:0 User:adam (Me) Room:general Clients:[] Message:asd}
+2025/10/20 21:57:30 Looping for reading message from ws
+2025/10/20 21:57:30 Looping for reading message from ws
+2025/10/20 21:57:30 Processing incoming msg {Type:0 User:adam (Me) Room:general Clients:[] Message:asd}
+2025/10/20 21:57:30 Processing incoming msg {Type:0 User:adam Room:general Clients:[] Message:asd}
+2025/10/20 21:57:30 Sending to server {"type":0,"room":"general","message":"sdf"} 
+2025/10/20 21:57:30 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 32 40 77 101 41 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 115 100 102 34 125 10]
+2025/10/20 21:57:30 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 115 100 102 34 125 10]
+2025/10/20 21:57:30 Sending msg to tea program {Type:0 User:adam (Me) Room:general Clients:[] Message:sdf}
+2025/10/20 21:57:30 Sending msg to tea program {Type:0 User:adam Room:general Clients:[] Message:sdf}
+2025/10/20 21:57:30 Looping for reading message from ws
+2025/10/20 21:57:30 Looping for reading message from ws
+2025/10/20 21:57:30 Processing incoming msg {Type:0 User:adam (Me) Room:general Clients:[] Message:sdf}
+2025/10/20 21:57:30 Processing incoming msg {Type:0 User:adam Room:general Clients:[] Message:sdf}
+2025/10/20 21:57:30 Sending to server {"type":0,"room":"general","message":"ewq"} 
+2025/10/20 21:57:30 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 32 40 77 101 41 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 101 119 113 34 125 10]
+2025/10/20 21:57:30 Sending msg to tea program {Type:0 User:adam (Me) Room:general Clients:[] Message:ewq}
+2025/10/20 21:57:30 Looping for reading message from ws
+2025/10/20 21:57:30 Processing incoming msg {Type:0 User:adam (Me) Room:general Clients:[] Message:ewq}
+2025/10/20 21:57:30 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 101 119 113 34 125 10]
+2025/10/20 21:57:30 Sending msg to tea program {Type:0 User:adam Room:general Clients:[] Message:ewq}
+2025/10/20 21:57:30 Looping for reading message from ws
+2025/10/20 21:57:30 Processing incoming msg {Type:0 User:adam Room:general Clients:[] Message:ewq}
+2025/10/20 21:57:30 Sending to server {"type":0,"room":"general","message":"f"} 
+2025/10/20 21:57:30 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 32 40 77 101 41 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 102 34 125 10]
+2025/10/20 21:57:30 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 102 34 125 10]
+2025/10/20 21:57:30 Sending msg to tea program {Type:0 User:adam (Me) Room:general Clients:[] Message:f}
+2025/10/20 21:57:30 Sending msg to tea program {Type:0 User:adam Room:general Clients:[] Message:f}
+2025/10/20 21:57:30 Looping for reading message from ws
+2025/10/20 21:57:30 Looping for reading message from ws
+2025/10/20 21:57:30 Processing incoming msg {Type:0 User:adam (Me) Room:general Clients:[] Message:f}
+2025/10/20 21:57:30 Processing incoming msg {Type:0 User:adam Room:general Clients:[] Message:f}
+2025/10/20 21:57:30 Sending to server {"type":0,"room":"general","message":"qwe"} 
+2025/10/20 21:57:30 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 32 40 77 101 41 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 113 119 101 34 125 10]
+2025/10/20 21:57:30 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 113 119 101 34 125 10]
+2025/10/20 21:57:30 Sending msg to tea program {Type:0 User:adam Room:general Clients:[] Message:qwe}
+2025/10/20 21:57:30 Sending msg to tea program {Type:0 User:adam (Me) Room:general Clients:[] Message:qwe}
+2025/10/20 21:57:30 Looping for reading message from ws
+2025/10/20 21:57:30 Looping for reading message from ws
+2025/10/20 21:57:30 Processing incoming msg {Type:0 User:adam Room:general Clients:[] Message:qwe}
+2025/10/20 21:57:30 Processing incoming msg {Type:0 User:adam (Me) Room:general Clients:[] Message:qwe}
+2025/10/20 21:57:31 Sending to server {"type":0,"room":"general","message":"c"} 
+2025/10/20 21:57:31 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 32 40 77 101 41 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 99 34 125 10]
+2025/10/20 21:57:31 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 99 34 125 10]
+2025/10/20 21:57:31 Sending msg to tea program {Type:0 User:adam Room:general Clients:[] Message:c}
+2025/10/20 21:57:31 Sending msg to tea program {Type:0 User:adam (Me) Room:general Clients:[] Message:c}
+2025/10/20 21:57:31 Looping for reading message from ws
+2025/10/20 21:57:31 Looping for reading message from ws
+2025/10/20 21:57:31 Processing incoming msg {Type:0 User:adam Room:general Clients:[] Message:c}
+2025/10/20 21:57:31 Processing incoming msg {Type:0 User:adam (Me) Room:general Clients:[] Message:c}
+2025/10/20 21:57:31 Sending to server {"type":0,"room":"general","message":"w"} 
+2025/10/20 21:57:31 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 32 40 77 101 41 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 119 34 125 10]
+2025/10/20 21:57:31 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 119 34 125 10]
+2025/10/20 21:57:31 Sending msg to tea program {Type:0 User:adam (Me) Room:general Clients:[] Message:w}
+2025/10/20 21:57:31 Sending msg to tea program {Type:0 User:adam Room:general Clients:[] Message:w}
+2025/10/20 21:57:31 Looping for reading message from ws
+2025/10/20 21:57:31 Looping for reading message from ws
+2025/10/20 21:57:31 Processing incoming msg {Type:0 User:adam (Me) Room:general Clients:[] Message:w}
+2025/10/20 21:57:31 Processing incoming msg {Type:0 User:adam Room:general Clients:[] Message:w}
+2025/10/20 21:57:31 Sending to server {"type":0,"room":"general","message":"q"} 
+2025/10/20 21:57:31 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 32 40 77 101 41 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 113 34 125 10]
+2025/10/20 21:57:31 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 113 34 125 10]
+2025/10/20 21:57:31 Sending msg to tea program {Type:0 User:adam Room:general Clients:[] Message:q}
+2025/10/20 21:57:31 Sending msg to tea program {Type:0 User:adam (Me) Room:general Clients:[] Message:q}
+2025/10/20 21:57:31 Looping for reading message from ws
+2025/10/20 21:57:31 Looping for reading message from ws
+2025/10/20 21:57:31 Processing incoming msg {Type:0 User:adam Room:general Clients:[] Message:q}
+2025/10/20 21:57:31 Processing incoming msg {Type:0 User:adam (Me) Room:general Clients:[] Message:q}
+2025/10/20 21:57:31 Sending to server {"type":0,"room":"general","message":"ewrc"} 
+2025/10/20 21:57:31 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 32 40 77 101 41 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 101 119 114 99 34 125 10]
+2025/10/20 21:57:31 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 101 119 114 99 34 125 10]
+2025/10/20 21:57:31 Sending msg to tea program {Type:0 User:adam (Me) Room:general Clients:[] Message:ewrc}
+2025/10/20 21:57:31 Sending msg to tea program {Type:0 User:adam Room:general Clients:[] Message:ewrc}
+2025/10/20 21:57:31 Looping for reading message from ws
+2025/10/20 21:57:31 Looping for reading message from ws
+2025/10/20 21:57:31 Processing incoming msg {Type:0 User:adam (Me) Room:general Clients:[] Message:ewrc}
+2025/10/20 21:57:31 Processing incoming msg {Type:0 User:adam Room:general Clients:[] Message:ewrc}
+2025/10/20 21:57:31 Sending to server {"type":0,"room":"general","message":"qe"} 
+2025/10/20 21:57:31 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 32 40 77 101 41 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 113 101 34 125 10]
+2025/10/20 21:57:31 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 113 101 34 125 10]
+2025/10/20 21:57:31 Sending msg to tea program {Type:0 User:adam (Me) Room:general Clients:[] Message:qe}
+2025/10/20 21:57:31 Sending msg to tea program {Type:0 User:adam Room:general Clients:[] Message:qe}
+2025/10/20 21:57:31 Looping for reading message from ws
+2025/10/20 21:57:31 Looping for reading message from ws
+2025/10/20 21:57:31 Processing incoming msg {Type:0 User:adam (Me) Room:general Clients:[] Message:qe}
+2025/10/20 21:57:31 Processing incoming msg {Type:0 User:adam Room:general Clients:[] Message:qe}
+2025/10/20 21:57:31 Sending to server {"type":0,"room":"general","message":"rc"} 
+2025/10/20 21:57:31 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 32 40 77 101 41 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 114 99 34 125 10]
+2025/10/20 21:57:31 Sending msg to tea program {Type:0 User:adam (Me) Room:general Clients:[] Message:rc}
+2025/10/20 21:57:31 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 114 99 34 125 10]
+2025/10/20 21:57:31 Looping for reading message from ws
+2025/10/20 21:57:31 Sending msg to tea program {Type:0 User:adam Room:general Clients:[] Message:rc}
+2025/10/20 21:57:31 Processing incoming msg {Type:0 User:adam (Me) Room:general Clients:[] Message:rc}
+2025/10/20 21:57:31 Looping for reading message from ws
+2025/10/20 21:57:31 Processing incoming msg {Type:0 User:adam Room:general Clients:[] Message:rc}
+2025/10/20 21:57:32 Sending to server {"type":0,"room":"general","message":"qe"} 
+2025/10/20 21:57:32 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 32 40 77 101 41 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 113 101 34 125 10]
+2025/10/20 21:57:32 Sending msg to tea program {Type:0 User:adam (Me) Room:general Clients:[] Message:qe}
+2025/10/20 21:57:32 Looping for reading message from ws
+2025/10/20 21:57:32 Processing incoming msg {Type:0 User:adam (Me) Room:general Clients:[] Message:qe}
+2025/10/20 21:57:32 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 113 101 34 125 10]
+2025/10/20 21:57:32 Sending msg to tea program {Type:0 User:adam Room:general Clients:[] Message:qe}
+2025/10/20 21:57:32 Looping for reading message from ws
+2025/10/20 21:57:32 Processing incoming msg {Type:0 User:adam Room:general Clients:[] Message:qe}
+2025/10/20 21:57:32 Sending to server {"type":0,"room":"general","message":"rc"} 
+2025/10/20 21:57:32 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 114 99 34 125 10]
+2025/10/20 21:57:32 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 32 40 77 101 41 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 114 99 34 125 10]
+2025/10/20 21:57:32 Sending msg to tea program {Type:0 User:adam Room:general Clients:[] Message:rc}
+2025/10/20 21:57:32 Sending msg to tea program {Type:0 User:adam (Me) Room:general Clients:[] Message:rc}
+2025/10/20 21:57:32 Looping for reading message from ws
+2025/10/20 21:57:32 Looping for reading message from ws
+2025/10/20 21:57:32 Processing incoming msg {Type:0 User:adam Room:general Clients:[] Message:rc}
+2025/10/20 21:57:32 Processing incoming msg {Type:0 User:adam (Me) Room:general Clients:[] Message:rc}
+2025/10/20 21:57:32 Sending to server {"type":0,"room":"general","message":"eq"} 
+2025/10/20 21:57:32 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 32 40 77 101 41 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 101 113 34 125 10]
+2025/10/20 21:57:32 Sending msg to tea program {Type:0 User:adam (Me) Room:general Clients:[] Message:eq}
+2025/10/20 21:57:32 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 101 113 34 125 10]
+2025/10/20 21:57:32 Looping for reading message from ws
+2025/10/20 21:57:32 Sending msg to tea program {Type:0 User:adam Room:general Clients:[] Message:eq}
+2025/10/20 21:57:32 Looping for reading message from ws
+2025/10/20 21:57:32 Processing incoming msg {Type:0 User:adam (Me) Room:general Clients:[] Message:eq}
+2025/10/20 21:57:32 Processing incoming msg {Type:0 User:adam Room:general Clients:[] Message:eq}
+2025/10/20 21:57:32 Sending to server {"type":0,"room":"general","message":"rc"} 
+2025/10/20 21:57:32 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 32 40 77 101 41 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 114 99 34 125 10]
+2025/10/20 21:57:32 Sending msg to tea program {Type:0 User:adam (Me) Room:general Clients:[] Message:rc}
+2025/10/20 21:57:32 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 114 99 34 125 10]
+2025/10/20 21:57:32 Looping for reading message from ws
+2025/10/20 21:57:32 Sending msg to tea program {Type:0 User:adam Room:general Clients:[] Message:rc}
+2025/10/20 21:57:32 Processing incoming msg {Type:0 User:adam (Me) Room:general Clients:[] Message:rc}
+2025/10/20 21:57:32 Looping for reading message from ws
+2025/10/20 21:57:32 Processing incoming msg {Type:0 User:adam Room:general Clients:[] Message:rc}
+2025/10/20 21:57:32 Sending to server {"type":0,"room":"general","message":"qe"} 
+2025/10/20 21:57:32 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 113 101 34 125 10]
+2025/10/20 21:57:32 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 32 40 77 101 41 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 113 101 34 125 10]
+2025/10/20 21:57:32 Sending msg to tea program {Type:0 User:adam Room:general Clients:[] Message:qe}
+2025/10/20 21:57:32 Looping for reading message from ws
+2025/10/20 21:57:32 Sending msg to tea program {Type:0 User:adam (Me) Room:general Clients:[] Message:qe}
+2025/10/20 21:57:32 Processing incoming msg {Type:0 User:adam Room:general Clients:[] Message:qe}
+2025/10/20 21:57:32 Looping for reading message from ws
+2025/10/20 21:57:32 Processing incoming msg {Type:0 User:adam (Me) Room:general Clients:[] Message:qe}
+2025/10/20 21:57:32 Sending to server {"type":0,"room":"general","message":"rc"} 
+2025/10/20 21:57:32 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 32 40 77 101 41 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 114 99 34 125 10]
+2025/10/20 21:57:32 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 100 97 109 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 114 99 34 125 10]
+2025/10/20 21:57:32 Sending msg to tea program {Type:0 User:adam (Me) Room:general Clients:[] Message:rc}
+2025/10/20 21:57:32 Sending msg to tea program {Type:0 User:adam Room:general Clients:[] Message:rc}
+2025/10/20 21:57:32 Looping for reading message from ws
+2025/10/20 21:57:32 Looping for reading message from ws
+2025/10/20 21:57:32 Processing incoming msg {Type:0 User:adam Room:general Clients:[] Message:rc}
+2025/10/20 21:57:32 Processing incoming msg {Type:0 User:adam (Me) Room:general Clients:[] Message:rc}
+2025/10/20 21:57:33 Error sending msg to ws: websocket: close 1006 (abnormal closure): unexpected EOF
+2025/10/20 21:57:33 Recieved: [123 34 116 121 112 101 34 58 54 44 34 117 115 101 114 34 58 34 97 100 97 109 34 125 10]
+2025/10/20 21:57:33 Sending msg to tea program {Type:6 User:adam Room: Clients:[] Message:}
+2025/10/20 21:57:33 Looping for reading message from ws
+2025/10/20 21:57:33 Recieved: [123 34 116 121 112 101 34 58 54 44 34 117 115 101 114 34 58 34 97 100 97 109 34 125 10]
+2025/10/20 21:57:33 Sending msg to tea program {Type:6 User:adam Room: Clients:[] Message:}
+2025/10/20 21:57:33 Processing incoming msg {Type:6 User:adam Room: Clients:[] Message:}
+2025/10/20 21:57:33 Looping for reading message from ws
+2025/10/20 21:57:33 Program finished running
+2025/10/20 21:57:33 Error sending msg to ws: read tcp 127.0.0.1:51296->127.0.0.1:8080: use of closed network connection
+2025/10/20 21:57:33 Program finished running
+2025/10/20 21:58:06 Connection via websocket established
+2025/10/20 21:58:06 Started reading message from ws
+2025/10/20 21:58:06 Looping for reading message from ws
+2025/10/20 21:58:07 Sending to server {"type":1,"user":"jan"} 
+2025/10/20 21:58:07 Recieved: [123 34 116 121 112 101 34 58 55 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 99 108 105 101 110 116 115 34 58 91 34 106 97 110 34 93 125 10]
+2025/10/20 21:58:07 Sending msg to tea program {Type:7 User: Room:general Clients:[jan] Message:}
+2025/10/20 21:58:07 Looping for reading message from ws
+2025/10/20 21:58:07 Processing incoming msg {Type:7 User: Room:general Clients:[jan] Message:}
+2025/10/20 21:58:10 Error sending msg to ws: read tcp 127.0.0.1:51303->127.0.0.1:8080: wsarecv: Istniejące połączenie zostało gwałtownie zamknięte przez zdalnego hosta.
+2025/10/20 21:58:23 Program finished running
+2025/10/20 21:58:25 Connection via websocket established
+2025/10/20 21:58:25 Started reading message from ws
+2025/10/20 21:58:25 Looping for reading message from ws
+2025/10/20 21:58:26 Sending to server {"type":1,"user":"jan"} 
+2025/10/20 21:58:26 Recieved: [123 34 116 121 112 101 34 58 55 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 99 108 105 101 110 116 115 34 58 91 34 106 97 110 34 93 125 10]
+2025/10/20 21:58:26 Sending msg to tea program {Type:7 User: Room:general Clients:[jan] Message:}
+2025/10/20 21:58:26 Looping for reading message from ws
+2025/10/20 21:58:26 Processing incoming msg {Type:7 User: Room:general Clients:[jan] Message:}
+2025/10/20 21:58:31 Connection via websocket established
+2025/10/20 21:58:31 Started reading message from ws
+2025/10/20 21:58:31 Looping for reading message from ws
+2025/10/20 21:58:32 Sending to server {"type":1,"user":"adam"} 
+2025/10/20 21:58:32 Recieved: [123 34 116 121 112 101 34 58 55 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 99 108 105 101 110 116 115 34 58 91 34 106 97 110 34 44 34 97 100 97 109 34 93 125 10]
+2025/10/20 21:58:32 Recieved: [123 34 116 121 112 101 34 58 53 44 34 117 115 101 114 34 58 34 97 100 97 109 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 125 10]
+2025/10/20 21:58:32 Sending msg to tea program {Type:5 User:adam Room:general Clients:[] Message:}
+2025/10/20 21:58:32 Looping for reading message from ws
+2025/10/20 21:58:32 Processing incoming msg {Type:5 User:adam Room:general Clients:[] Message:}
+2025/10/20 21:58:32 Sending msg to tea program {Type:7 User: Room:general Clients:[jan adam] Message:}
+2025/10/20 21:58:32 Looping for reading message from ws
+2025/10/20 21:58:32 Processing incoming msg {Type:7 User: Room:general Clients:[jan adam] Message:}
+2025/10/20 21:58:32 Error sending msg to ws: websocket: close 1006 (abnormal closure): unexpected EOF
+2025/10/20 21:58:32 Recieved: [123 34 116 121 112 101 34 58 54 44 34 117 115 101 114 34 58 34 97 100 97 109 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 125 10]
+2025/10/20 21:58:32 Sending msg to tea program {Type:6 User:adam Room:general Clients:[] Message:}
+2025/10/20 21:58:32 Looping for reading message from ws
+2025/10/20 21:58:32 Processing incoming msg {Type:6 User:adam Room:general Clients:[] Message:}
+2025/10/20 21:58:32 Program finished running
