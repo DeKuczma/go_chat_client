@@ -3,7 +3,6 @@ package main
 import "github.com/charmbracelet/lipgloss"
 
 type Room struct {
-	active        bool
 	unreadMessage bool
 	users         []string
 	messages      []ChatMessage
@@ -25,7 +24,6 @@ func (room Room) GetUsers(maxHeight int) string {
 
 func InitRoom() *Room {
 	return &Room{
-		active:        false,
 		unreadMessage: false,
 		users:         make([]string, 0),
 	}

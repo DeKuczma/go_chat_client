@@ -266,7 +266,7 @@ func (h Hub) HandleIncomingMessage(msg IncomingMessage) (tea.Model, tea.Cmd) {
 		if len(room.messages) > MaxMessages {
 			room.messages = room.messages[1:]
 		}
-		if !room.active {
+		if msg.Room != h.roomsName[h.currentRoomIndex] {
 			room.unreadMessage = true
 		}
 	case ClientLeftRoom:
@@ -351,10 +351,6 @@ func (h Hub) GetRoomsPanel(width int) string {
 				border.BottomLeft = "│"
 			}
 		} else {
-			roomName := name
-			if !h.rooms[name].active {
-				roomName += "*"
-			}
 			border = inactiveRoomBorder
 			if index == 0 {
 				border.BottomLeft = "├"
@@ -367,10 +363,12 @@ func (h Hub) GetRoomsPanel(width int) string {
 		var roomHeader string
 		name := h.roomsName[index]
 		if width-(len(name)+borderSize) > 5 {
-			width = width - borderSize - len(name)
+			if name != h.roomsName[h.currentRoomIndex] && h.rooms[name].unreadMessage {
+				name += "*"
+			}
 			lengths = append(lengths, borderSize+len(name))
 			roomHeader = singleRoomHeader(index, name)
-			h.input.SetValue(strconv.Itoa(width))
+			width = width - borderSize - len(name)
 		} else {
 			if width < 5 {
 				if (!strings.Contains(rooms[0], "...") && h.currentRoomIndex != 0) || len(rooms) != 1 {
