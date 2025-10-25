@@ -83,7 +83,6 @@ func Read(ctx context.Context, conn *websocket.Conn, p *tea.Program) {
 		case <-ctx.Done():
 			return
 		default:
-			log.Println("Looping for reading message from ws")
 			_, recived, err := conn.ReadMessage()
 			if err != nil {
 				log.Printf("Error sending msg to ws: %s\n", err)
