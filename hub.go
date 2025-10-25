@@ -95,7 +95,7 @@ func NewHub() Hub {
 	ti := textinput.New()
 	ti.Placeholder = ""
 	ti.Focus()
-	ti.CharLimit = 20
+	ti.CharLimit = 50
 	ti.Prompt = "> "
 
 	h.input = ti
@@ -180,10 +180,12 @@ func (h Hub) HandleKeyMsg(msg tea.KeyMsg) (tea.Model, tea.Cmd) {
 		return h.HandleInputSubmit()
 	case key.Matches(msg, h.keyMap.joinRoom):
 		if h.clientState == WritingMessage {
+			h.input.Reset()
 			h.clientState = ClientState(JoiningRoom)
 		}
 	case key.Matches(msg, h.keyMap.leaveJoinRoom):
 		if h.clientState == JoiningRoom {
+			h.input.Reset()
 			h.clientState = ClientState(WritingMessage)
 		}
 	case key.Matches(msg, h.keyMap.leaveRoom):

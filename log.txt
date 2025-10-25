@@ -164,3 +164,31 @@
 2025/10/25 22:20:31 Program finished running
 2025/10/25 22:20:35 Error sending msg to ws: websocket: close 1006 (abnormal closure): unexpected EOF
 2025/10/25 22:20:35 Program finished running
+2025/10/25 22:37:00 Connection via websocket established
+2025/10/25 22:37:00 Started reading message from ws
+2025/10/25 22:37:01 Sending to server {"type":1,"user":"test"} 
+2025/10/25 22:37:01 Recieved: [123 34 116 121 112 101 34 58 55 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 99 108 105 101 110 116 115 34 58 91 34 116 101 115 116 34 93 125 10]
+2025/10/25 22:37:01 Sending msg to tea program {Type:7 User: Room:general Clients:[test] Message:}
+2025/10/25 22:37:01 Processing incoming msg {Type:7 User: Room:general Clients:[test] Message:}
+2025/10/25 22:37:06 Error sending msg to ws: websocket: close 1006 (abnormal closure): unexpected EOF
+2025/10/25 22:37:06 Program finished running
+2025/10/25 22:37:15 Connection via websocket established
+2025/10/25 22:37:15 Started reading message from ws
+2025/10/25 22:37:17 Sending to server {"type":1,"user":"asdasd"} 
+2025/10/25 22:37:17 Recieved: [123 34 116 121 112 101 34 58 55 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 99 108 105 101 110 116 115 34 58 91 34 97 115 100 97 115 100 34 93 125 10]
+2025/10/25 22:37:17 Sending msg to tea program {Type:7 User: Room:general Clients:[asdasd] Message:}
+2025/10/25 22:37:17 Processing incoming msg {Type:7 User: Room:general Clients:[asdasd] Message:}
+2025/10/25 22:37:26 Error sending msg to ws: websocket: close 1006 (abnormal closure): unexpected EOF
+2025/10/25 22:37:26 Program finished running
+2025/10/25 22:37:45 Connection via websocket established
+2025/10/25 22:37:45 Started reading message from ws
+2025/10/25 22:37:47 Sending to server {"type":1,"user":"test"} 
+2025/10/25 22:37:47 Recieved: [123 34 116 121 112 101 34 58 55 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 99 108 105 101 110 116 115 34 58 91 34 116 101 115 116 34 93 125 10]
+2025/10/25 22:37:47 Sending msg to tea program {Type:7 User: Room:general Clients:[test] Message:}
+2025/10/25 22:37:47 Processing incoming msg {Type:7 User: Room:general Clients:[test] Message:}
+2025/10/25 22:37:54 Sending to server {"type":0,"room":"general","message":"asdasdsdafasdfwqefqwefwqefqwefqwefqwefqwefqwefqwef"} 
+2025/10/25 22:37:54 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 116 101 115 116 32 40 77 101 41 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 97 115 100 97 115 100 115 100 97 102 97 115 100 102 119 113 101 102 113 119 101 102 119 113 101 102 113 119 101 102 113 119 101 102 113 119 101 102 113 119 101 102 113 119 101 102 113 119 101 102 34 125 10]
+2025/10/25 22:37:54 Sending msg to tea program {Type:0 User:test (Me) Room:general Clients:[] Message:asdasdsdafasdfwqefqwefwqefqwefqwefqwefqwefqwefqwef}
+2025/10/25 22:37:54 Processing incoming msg {Type:0 User:test (Me) Room:general Clients:[] Message:asdasdsdafasdfwqefqwefwqefqwefqwefqwefqwefqwefqwef}
+2025/10/25 22:37:56 Error sending msg to ws: websocket: close 1006 (abnormal closure): unexpected EOF
+2025/10/25 22:37:56 Program finished running
