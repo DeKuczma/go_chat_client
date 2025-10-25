@@ -14,8 +14,13 @@ type ChatMessage struct {
 	message string
 }
 
-func (room Room) GetUsers() string {
-	return lipgloss.JoinVertical(lipgloss.Top, room.users...)
+func (room Room) GetUsers(maxHeight int) string {
+
+	users := room.users
+	if len(users) > maxHeight {
+		users = users[0:maxHeight]
+	}
+	return lipgloss.JoinVertical(lipgloss.Top, users...)
 }
 
 func InitRoom() *Room {

@@ -298,7 +298,7 @@ func (h Hub) HandleIncomingMessage(msg IncomingMessage) (tea.Model, tea.Cmd) {
 
 func (h Hub) GetUsersPanel(width, height int) string {
 	usersHeader := usersHeaderStyle.Width(width).Render("Users")
-	roomUsers := usersStyle.Width(width).Height(height - 3).Align(lipgloss.Center).Render(h.rooms[h.roomsName[h.currentRoomIndex]].GetUsers())
+	roomUsers := usersStyle.Width(width).Height(height - 3).Align(lipgloss.Center).Render(h.rooms[h.roomsName[h.currentRoomIndex]].GetUsers(height - 3))
 	return lipgloss.JoinVertical(lipgloss.Top, usersHeader, roomUsers)
 }
 
