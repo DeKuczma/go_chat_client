@@ -2,10 +2,15 @@ package main
 
 import (
 	"log"
+	"slices"
+	"strconv"
+	"strings"
 
+	"github.com/charmbracelet/bubbles/help"
 	"github.com/charmbracelet/bubbles/key"
 	"github.com/charmbracelet/bubbles/textinput"
 	tea "github.com/charmbracelet/bubbletea"
+	"github.com/charmbracelet/lipgloss"
 	"github.com/gorilla/websocket"
 )
 
@@ -40,17 +45,20 @@ type Hub struct {
 	input            textinput.Model
 	currentRoomIndex int
 	conn             *websocket.Conn
+	help             help.Model
+	width            int
+	height           int
 }
 
 func NewHub() Hub {
 	h := Hub{
 		rooms: make(map[string]*Room),
-
+		help:  help.New(),
 		//Declare key mapping
 		keyMap: keyMapping{
 			quit: key.NewBinding(
 				key.WithKeys("ctrl+c"),
-				key.WithHelp("esc", "quit")),
+				key.WithHelp("ctrl+c", "quit")),
 			enter: key.NewBinding(
 				key.WithKeys("enter"),
 			),
@@ -87,8 +95,8 @@ func NewHub() Hub {
 	ti := textinput.New()
 	ti.Placeholder = ""
 	ti.Focus()
-	ti.CharLimit = 50
-	ti.Prompt = ""
+	ti.CharLimit = 20
+	ti.Prompt = "> "
 
 	h.input = ti
 	return h
@@ -101,6 +109,9 @@ func (h Hub) Init() tea.Cmd {
 
 func (h Hub) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 	switch m := msg.(type) {
+	case tea.WindowSizeMsg:
+		h.width = m.Width
+		h.height = m.Height
 	case tea.KeyMsg:
 		return h.HandleKeyMsg(m)
 	case IncomingMessage:
@@ -110,33 +121,44 @@ func (h Hub) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 }
 
 func (h Hub) View() string {
-	m := "Chat!!! \n\n"
+	window := strings.Builder{}
+	windowWidth := h.width - windowStyle.GetVerticalBorderSize()
+	windowHeight := h.height - windowStyle.GetVerticalBorderSize()
+	availableWidth := windowWidth
+	availableHeight := windowHeight
+
+	title := titleStyle.Width(availableWidth).Render("\nGo Chat\n")
+	window.WriteString(title)
+	window.WriteString("\n")
+	availableHeight -= 8
 
 	switch h.clientState {
 	case LogingIn:
-		m += "Provide username: "
+		displayText := "Provide username\n\n" + h.input.View()
+		window.WriteString(manageStyle.Width(availableWidth).Height(availableHeight).Render(displayText))
 	case JoiningRoom:
-		m += "Current rooms: "
-		m += h.GetJoinedRooms() + "\n\n"
-		m += "Provide room name to join: "
+		displayText := "Provide room name to join: \n\n" + h.input.View()
+		window.WriteString(manageStyle.Width(availableWidth).Height(availableHeight).Render(displayText))
 	case WritingMessage:
-		m += "Current rooms: "
-		m += h.GetJoinedRooms() + "\n\n"
+		usersWidth := 28
+		chatWidth := availableWidth - usersWidth - usersStyle.GetHorizontalFrameSize()
 
-		m += "Active room: " + h.roomsName[h.currentRoomIndex] + "\n"
-		m += "Room users: " + h.rooms[h.roomsName[h.currentRoomIndex]].GetUsers() + "\n"
-		room := h.rooms[h.roomsName[h.currentRoomIndex]]
-		if len(room.messages) > 0 {
-			m += "Room messages: \n"
-			for _, val := range room.messages {
-				m += val.user + ": " + val.message + "\n"
-			}
-		}
-
-		m += "\nWrite message to " + h.roomsName[h.currentRoomIndex] + ": "
+		roomUsersPanel := h.GetUsersPanel(usersWidth, availableHeight)
+		chatPanel := h.GetChatPanel(chatWidth, availableHeight)
+		window.WriteString(lipgloss.JoinHorizontal(lipgloss.Top, chatPanel, roomUsersPanel))
 	}
-	m += h.input.View()
-	return m
+	window.WriteString("\n")
+
+	helpText := topBorderStyle.Width(availableWidth).Render(h.help.ShortHelpView([]key.Binding{
+		h.keyMap.joinRoom,
+		h.keyMap.leaveRoom,
+		h.keyMap.switchNextRoom,
+		h.keyMap.switchPrevRoom,
+		h.keyMap.quit,
+	}))
+	window.WriteString(helpText)
+
+	return windowStyle.Width(windowWidth).Height(windowHeight).Render(window.String())
 }
 
 func (h Hub) GetJoinedRooms() string {
@@ -167,13 +189,11 @@ func (h Hub) HandleKeyMsg(msg tea.KeyMsg) (tea.Model, tea.Cmd) {
 	case key.Matches(msg, h.keyMap.leaveRoom):
 		cmd = h.LeaveRoom()
 	case key.Matches(msg, h.keyMap.switchNextRoom):
-		if h.currentRoomIndex != len(h.roomsName)-1 {
-			h.currentRoomIndex++
-		}
+		h.currentRoomIndex = min(h.currentRoomIndex+1, len(h.rooms)-1)
+		h.rooms[h.roomsName[h.currentRoomIndex]].unreadMessage = false
 	case key.Matches(msg, h.keyMap.switchPrevRoom):
-		if h.currentRoomIndex != 0 {
-			h.currentRoomIndex--
-		}
+		h.currentRoomIndex = max(h.currentRoomIndex-1, 0)
+		h.rooms[h.roomsName[h.currentRoomIndex]].unreadMessage = false
 	default:
 		h.input, cmd = h.input.Update(msg)
 	}
@@ -246,6 +266,9 @@ func (h Hub) HandleIncomingMessage(msg IncomingMessage) (tea.Model, tea.Cmd) {
 		if len(room.messages) > MaxMessages {
 			room.messages = room.messages[1:]
 		}
+		if !room.active {
+			room.unreadMessage = true
+		}
 	case ClientLeftRoom:
 		room := h.rooms[msg.Room]
 		foundAt := 0
@@ -271,4 +294,141 @@ func (h Hub) HandleIncomingMessage(msg IncomingMessage) (tea.Model, tea.Cmd) {
 		}
 	}
 	return h, nil
+}
+
+func (h Hub) GetUsersPanel(width, height int) string {
+	usersHeader := usersHeaderStyle.Width(width).Render("Users")
+	roomUsers := usersStyle.Width(width).Height(height - 3).Align(lipgloss.Center).Render(h.rooms[h.roomsName[h.currentRoomIndex]].GetUsers())
+	return lipgloss.JoinVertical(lipgloss.Top, usersHeader, roomUsers)
+}
+
+func (h Hub) GetChatPanel(width, height int) string {
+	height -= 2
+	roomHeaderPanel := h.GetRoomsPanel(width)
+
+	inputPanel := messagePanelFooter.Width(width - messagePanelFooter.GetVerticalBorderSize()).Height(1).Render(h.input.View())
+	height = height - topBorderStyle.GetHorizontalBorderSize() - activeRoomBorder.GetLeftSize() - activeRoomBorder.GetRightSize()
+
+	room := h.rooms[h.roomsName[h.currentRoomIndex]]
+	var messagesPanel string
+	var roomMessages []string
+	for _, val := range room.messages {
+		align := lipgloss.Left
+		if strings.Contains(val.user, ("Me")) {
+			align = lipgloss.Right
+		}
+		msg := textStyle.Width(width - textStyle.GetHorizontalBorderSize()).Align(align).Render(val.user + ": " + val.message)
+		roomMessages = append(roomMessages, msg)
+	}
+	if len(roomMessages) >= height {
+		roomMessages = roomMessages[len(roomMessages)-height+1:]
+	}
+
+	if height-len(roomMessages)-1 > 0 {
+		emptyMsg := make([]string, height-len(roomMessages)-1)
+
+		for i := range emptyMsg {
+			emptyMsg[i] = textStyle.Width(width - textStyle.GetHorizontalBorderSize()).Align().Render(" ")
+		}
+
+		roomMessages = append(emptyMsg, roomMessages...)
+	}
+	messagesPanel = lipgloss.JoinVertical(lipgloss.Top, roomMessages...)
+
+	return lipgloss.JoinVertical(lipgloss.Top, roomHeaderPanel, messagesPanel, inputPanel)
+}
+
+func (h Hub) GetRoomsPanel(width int) string {
+	var rooms []string
+	var lengths []int
+	borderSize := 2
+
+	singleRoomHeader := func(index int, name string) string {
+		var border lipgloss.Border
+		if index == h.currentRoomIndex {
+			border = activeRoomBorder
+			if index == 0 {
+				border.BottomLeft = "│"
+			}
+		} else {
+			roomName := name
+			if !h.rooms[name].active {
+				roomName += "*"
+			}
+			border = inactiveRoomBorder
+			if index == 0 {
+				border.BottomLeft = "├"
+			}
+		}
+		return roomStyle.Border(border).Render(name)
+	}
+
+	createRoomHeader := func(index int) (string, bool) {
+		var roomHeader string
+		name := h.roomsName[index]
+		if width-(len(name)+borderSize) > 5 {
+			width = width - borderSize - len(name)
+			lengths = append(lengths, borderSize+len(name))
+			roomHeader = singleRoomHeader(index, name)
+			h.input.SetValue(strconv.Itoa(width))
+		} else {
+			if width < 5 {
+				if (!strings.Contains(rooms[0], "...") && h.currentRoomIndex != 0) || len(rooms) != 1 {
+					rooms = append(rooms[0:1], rooms[2:]...)
+					width = width + lengths[1]
+					lengths = append(lengths[0:1], lengths[2:]...)
+				}
+			}
+			moreText := "..."
+			border := inactiveRoomBorder
+			width = width - len(moreText) - borderSize
+
+			h.input.SetValue(strconv.Itoa(width))
+			if index < h.currentRoomIndex {
+				border.BottomLeft = "├"
+			} else if width == 0 {
+				border.BottomRight = "┤"
+			}
+
+			lengths = append(lengths, borderSize+len(moreText))
+			roomHeader = roomStyle.Border(border).Render(moreText)
+			return roomHeader, false
+		}
+		return roomHeader, true
+	}
+
+	for i := h.currentRoomIndex; i >= 0; i-- {
+		roomHeader, cont := createRoomHeader(i)
+		rooms = append(rooms, roomHeader)
+		if !cont {
+			break
+		}
+	}
+
+	slices.Reverse(rooms)
+	slices.Reverse(lengths)
+
+	for i := h.currentRoomIndex + 1; i < len(h.roomsName); i++ {
+		roomHeader, cont := createRoomHeader(i)
+		if roomHeader != "" {
+			rooms = append(rooms, roomHeader)
+		}
+		if !cont {
+			break
+		}
+	}
+
+	if width > 0 {
+		var gapFilling []string
+
+		for i := 0; i < width-1; i++ {
+			gapFilling = append(gapFilling, "\n\n─")
+		}
+		gapFilling = append(gapFilling, "\n\n┐")
+		underlineStyle := lipgloss.NewStyle().Foreground(frameColor)
+		underline := underlineStyle.Render(lipgloss.JoinHorizontal(lipgloss.Left, gapFilling...))
+		rooms = append(rooms, underline)
+	}
+	return lipgloss.JoinHorizontal(lipgloss.Top, rooms...)
+
 }

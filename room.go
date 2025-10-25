@@ -1,5 +1,7 @@
 package main
 
+import "github.com/charmbracelet/lipgloss"
+
 type Room struct {
 	active        bool
 	unreadMessage bool
@@ -13,11 +15,7 @@ type ChatMessage struct {
 }
 
 func (room Room) GetUsers() string {
-	var roomUsers string
-	for _, user := range room.users {
-		roomUsers += user + " "
-	}
-	return roomUsers
+	return lipgloss.JoinVertical(lipgloss.Top, room.users...)
 }
 
 func InitRoom() *Room {

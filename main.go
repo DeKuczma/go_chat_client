@@ -39,7 +39,7 @@ func main() {
 
 	log.Println("Connection via websocket established")
 
-	p := tea.NewProgram(h, tea.WithContext(context.Background()))
+	p := tea.NewProgram(h, tea.WithAltScreen())
 
 	ctx, cancel := context.WithCancel(context.Background())
 	defer cancel()
