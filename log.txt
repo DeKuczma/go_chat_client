@@ -1,0 +1,166 @@
+2025/10/25 19:33:57 Connection via websocket established
+2025/10/25 19:33:57 Started reading message from ws
+2025/10/25 19:33:59 Sending to server {"type":1,"user":"test"} 
+2025/10/25 19:33:59 Recieved: [123 34 116 121 112 101 34 58 55 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 99 108 105 101 110 116 115 34 58 91 34 116 101 115 116 34 93 125 10]
+2025/10/25 19:33:59 Sending msg to tea program {Type:7 User: Room:general Clients:[test] Message:}
+2025/10/25 19:33:59 Processing incoming msg {Type:7 User: Room:general Clients:[test] Message:}
+2025/10/25 19:34:07 Connection via websocket established
+2025/10/25 19:34:07 Started reading message from ws
+2025/10/25 19:34:08 Sending to server {"type":1,"user":"asdads"} 
+2025/10/25 19:34:08 Recieved: [123 34 116 121 112 101 34 58 53 44 34 117 115 101 114 34 58 34 97 115 100 97 100 115 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 125 10]
+2025/10/25 19:34:08 Recieved: [123 34 116 121 112 101 34 58 55 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 99 108 105 101 110 116 115 34 58 91 34 116 101 115 116 34 44 34 97 115 100 97 100 115 34 93 125 10]
+2025/10/25 19:34:08 Sending msg to tea program {Type:5 User:asdads Room:general Clients:[] Message:}
+2025/10/25 19:34:08 Processing incoming msg {Type:5 User:asdads Room:general Clients:[] Message:}
+2025/10/25 19:34:08 Sending msg to tea program {Type:7 User: Room:general Clients:[test asdads] Message:}
+2025/10/25 19:34:08 Processing incoming msg {Type:7 User: Room:general Clients:[test asdads] Message:}
+2025/10/25 19:34:09 Sending to server {"type":0,"room":"general","message":"sadasd"} 
+2025/10/25 19:34:09 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 115 100 97 100 115 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 115 97 100 97 115 100 34 125 10]
+2025/10/25 19:34:09 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 97 115 100 97 100 115 32 40 77 101 41 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 115 97 100 97 115 100 34 125 10]
+2025/10/25 19:34:09 Sending msg to tea program {Type:0 User:asdads Room:general Clients:[] Message:sadasd}
+2025/10/25 19:34:09 Sending msg to tea program {Type:0 User:asdads (Me) Room:general Clients:[] Message:sadasd}
+2025/10/25 19:34:09 Processing incoming msg {Type:0 User:asdads Room:general Clients:[] Message:sadasd}
+2025/10/25 19:34:09 Processing incoming msg {Type:0 User:asdads (Me) Room:general Clients:[] Message:sadasd}
+2025/10/25 19:34:10 Recieved: [123 34 116 121 112 101 34 58 54 44 34 117 115 101 114 34 58 34 97 115 100 97 100 115 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 125 10]
+2025/10/25 19:34:10 Error sending msg to ws: websocket: close 1006 (abnormal closure): unexpected EOF
+2025/10/25 19:34:10 Sending msg to tea program {Type:6 User:asdads Room:general Clients:[] Message:}
+2025/10/25 19:34:10 Processing incoming msg {Type:6 User:asdads Room:general Clients:[] Message:}
+2025/10/25 19:34:10 Program finished running
+2025/10/25 19:34:11 Error sending msg to ws: websocket: close 1006 (abnormal closure): unexpected EOF
+2025/10/25 19:34:11 Program finished running
+2025/10/25 19:43:51 Connection via websocket established
+2025/10/25 19:43:51 Started reading message from ws
+2025/10/25 19:43:52 Sending to server {"type":1,"user":"t"} 
+2025/10/25 19:43:52 Recieved: [123 34 116 121 112 101 34 58 55 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 99 108 105 101 110 116 115 34 58 91 34 116 34 93 125 10]
+2025/10/25 19:43:52 Sending msg to tea program {Type:7 User: Room:general Clients:[t] Message:}
+2025/10/25 19:43:52 Processing incoming msg {Type:7 User: Room:general Clients:[t] Message:}
+2025/10/25 19:43:56 Connection via websocket established
+2025/10/25 19:43:56 Started reading message from ws
+2025/10/25 19:43:58 Sending to server {"type":1,"user":"temp"} 
+2025/10/25 19:43:58 Recieved: [123 34 116 121 112 101 34 58 55 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 99 108 105 101 110 116 115 34 58 91 34 116 34 44 34 116 101 109 112 34 93 125 10]
+2025/10/25 19:43:58 Recieved: [123 34 116 121 112 101 34 58 53 44 34 117 115 101 114 34 58 34 116 101 109 112 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 125 10]
+2025/10/25 19:43:58 Sending msg to tea program {Type:7 User: Room:general Clients:[t temp] Message:}
+2025/10/25 19:43:58 Sending msg to tea program {Type:5 User:temp Room:general Clients:[] Message:}
+2025/10/25 19:43:58 Processing incoming msg {Type:5 User:temp Room:general Clients:[] Message:}
+2025/10/25 19:43:58 Processing incoming msg {Type:7 User: Room:general Clients:[t temp] Message:}
+2025/10/25 19:43:59 Sending to server {"type":0,"room":"general","message":"sadfasdf"} 
+2025/10/25 19:43:59 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 116 101 109 112 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 115 97 100 102 97 115 100 102 34 125 10]
+2025/10/25 19:43:59 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 116 101 109 112 32 40 77 101 41 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 115 97 100 102 97 115 100 102 34 125 10]
+2025/10/25 19:43:59 Sending msg to tea program {Type:0 User:temp Room:general Clients:[] Message:sadfasdf}
+2025/10/25 19:43:59 Sending msg to tea program {Type:0 User:temp (Me) Room:general Clients:[] Message:sadfasdf}
+2025/10/25 19:43:59 Processing incoming msg {Type:0 User:temp Room:general Clients:[] Message:sadfasdf}
+2025/10/25 19:43:59 Processing incoming msg {Type:0 User:temp (Me) Room:general Clients:[] Message:sadfasdf}
+2025/10/25 19:44:00 Sending to server {"type":0,"room":"general","message":"asdfsa"} 
+2025/10/25 19:44:00 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 116 101 109 112 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 97 115 100 102 115 97 34 125 10]
+2025/10/25 19:44:00 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 116 101 109 112 32 40 77 101 41 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 97 115 100 102 115 97 34 125 10]
+2025/10/25 19:44:00 Sending msg to tea program {Type:0 User:temp (Me) Room:general Clients:[] Message:asdfsa}
+2025/10/25 19:44:00 Sending msg to tea program {Type:0 User:temp Room:general Clients:[] Message:asdfsa}
+2025/10/25 19:44:00 Processing incoming msg {Type:0 User:temp Room:general Clients:[] Message:asdfsa}
+2025/10/25 19:44:00 Processing incoming msg {Type:0 User:temp (Me) Room:general Clients:[] Message:asdfsa}
+2025/10/25 19:44:01 Sending to server {"type":0,"room":"general","message":"sdfsafd"} 
+2025/10/25 19:44:01 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 116 32 40 77 101 41 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 115 100 102 115 97 102 100 34 125 10]
+2025/10/25 19:44:01 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 116 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 109 101 115 115 97 103 101 34 58 34 115 100 102 115 97 102 100 34 125 10]
+2025/10/25 19:44:01 Sending msg to tea program {Type:0 User:t (Me) Room:general Clients:[] Message:sdfsafd}
+2025/10/25 19:44:01 Sending msg to tea program {Type:0 User:t Room:general Clients:[] Message:sdfsafd}
+2025/10/25 19:44:01 Processing incoming msg {Type:0 User:t Room:general Clients:[] Message:sdfsafd}
+2025/10/25 19:44:01 Processing incoming msg {Type:0 User:t (Me) Room:general Clients:[] Message:sdfsafd}
+2025/10/25 19:44:02 Recieved: [123 34 116 121 112 101 34 58 54 44 34 117 115 101 114 34 58 34 116 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 125 10]
+2025/10/25 19:44:02 Error sending msg to ws: websocket: close 1006 (abnormal closure): unexpected EOF
+2025/10/25 19:44:02 Sending msg to tea program {Type:6 User:t Room:general Clients:[] Message:}
+2025/10/25 19:44:02 Processing incoming msg {Type:6 User:t Room:general Clients:[] Message:}
+2025/10/25 19:44:02 Program finished running
+2025/10/25 19:44:03 Error sending msg to ws: websocket: close 1006 (abnormal closure): unexpected EOF
+2025/10/25 19:44:03 Program finished running
+2025/10/25 22:13:56 Connection via websocket established
+2025/10/25 22:13:56 Started reading message from ws
+2025/10/25 22:14:03 Sending to server {"type":1,"user":"Jhon"} 
+2025/10/25 22:14:03 Recieved: [123 34 116 121 112 101 34 58 55 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 99 108 105 101 110 116 115 34 58 91 34 74 104 111 110 34 93 125 10]
+2025/10/25 22:14:03 Sending msg to tea program {Type:7 User: Room:general Clients:[Jhon] Message:}
+2025/10/25 22:14:03 Processing incoming msg {Type:7 User: Room:general Clients:[Jhon] Message:}
+2025/10/25 22:14:17 Sending to server {"type":2,"room":"hobby"} 
+2025/10/25 22:14:17 Recieved: [123 34 116 121 112 101 34 58 55 44 34 114 111 111 109 34 58 34 104 111 98 98 121 34 44 34 99 108 105 101 110 116 115 34 58 91 34 74 104 111 110 34 93 125 10]
+2025/10/25 22:14:17 Sending msg to tea program {Type:7 User: Room:hobby Clients:[Jhon] Message:}
+2025/10/25 22:14:17 Processing incoming msg {Type:7 User: Room:hobby Clients:[Jhon] Message:}
+2025/10/25 22:14:19 Sending to server {"type":2,"room":"sport"} 
+2025/10/25 22:14:19 Recieved: [123 34 116 121 112 101 34 58 55 44 34 114 111 111 109 34 58 34 115 112 111 114 116 34 44 34 99 108 105 101 110 116 115 34 58 91 34 74 104 111 110 34 93 125 10]
+2025/10/25 22:14:19 Sending msg to tea program {Type:7 User: Room:sport Clients:[Jhon] Message:}
+2025/10/25 22:14:19 Processing incoming msg {Type:7 User: Room:sport Clients:[Jhon] Message:}
+2025/10/25 22:14:24 Sending to server {"type":2,"room":"cooking"} 
+2025/10/25 22:14:24 Recieved: [123 34 116 121 112 101 34 58 55 44 34 114 111 111 109 34 58 34 99 111 111 107 105 110 103 34 44 34 99 108 105 101 110 116 115 34 58 91 34 74 104 111 110 34 93 125 10]
+2025/10/25 22:14:24 Sending msg to tea program {Type:7 User: Room:cooking Clients:[Jhon] Message:}
+2025/10/25 22:14:24 Processing incoming msg {Type:7 User: Room:cooking Clients:[Jhon] Message:}
+2025/10/25 22:14:26 Sending to server {"type":2,"room":"books"} 
+2025/10/25 22:14:26 Recieved: [123 34 116 121 112 101 34 58 55 44 34 114 111 111 109 34 58 34 98 111 111 107 115 34 44 34 99 108 105 101 110 116 115 34 58 91 34 74 104 111 110 34 93 125 10]
+2025/10/25 22:14:26 Sending msg to tea program {Type:7 User: Room:books Clients:[Jhon] Message:}
+2025/10/25 22:14:26 Processing incoming msg {Type:7 User: Room:books Clients:[Jhon] Message:}
+2025/10/25 22:14:30 Sending to server {"type":2,"room":"games"} 
+2025/10/25 22:14:30 Recieved: [123 34 116 121 112 101 34 58 55 44 34 114 111 111 109 34 58 34 103 97 109 101 115 34 44 34 99 108 105 101 110 116 115 34 58 91 34 74 104 111 110 34 93 125 10]
+2025/10/25 22:14:30 Sending msg to tea program {Type:7 User: Room:games Clients:[Jhon] Message:}
+2025/10/25 22:14:30 Processing incoming msg {Type:7 User: Room:games Clients:[Jhon] Message:}
+2025/10/25 22:16:06 Connection via websocket established
+2025/10/25 22:16:06 Started reading message from ws
+2025/10/25 22:17:02 Sending to server {"type":1,"user":"Doe"} 
+2025/10/25 22:17:02 Recieved: [123 34 116 121 112 101 34 58 53 44 34 117 115 101 114 34 58 34 68 111 101 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 125 10]
+2025/10/25 22:17:02 Recieved: [123 34 116 121 112 101 34 58 55 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 44 34 99 108 105 101 110 116 115 34 58 91 34 74 104 111 110 34 44 34 68 111 101 34 93 125 10]
+2025/10/25 22:17:02 Sending msg to tea program {Type:5 User:Doe Room:general Clients:[] Message:}
+2025/10/25 22:17:02 Processing incoming msg {Type:5 User:Doe Room:general Clients:[] Message:}
+2025/10/25 22:17:02 Sending msg to tea program {Type:7 User: Room:general Clients:[Jhon Doe] Message:}
+2025/10/25 22:17:02 Processing incoming msg {Type:7 User: Room:general Clients:[Jhon Doe] Message:}
+2025/10/25 22:17:27 Sending to server {"type":2,"room":"tv shows"} 
+2025/10/25 22:17:27 Recieved: [123 34 116 121 112 101 34 58 55 44 34 114 111 111 109 34 58 34 116 118 32 115 104 111 119 115 34 44 34 99 108 105 101 110 116 115 34 58 91 34 74 104 111 110 34 93 125 10]
+2025/10/25 22:17:27 Sending msg to tea program {Type:7 User: Room:tv shows Clients:[Jhon] Message:}
+2025/10/25 22:17:27 Processing incoming msg {Type:7 User: Room:tv shows Clients:[Jhon] Message:}
+2025/10/25 22:17:33 Sending to server {"type":2,"room":"games"} 
+2025/10/25 22:17:33 Recieved: [123 34 116 121 112 101 34 58 55 44 34 114 111 111 109 34 58 34 103 97 109 101 115 34 44 34 99 108 105 101 110 116 115 34 58 91 34 74 104 111 110 34 44 34 68 111 101 34 93 125 10]
+2025/10/25 22:17:33 Recieved: [123 34 116 121 112 101 34 58 53 44 34 117 115 101 114 34 58 34 68 111 101 34 44 34 114 111 111 109 34 58 34 103 97 109 101 115 34 125 10]
+2025/10/25 22:17:33 Sending msg to tea program {Type:5 User:Doe Room:games Clients:[] Message:}
+2025/10/25 22:17:33 Sending msg to tea program {Type:7 User: Room:games Clients:[Jhon Doe] Message:}
+2025/10/25 22:17:33 Processing incoming msg {Type:5 User:Doe Room:games Clients:[] Message:}
+2025/10/25 22:17:33 Processing incoming msg {Type:7 User: Room:games Clients:[Jhon Doe] Message:}
+2025/10/25 22:17:51 Sending to server {"type":2,"room":"cooking"} 
+2025/10/25 22:17:51 Recieved: [123 34 116 121 112 101 34 58 55 44 34 114 111 111 109 34 58 34 99 111 111 107 105 110 103 34 44 34 99 108 105 101 110 116 115 34 58 91 34 74 104 111 110 34 44 34 68 111 101 34 93 125 10]
+2025/10/25 22:17:51 Recieved: [123 34 116 121 112 101 34 58 53 44 34 117 115 101 114 34 58 34 68 111 101 34 44 34 114 111 111 109 34 58 34 99 111 111 107 105 110 103 34 125 10]
+2025/10/25 22:17:51 Sending msg to tea program {Type:7 User: Room:cooking Clients:[Jhon Doe] Message:}
+2025/10/25 22:17:51 Sending msg to tea program {Type:5 User:Doe Room:cooking Clients:[] Message:}
+2025/10/25 22:17:51 Processing incoming msg {Type:7 User: Room:cooking Clients:[Jhon Doe] Message:}
+2025/10/25 22:17:51 Processing incoming msg {Type:5 User:Doe Room:cooking Clients:[] Message:}
+2025/10/25 22:18:00 Sending to server {"type":0,"room":"cooking","message":"hello there"} 
+2025/10/25 22:18:00 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 68 111 101 32 40 77 101 41 34 44 34 114 111 111 109 34 58 34 99 111 111 107 105 110 103 34 44 34 109 101 115 115 97 103 101 34 58 34 104 101 108 108 111 32 116 104 101 114 101 34 125 10]
+2025/10/25 22:18:00 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 68 111 101 34 44 34 114 111 111 109 34 58 34 99 111 111 107 105 110 103 34 44 34 109 101 115 115 97 103 101 34 58 34 104 101 108 108 111 32 116 104 101 114 101 34 125 10]
+2025/10/25 22:18:00 Sending msg to tea program {Type:0 User:Doe (Me) Room:cooking Clients:[] Message:hello there}
+2025/10/25 22:18:00 Sending msg to tea program {Type:0 User:Doe Room:cooking Clients:[] Message:hello there}
+2025/10/25 22:18:00 Processing incoming msg {Type:0 User:Doe (Me) Room:cooking Clients:[] Message:hello there}
+2025/10/25 22:18:00 Processing incoming msg {Type:0 User:Doe Room:cooking Clients:[] Message:hello there}
+2025/10/25 22:18:09 Sending to server {"type":0,"room":"games","message":"Hi"} 
+2025/10/25 22:18:09 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 68 111 101 32 40 77 101 41 34 44 34 114 111 111 109 34 58 34 103 97 109 101 115 34 44 34 109 101 115 115 97 103 101 34 58 34 72 105 34 125 10]
+2025/10/25 22:18:09 Sending msg to tea program {Type:0 User:Doe (Me) Room:games Clients:[] Message:Hi}
+2025/10/25 22:18:09 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 68 111 101 34 44 34 114 111 111 109 34 58 34 103 97 109 101 115 34 44 34 109 101 115 115 97 103 101 34 58 34 72 105 34 125 10]
+2025/10/25 22:18:09 Processing incoming msg {Type:0 User:Doe (Me) Room:games Clients:[] Message:Hi}
+2025/10/25 22:18:09 Sending msg to tea program {Type:0 User:Doe Room:games Clients:[] Message:Hi}
+2025/10/25 22:18:09 Processing incoming msg {Type:0 User:Doe Room:games Clients:[] Message:Hi}
+2025/10/25 22:18:18 Sending to server {"type":0,"room":"games","message":"Hi"} 
+2025/10/25 22:18:18 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 74 104 111 110 34 44 34 114 111 111 109 34 58 34 103 97 109 101 115 34 44 34 109 101 115 115 97 103 101 34 58 34 72 105 34 125 10]
+2025/10/25 22:18:18 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 74 104 111 110 32 40 77 101 41 34 44 34 114 111 111 109 34 58 34 103 97 109 101 115 34 44 34 109 101 115 115 97 103 101 34 58 34 72 105 34 125 10]
+2025/10/25 22:18:18 Sending msg to tea program {Type:0 User:Jhon Room:games Clients:[] Message:Hi}
+2025/10/25 22:18:18 Sending msg to tea program {Type:0 User:Jhon (Me) Room:games Clients:[] Message:Hi}
+2025/10/25 22:18:18 Processing incoming msg {Type:0 User:Jhon Room:games Clients:[] Message:Hi}
+2025/10/25 22:18:18 Processing incoming msg {Type:0 User:Jhon (Me) Room:games Clients:[] Message:Hi}
+2025/10/25 22:18:34 Sending to server {"type":0,"room":"games","message":"What are you playing"} 
+2025/10/25 22:18:34 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 68 111 101 32 40 77 101 41 34 44 34 114 111 111 109 34 58 34 103 97 109 101 115 34 44 34 109 101 115 115 97 103 101 34 58 34 87 104 97 116 32 97 114 101 32 121 111 117 32 112 108 97 121 105 110 103 34 125 10]
+2025/10/25 22:18:34 Sending msg to tea program {Type:0 User:Doe (Me) Room:games Clients:[] Message:What are you playing}
+2025/10/25 22:18:34 Recieved: [123 34 116 121 112 101 34 58 48 44 34 117 115 101 114 34 58 34 68 111 101 34 44 34 114 111 111 109 34 58 34 103 97 109 101 115 34 44 34 109 101 115 115 97 103 101 34 58 34 87 104 97 116 32 97 114 101 32 121 111 117 32 112 108 97 121 105 110 103 34 125 10]
+2025/10/25 22:18:34 Sending msg to tea program {Type:0 User:Doe Room:games Clients:[] Message:What are you playing}
+2025/10/25 22:18:34 Processing incoming msg {Type:0 User:Doe Room:games Clients:[] Message:What are you playing}
+2025/10/25 22:18:34 Processing incoming msg {Type:0 User:Doe (Me) Room:games Clients:[] Message:What are you playing}
+2025/10/25 22:20:31 Recieved: [123 34 116 121 112 101 34 58 54 44 34 117 115 101 114 34 58 34 74 104 111 110 34 44 34 114 111 111 109 34 58 34 103 101 110 101 114 97 108 34 125 10]
+2025/10/25 22:20:31 Sending msg to tea program {Type:6 User:Jhon Room:general Clients:[] Message:}
+2025/10/25 22:20:31 Recieved: [123 34 116 121 112 101 34 58 54 44 34 117 115 101 114 34 58 34 74 104 111 110 34 44 34 114 111 111 109 34 58 34 99 111 111 107 105 110 103 34 125 10]
+2025/10/25 22:20:31 Sending msg to tea program {Type:6 User:Jhon Room:cooking Clients:[] Message:}
+2025/10/25 22:20:31 Processing incoming msg {Type:6 User:Jhon Room:general Clients:[] Message:}
+2025/10/25 22:20:31 Error sending msg to ws: websocket: close 1006 (abnormal closure): unexpected EOF
+2025/10/25 22:20:31 Processing incoming msg {Type:6 User:Jhon Room:cooking Clients:[] Message:}
+2025/10/25 22:20:31 Recieved: [123 34 116 121 112 101 34 58 54 44 34 117 115 101 114 34 58 34 74 104 111 110 34 44 34 114 111 111 109 34 58 34 103 97 109 101 115 34 125 10]
+2025/10/25 22:20:31 Sending msg to tea program {Type:6 User:Jhon Room:games Clients:[] Message:}
+2025/10/25 22:20:31 Processing incoming msg {Type:6 User:Jhon Room:games Clients:[] Message:}
+2025/10/25 22:20:31 Program finished running
+2025/10/25 22:20:35 Error sending msg to ws: websocket: close 1006 (abnormal closure): unexpected EOF
+2025/10/25 22:20:35 Program finished running
